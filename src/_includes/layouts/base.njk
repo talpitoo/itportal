@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" class="itportal-snap-container" x-data="{ isTopNavbarOpen: false }" :class="{'overflow-hidden': isTopNavbarOpen}">
+  <head>
+    {% include "../components/meta.njk" %}
+  </head>
+  <body class="dark-theme">
+    <div id="top" class="itportal-anchor-offset"></div>
+
+    {% include "../components/navigation.njk" %}
+    <main>
+      {{ content | safe }}
+    </main>
+
+    {% include "../components/footer.njk" %}
+
+    {# NOTE: modals at the very end so their z-index is above everything else #}
+    {# {% include "components/modals/modal-gallery.njk" %} #}
+
+    {# NOTE: optional example in case importing in main.js does not work 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js" defer></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" defer></script> #}
+
+    <!-- Bootstrap Sass & ESM JS example https://getbootstrap.com/docs/5.3/examples/, https://github.com/twbs/examples/tree/main/sass-js-esm -->
+    {# <script async src="https://ga.jspm.io/npm:es-module-shims@1.5.5/dist/es-module-shims.js"></script>
+    <script type="importmap">
+    {
+    "imports": {
+        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.js",
+        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.esm.min.js"
+    }
+    }
+    </script>
+    <script type="module">
+    import * as bootstrap from 'bootstrap'
+    document.querySelectorAll('[data-bs-toggle="popover"]')
+        .forEach(popover => {
+        new bootstrap.Popover(popover)
+        })
+    </script>
+    #}
+
+    {# <script src="/js/main.js" defer></script> #}
+    <!--     JQuery     -->
+    <script src="js/vendors/jquery-3.6.1.min.js"></script>
+
+    <!--     appear     -->
+    <script src="js/vendors/appear.min.js"></script>
+
+    <!--     bootstrap     -->
+    <script src="js/vendors/bootstrap.bundle.min.js"></script>
+
+    <!--     countTo     -->
+    <script src="js/vendors/jquery.countTo.js"></script>
+
+    <!--     wow     -->
+    <script src="js/vendors/wow.min.js"></script>
+
+    <!--     swiper     -->
+    <script src="js/vendors/swiper-bundle.min.js"></script>
+
+    <!--     particles     -->
+    <script src="js/vendors/particles.min.js"></script>
+
+    <!--     Vanilla-tilt     -->
+    <script src="js/vendors/vanilla-tilt.min.js"></script>
+
+    <!--     isotope     -->
+    <script src="js/vendors/isotope-min.js"></script>
+
+    <!--     fancybox     -->
+    <script src="js/vendors/jquery.fancybox.min.js"></script>
+
+    <!--     main     -->
+    <script src="js/main.js"></script>
+
+    <!--     local, page-level JS     -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // toas/popup
+        const demoToastEl = document.getElementById('demoToast');
+        const demoToast = new bootstrap.Toast(demoToastEl);
+        demoToast.show();
+
+        demoToastEl.addEventListener('shown.bs.toast', () => {
+          console.debug("toast shown");
+        })
+
+        // dropdowns/different images
+        const companySizeDropdown = document.getElementById('companySize');
+        const industryDropdown = document.getElementById('industry');
+        const heroImageWrapper = document.querySelector('.hero-img-wraper img');
+
+        function updateHeroImage() {
+          const companySize = companySizeDropdown.value;
+          const industry = industryDropdown.value;
+
+          let imagePath = 'assets/images/hero/hero-portal.png'; // default image
+
+          if (companySize === '5000+') {
+            imagePath = 'assets/images/hero/hero-portal-02.png';
+          } else if (companySize === '50-249') {
+            imagePath = 'assets/images/hero/hero-portal-03.png';
+          } else if (companySize === '10-49') {
+            imagePath = 'assets/images/hero/hero-portal-04.png';
+          } else if (industry === 'msp') {
+            imagePath = 'assets/images/hero/hero-portal-05.png';
+          } else if (industry === 'it') {
+            imagePath = 'assets/images/hero/hero-portal-06.png';
+          }
+
+          heroImageWrapper.src = imagePath;
+        }
+
+        companySizeDropdown.addEventListener('change', updateHeroImage);
+        industryDropdown.addEventListener('change', updateHeroImage);
+
+      });
+    </script>
+  </body>
+</html>

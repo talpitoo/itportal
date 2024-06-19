@@ -1,0 +1,204 @@
+header {
+  a,
+  .btn-link {
+    // font-weight: 500;
+    text-decoration: none;
+  }
+}
+
+.btn-navbar {
+  font-weight: 500;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    span,
+    svg {
+      color: $tertiary;
+      transition: transform .3s ease-in-out;
+    }
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    display: inline-flex;
+    align-items: center;
+    height: map-get($spacers, "navbar");
+  }
+}
+
+// bg-primary-dark bg-lg-primary d-none d-xl-flex flex-grow-1 justify-content-center list-inline mb-0
+
+// collapsed: d-none
+
+// open: d-flex flex-column align-items-start px-3 position-absolute mt-navbar top-0 bottom-0 start-0 end-0
+.list-main-menu {
+  display: none;
+  background-color: $primary-dark;
+
+  > ul {
+    display: flex;
+    flex-direction: column;
+    gap: $spacer;
+    margin-bottom: 0;
+    list-style: none;
+
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+      flex-grow: 1;
+      gap: 0;
+      justify-content: center;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    background-color: transparent;
+  }
+
+  @include media-breakpoint-up(xl) {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  &.expanded {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: map-get($spacers, 4);
+    margin-top: map-get($spacers, "navbar");
+    font-size: 20px;
+
+    button {
+      font-size: 20px;
+    }
+  }
+}
+
+[data-dropdown-open] {
+  // NOTE: this equals to [data-dropdown-open="false"]
+  position: fixed;
+  top: map-get($spacers, "navbar");
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: map-get($spacers, 4);
+  padding-bottom: map-get($spacers, 4);
+  overflow-y: auto;
+  font-size: $font-size-base;
+  visibility: hidden;
+  background-color: $primary-dark;
+  opacity: 0;
+  // transition: all .3s ease-in-out // TODO: debug on page load
+  transform: translateX(100vw);
+
+  svg {
+    stroke-width: 2;
+  }
+
+  .stretched-link-parent {
+    margin-bottom: $spacer;
+    background-color: $primary;
+  }
+
+  @include media-breakpoint-up(lg) {
+
+    position: absolute;
+    bottom: auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: none;
+    padding: map-get($spacers, 4);
+    overflow-y: hidden;
+    background-color: $white;
+    box-shadow: $box-shadow;
+    transform: translateX(50px);
+
+    p {
+      margin-bottom: 0;
+    }
+
+    a:not(.stretched-link) {
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    li {
+      flex-grow: 1;
+    }
+
+    .flex-3 {
+      flex: 1 0 calc(100% / 3);
+      padding-right: map-get($spacers, 4);
+    }
+
+    .flex-4 {
+      flex: 1 0 calc(100% / 4);
+      padding-right: map-get($spacers, 4);
+    }
+
+    .flex-5 {
+      flex: 1 0 calc(100% / 5);
+      padding-right: map-get($spacers, 4);
+    }
+
+    .stretched-link-parent {
+      padding: $spacer;
+      margin-bottom: 0;
+      background-color: $white;
+
+      &:hover {
+        background-color: $light;
+        border-radius: $border-radius-xl;
+      }
+    }
+
+    .layout-calculators {
+      // stylelint-disable declaration-no-important
+      position: absolute !important;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 0;
+      background-color: $light;
+
+      h6 {
+        display: none;
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: map-get($spacers, 3);
+        padding-bottom: map-get($spacers, 3);
+        padding-left: map-get($spacers, 4);
+      }
+
+      svg {
+        stroke-width: 1;
+      }
+    }
+  }
+}
+
+[data-dropdown-open="true"] {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.dom-loaded {
+  [data-dropdown-open] {
+    transition: all .3s ease-in-out;
+  }
+}

@@ -1,0 +1,114 @@
+.py-section {
+  // TODO: refactor
+  // padding-top: map-get($spacers, '64px');
+  // padding-bottom: map-get($spacers, '64px');
+
+  // stylelint-disable scss/selector-no-union-class-name
+  &-lg {
+    padding-top: map-get($spacers, "72px");
+    padding-bottom: map-get($spacers, "72px");
+  }
+}
+
+.container-max-xl {
+  @include media-breakpoint-up(xxl) {
+    max-width: map-get($container-max-widths, xl);
+  }
+}
+
+.itportal-tile {
+  display: flex;
+  gap: $spacer;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: $spacer;
+  background-color: $white;
+  border-radius: $border-radius-24px;
+}
+
+.itportal-anchor-offset {
+  &::before {
+    display: block;
+    height: map-get($spacers, "navbar");
+    margin-top: map-get($spacers, "navbar") * -1;
+    visibility: hidden;
+    content: "";
+  }
+
+  // &.itportal-anchor-offset-first {
+  //   &::before {
+  //     height: map-get($spacers, "navbar") * 2;
+  //   }
+  // }
+}
+
+.itportal-snap-container {
+  scroll-snap-type: y proximity;
+  // scroll-snap-type: y mandatory;
+
+  body {
+    scroll-snap-type: y proximity;
+    // scroll-snap-type: y mandatory
+  }
+
+  .itportal-scroll-snap {
+    scroll-snap-align: start;
+    scroll-margin: 16px;
+    // scroll-snap-stop: always;
+  }
+
+  .dropdown-max-2 .child-checked + .child-checked {
+    padding-bottom: map-get($spacers, "16px");
+    margin-bottom: map-get($spacers, "8px");
+    border-bottom: 1px solid $light;
+  }
+
+  .dropdown-max-multiple .js-selected-summary {
+    display: none;
+  }
+}
+
+.cell-border-top,
+.cell-border-bottom {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: -2px;
+    right: -1px;
+    bottom: -2px;
+    left: -2px;
+    display: block;
+    content: "";
+    border: 3px solid $tertiary;
+  }
+}
+
+.cell-border-top {
+  &::before {
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+
+.cell-border-bottom {
+  &::before {
+    border-top: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+.nav-tabs-inline {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  @include media-breakpoint-up(lg) {
+    overflow-x: unset;
+    overflow-y: unset;
+  }
+}
