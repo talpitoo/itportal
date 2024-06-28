@@ -88,9 +88,17 @@
                 <!--End of .hero-text-area-->
             </div>
             <!--start of .image-area -->
-            <div class="col-12   mx-md-auto col-lg-6 text-center " data-tilt>
+            <div class="col-12 mx-md-auto col-lg-6 text-center">
                 <div class="hero-image-area mb-5 mb-lg-0">
-                    <div class="hero-img-wraper  "><img class="img-fluid " src="/assets/images/hero/hero-portal.png" alt="" draggable="false"></div>
+                    {# <div class="hero-img-wraper  "><img class="img-fluid " src="/assets/images/hero/hero-portal.png" alt="" draggable="false"></div> #}
+
+                    {# NOTE: animation video #}
+
+                    <div id="animation_container" style="width:725px; height:540px">
+                        <canvas id="canvas" width="725" height="540" style="position: absolute; right: 0; z-index: -1; display: block;"></canvas>
+                        <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:725px; height:540px; position: absolute; left: 0px; top: 0px; display: block;">
+                        </div>
+                    </div>
                 </div>
             </div>
             <!--End of .image-area -->
