@@ -1,60 +1,75 @@
 <section class="py-5">
     <div class="container">
-        <div class="row">
+        <div class="row info-items-list">
             <div class="col-12 col-lg-6 d-flex align-items-center about-col  wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                <div class="img-area  ">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eVfyL85j4QM?si=hor1jWLC7tO3XDHS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="col-12 col-lg-6 tab-content w-100" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/eVfyL85j4QM?si=hor1jWLC7tO3XDHS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <div class="ratio ratio-16x9">
+                            <video controls>
+                                <source src="https://www.itportal.com/v4/videos/video2.ogv" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1h1o9EHAJtQ?si=nUeAS-WJhbtEg0xG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 d-flex align-items-center about-col pad-start  wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
-                <div class="text-area ">
-                    <div class="sec-heading  light-title ">
-                        <div class="content-area">
-                            <span class="pre-title       wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">a picture is worth a thousand words</span>
-                            <h2 class="title    wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+            <div class="col-12 col-lg-6">
+                <div class="sec-heading  light-title ">
+                    <div class="content-area">
+                        <span class="pre-title       wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">a picture is worth a thousand words</span>
+                        <h2 class="title    wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
                             IT Documentation<br/>
-                                <a href="https://kb.itportal.com/?U=KQ8VTIvC" target="_blank" class="featured-text">AI Powered <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
-                                        <path d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"></path>
-                                    </svg>
-                                </a>
-                            </h2>
-                        </div>
+                            <a href="https://kb.itportal.com/?U=KQ8VTIvC" target="_blank" class="featured-text">AI Powered <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
+                                    <path d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"></path>
+                                </svg>
+                            </a>
+                        </h2>
                     </div>
-                    <p class=" about-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!</p>
-                    <div class="info-items-list">
-                        <div class="row ">
-                            <div class="col-12 ">
-                                <div class="info-item">
-                                    <span class="info-number ">01.</span>
-                                    <div class="info-content">
-                                        <h5 class="info-title">Engineer Video</h5>
-                                        <p class="info-text">See how as an engineer you can benefit from a central documentation repository.</p>
-                                    </div>
+                </div>
+                <p class=" about-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!</p>
+                <ul class="nav flex-column gap-3 nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-start active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                            <div class="info-item">
+                                <span class="info-number ">01.</span>
+                                <div class="info-content">
+                                    <h5 class="info-title">Engineer Video</h5>
+                                    <p class="info-text">See how as an engineer you can benefit from a central documentation repository.</p>
                                 </div>
                             </div>
-                            <div class="col-12 ">
-                                <div class="info-item">
-                                    <span class="info-number ">02.</span>
-                                    <div class="info-content">
-                                        <h5 class="info-title">Manager Video</h5>
-                                        <p class="info-text">As a manager, find piece of mind knowing knowledge is centralized.</p>
-                                    </div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-start" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                            <div class="info-item">
+                                <span class="info-number ">02.</span>
+                                <div class="info-content">
+                                    <h5 class="info-title">Manager Video</h5>
+                                    <p class="info-text">As a manager, find piece of mind knowing knowledge is centralized.</p>
                                 </div>
                             </div>
-                            <div class="col-12 ">
-                                <div class="info-item">
-                                    <span class="info-number ">03.</span>
-                                    <div class="info-content">
-                                        <h5 class="info-title">15 Minute Overview</h5>
-                                        <p class="info-text">Also review our quick 15 minute overview video to get a good grasp of what is needed for documentation.</p>
-                                    </div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-start" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+                            <div class="info-item">
+                                <span class="info-number ">03.</span>
+                                <div class="info-content">
+                                    <h5 class="info-title">15 Minute Overview</h5>
+                                    <p class="info-text">Also review our quick 15 minute overview video to get a good grasp of what is needed for documentation.</p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="cta-area ">
-                        <a class=" btn-solid " href="about-us.html">get in toutch</a>
-                    </div>
+                        </button>
+                    </li>
+                </ul>
+                <div class="cta-area mt-4">
+                    <a class=" btn-solid " href="about-us.html">get in toutch</a>
                 </div>
             </div>
         </div>
