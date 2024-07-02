@@ -2,8 +2,13 @@
 <section class="page-hero  d-flex align-items-center  tringle-bg" id="page-hero">
     <div class="overlay-photo-image-bg" data-bg-img="assets/images/sections-bg-images/pattern-bg-1.jpg" data-bg-opacity=".2"></div>
     <!-- <div class="particles-js  dots" id="particles-js"></div> -->
-    <div class="container">
-        <div class="row align-items-center">
+    <div class="container position-relative">
+        <div id="animation_container" style="position: absolute; right: 0; z-index: -1; width:725px; height:540px">
+            <canvas id="canvas" width="725" height="540" style="position: absolute; right: 0; z-index: -1; display: block;"></canvas>
+            <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:725px; height:540px; position: absolute; left: 0px; top: 0px; display: block;"></div>
+        </div>
+        <div class="row">
+
             <div class="col-12 col-lg-6 ">
                 <!--Start of .hero-text-area-->
                 <div class="hero-text-area   ">
@@ -43,65 +48,52 @@
                                 </span>
                                 <span class="design-element rounded-shape stripes"></span> for secure documentation</h1>
                         </div>
-                        <div class="col-10       ">
-                            <p class="hero-subtitle ">Just like CRM empowers Sales IT Portal empowers IT!</p>
-                            <form class="g-3 mb-4">
-                                <div class="col-12 mb-3">
-                                    <label class="" for="companySize">I work in a</label>
-                                    <select class="form-select" aria-label="Company size" id="companySize">
-                                        <option selected>Select company size</option>
-                                        <option value="5000+">Enterprise (5,000+ employees)</option>
-                                        <!-- <option value="250-4999">Mid-market (250-4,999 employees)</option> -->
-                                        <option value="50-249">Medium-sized (50-249 employees)</option>
-                                        <option value="10-49">Small (10-49 employees)</option>
-                                        <!-- <option value="1-9">Emerging (1-9 employees)</option> -->
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <label for="industry">company in</label>
-                                    <select class="form-select" id="industry">
-                                        <option value="" selected="">Select Industry</option>
-                                        <option value="msp">MSP</option>
-                                        <option value="it">IT</option>
-                                        <!-- 
-                        <option value="Other">Other</option> -->
-                                    </select>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-12   ">
-                            <div class="cta-links-area ">
-                                <a class=" btn-outline cta-link cta-link-primary " href="#0">Find My Solution</a>
-                                <div class="play-btn-row-dir ">
-                                    <a class="video-link" href="https://www.youtube.com/watch?v=QI4_dGvZ5yE&amp;ab_channel=JUtah" role="button" title="play" data-fancybox="data-fancybox">
-                                        <div class="play-video-btn">
-                                            <div class="play-btn">
-                                                <i class="fas fa-play icon"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
                 <!--End of .hero-text-area-->
             </div>
-            <!--start of .image-area -->
-            <div class="col-12 mx-md-auto col-lg-6 text-center">
-                <div class="hero-image-area mb-5 mb-lg-0">
-                    {# <div class="hero-img-wraper  "><img class="img-fluid " src="/assets/images/hero/hero-portal.png" alt="" draggable="false"></div> #}
 
-                    {# NOTE: animation video #}
+            <div class="col-12 col-lg-4 offset-lg-2" style="margin-top: 555px; margin-bottom: 55px;">
+                <p class="hero-subtitle ">Just like CRM empowers Sales IT Portal empowers IT!</p>
+                <form class="g-3 mb-4">
+                    <div class="col-12 mb-3">
+                        <label class="" for="companySize">I work in a</label>
+                        <select class="form-select" aria-label="Company size" id="companySize">
+                            <option selected>Select company size</option>
+                            <option value="5000+">Enterprise (5,000+ employees)</option>
+                            <!-- <option value="250-4999">Mid-market (250-4,999 employees)</option> -->
+                            <option value="50-249">Medium-sized (50-249 employees)</option>
+                            <option value="10-49">Small (10-49 employees)</option>
+                            <!-- <option value="1-9">Emerging (1-9 employees)</option> -->
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="industry">company in</label>
+                        <select class="form-select" id="industry">
+                            <option value="" selected="">Select Industry</option>
+                            <option value="msp">MSP</option>
+                            <option value="it">IT</option>
+                            <!-- 
+                        <option value="Other">Other</option> -->
+                        </select>
+                    </div>
+                </form>
 
-                    <div id="animation_container" style="width:725px; height:540px">
-                        <canvas id="canvas" width="725" height="540" style="position: absolute; right: 0; z-index: -1; display: block;"></canvas>
-                        <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:725px; height:540px; position: absolute; left: 0px; top: 0px; display: block;">
-                        </div>
+                <div class="cta-links-area ">
+                    <a class=" btn-outline cta-link cta-link-primary " href="#0">Find My Solution</a>
+                    <div class="play-btn-row-dir ">
+                        <a class="video-link" href="https://www.youtube.com/watch?v=QI4_dGvZ5yE&amp;ab_channel=JUtah" role="button" title="play" data-fancybox="data-fancybox">
+                            <div class="play-video-btn">
+                                <div class="play-btn">
+                                    <i class="fas fa-play icon"></i>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
-            <!--End of .image-area -->
+
         </div>
     </div>
 </section>
