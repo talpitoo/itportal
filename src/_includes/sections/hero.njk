@@ -1,12 +1,11 @@
 <!-- Start  Page hero-->
 <section class="page-hero  d-flex align-items-center  tringle-bg" id="page-hero">
-    <div class="overlay-photo-image-bg" data-bg-img="assets/images/sections-bg-images/pattern-bg-1.jpg" data-bg-opacity=".2"></div>
+    <div class="overlay-photo-image-bg" data-bg-img="/assets/images/sections-bg-images/pattern-bg-1.jpg" data-bg-opacity=".2"></div>
     <!-- <div class="particles-js  dots" id="particles-js"></div> -->
     <div class="container position-relative">
-        <div id="animation_container" style="position: absolute; right: 0; z-index: -1; width:725px; height:540px">
-            <canvas id="canvas" width="725" height="540" style="position: absolute; right: 0; z-index: -1; display: block;"></canvas>
-            <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:725px; height:540px; position: absolute; left: 0px; top: 0px; display: block;"></div>
-        </div>
+
+        {% include "animations/animation-splash-landing.njk" %}
+
         <div class="row">
 
             <div class="col-12 col-lg-6 ">
