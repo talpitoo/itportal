@@ -74,34 +74,5 @@
 <link rel="stylesheet" href="/css/main.css">
 <title>IT Portal | IT Documentation | MSP Documentation | IT Portal Inc.</title>
 
-<!-- hero section -->
-<style>
-    .page-hero.tringle-bg::before {
-        clip-path: polygon(100vw 20vw, 100vw 100vw, -35vw 100vw);
-    }
-
-    @media (max-width: 991px) {
-        .page-hero.tringle-bg::before {
-            clip-path: polygon(0 100%, 100% 50%, 100% 100%);
-        }
-    }
-
-    a[target="_blank"]::after {
-        content: "🔗";
-        margin-left: 0.5rem;
-        filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(180deg);
-    }
-
-    .canvas-features {
-        width: 50% !important;
-        height: auto !important;
-        margin: 1rem auto 0;
-    }
-
-    .canvas-features canvas {
-        width: 100% !important;
-        height: auto !important;
-    }
-</style>
-
+{% include "components/css-temporary.njk" %}
 <link rel="stylesheet" href="/css/cookieconsent.css" media="print" onload="this.media='all'">
