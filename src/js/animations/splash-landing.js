@@ -2353,7 +2353,7 @@ p.nominalBounds = new cjs.Rectangle(-180.6,-50.1,378.6,598.7);
 
 
 // stage content:
-(lib.PageSPLASH_HTML5Canvas = function(mode,startPosition,loop,reversed) {
+(lib.sceneSplashLanding = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -2652,7 +2652,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(728.7,574.7,718.7,465.29999999999995);
 // library properties:
 lib.properties = {
-	id: 'EE4643AE80820C40A47694B9E2AC5C59',
+	id: 'compositionSplashLanding',
 	width: 1450,
 	height: 1080,
 	fps: 40,
@@ -2695,7 +2695,7 @@ an.bootstrapCallback=function(fnCallback) {
 };
 
 an.compositions = an.compositions || {};
-an.compositions['EE4643AE80820C40A47694B9E2AC5C59'] = {
+an.compositions['compositionSplashLanding'] = {
 	getStage: function() { return exportRoot.stage; },
 	getLibrary: function() { return lib; },
 	getSpriteSheet: function() { return ss; },

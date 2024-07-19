@@ -81,7 +81,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,67.6,47);
 
 
 // stage content:
-(lib.PageFEATURES_HTML5Canvas = function(mode,startPosition,loop,reversed) {
+(lib.sceneFeatures = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -480,7 +480,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(671.9,393.3,617.4,659.5);
 // library properties:
 lib.properties = {
-	id: '5913D43E621C094BBD3A30C5DD009969',
+	id: 'compositionFeatures',
 	width: 1300,
 	height: 732,
 	fps: 40,
@@ -523,7 +523,7 @@ an.bootstrapCallback=function(fnCallback) {
 };
 
 an.compositions = an.compositions || {};
-an.compositions['5913D43E621C094BBD3A30C5DD009969'] = {
+an.compositions['compositionFeatures'] = {
 	getStage: function() { return exportRoot.stage; },
 	getLibrary: function() { return lib; },
 	getSpriteSheet: function() { return ss; },

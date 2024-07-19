@@ -3,6 +3,11 @@
     <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:725px; height:540px; position: absolute; left: 0px; top: 0px; display: block;"></div>
 </div>
 
+{# <div id="animation_container" class="w-100 position-absolute">
+    <canvas id="canvas" width="725" height="540" class="w-100 h-auto"></canvas>
+    <div id="dom_overlay_container" class="d-none"></div>
+</div> #}
+
 {# NOTE: video canvas stuff #}
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
 <script src="/js/animations/splash-landing.js"></script>
@@ -17,7 +22,7 @@
         canvas = document.getElementById("canvas");
         anim_container = document.getElementById("animation_container");
         dom_overlay_container = document.getElementById("dom_overlay_container");
-        var comp = AdobeAn.getComposition("EE4643AE80820C40A47694B9E2AC5C59");
+        var comp = AdobeAn.getComposition("compositionSplashLanding");
         var lib = comp.getLibrary();
         handleComplete({}, comp);
     }
@@ -25,7 +30,7 @@
         //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
         var lib = comp.getLibrary();
         var ss = comp.getSpriteSheet();
-        exportRoot = new lib.PageSPLASH_HTML5Canvas();
+        exportRoot = new lib.sceneSplashLanding();
         stage = new lib.Stage(canvas);
         //Registers the "tick" event listener.
         fnStartAnimation = function () {
@@ -36,7 +41,8 @@
                 .addEventListener("tick", stage);
         }
         //Code to support hidpi screens and responsive scaling.
-        AdobeAn.makeResponsive(false, 'both', false, 1, [canvas, anim_container, dom_overlay_container]);
+        // TODO AdobeAn.makeResponsive(false, 'both', false, 1, [canvas, anim_container, dom_overlay_container]);
+        AdobeAn.makeResponsive(true, 'both', true, 1, [canvas, anim_container, dom_overlay_container]);
         AdobeAn.compositionLoaded(lib.properties.id);
         fnStartAnimation();
     }

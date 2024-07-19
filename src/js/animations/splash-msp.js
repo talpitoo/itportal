@@ -2416,7 +2416,7 @@ p.nominalBounds = new cjs.Rectangle(-61.8,-61.5,266,611.2);
 
 
 // stage content:
-(lib.PageCustomersManagedServiceProviders_HTML5Canvas = function(mode,startPosition,loop,reversed) {
+(lib.sceneSplashMSP = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -2754,7 +2754,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(730.5,545.9,718.7,491.69999999999993);
 // library properties:
 lib.properties = {
-	id: 'CB526EE09EF8D040894077FA947C0805',
+	id: 'compositionSplashMSP',
 	width: 1450,
 	height: 1080,
 	fps: 40,
@@ -2797,7 +2797,7 @@ an.bootstrapCallback=function(fnCallback) {
 };
 
 an.compositions = an.compositions || {};
-an.compositions['CB526EE09EF8D040894077FA947C0805'] = {
+an.compositions['compositionSplashMSP'] = {
 	getStage: function() { return exportRoot.stage; },
 	getLibrary: function() { return lib; },
 	getSpriteSheet: function() { return ss; },

@@ -1447,7 +1447,7 @@ p.nominalBounds = new cjs.Rectangle(-180.6,-50.4,350.9,599);
 
 
 // stage content:
-(lib.PageINTEGRATIONanim_HTML5Canvas = function(mode,startPosition,loop,reversed) {
+(lib.sceneIntegrations = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -1833,7 +1833,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(819.6,468.4,363.6,355.80000000000007);
 // library properties:
 lib.properties = {
-	id: '7AEF746F08D14B469E05E5139F104A49',
+	id: 'compositionIntegrations',
 	width: 1300,
 	height: 870,
 	fps: 40,
@@ -1876,7 +1876,7 @@ an.bootstrapCallback=function(fnCallback) {
 };
 
 an.compositions = an.compositions || {};
-an.compositions['7AEF746F08D14B469E05E5139F104A49'] = {
+an.compositions['compositionIntegrations'] = {
 	getStage: function() { return exportRoot.stage; },
 	getLibrary: function() { return lib; },
 	getSpriteSheet: function() { return ss; },
