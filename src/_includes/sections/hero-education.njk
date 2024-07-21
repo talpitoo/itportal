@@ -4,7 +4,10 @@
     <!-- <div class="particles-js  dots" id="particles-js"></div> -->
     <div class="container position-relative">
 
-        {% include "animations/animation-splash-education.njk" %}
+        {% set animationName = "splash-education" %}
+        {% set compositionId = "compositionSplashEducation" %}
+        {% set sceneName = "sceneSplashEducation" %}
+        {% include "animations/animation-template.njk" %}
 
         <div class="row">
 

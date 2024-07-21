@@ -1,6 +1,7 @@
-<div id="animation_container" style="position: absolute; right: 0; z-index: -1; width:725px; height:540px">
-    <canvas id="canvas" width="725" height="540" style="position: absolute; right: 0; z-index: -1; display: block;"></canvas>
-    <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:725px; height:540px; position: absolute; left: 0px; top: 0px; display: block;"></div>
+{# NOTE: not used, aspect-ratio: {{ width | default(725)}} / {{ height | default(540)}} !important; #}
+<div id="animation_container" class="{{ wrapperClass }}" style="position: {{ position | default("absolute")}}; right: 0; z-index: -1; width:{{ width | default(725)}}px; height:{{ height | default(540)}}px;">
+    <canvas id="canvas" width="{{ width | default(725)}}" height="{{ height | default(540)}}" style="position: {{ position | default("absolute")}}; right: 0; z-index: -1; display: block;"></canvas>
+    <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:{{ width | default(725)}}px; height:{{ height | default(540)}}px; position: absolute; left: 0px; top: 0px; display: block;"></div>
 </div>
 
 {# <div id="animation_container" class="w-100 position-absolute">
@@ -10,7 +11,7 @@
 
 {# NOTE: video canvas stuff #}
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="/js/animations/splash-landing.js"></script>
+<script src="/js/animations/{{ animationName }}.js"></script>
 <script>
     var canvas,
         stage,
@@ -22,17 +23,18 @@
         canvas = document.getElementById("canvas");
         anim_container = document.getElementById("animation_container");
         dom_overlay_container = document.getElementById("dom_overlay_container");
-        var comp = AdobeAn.getComposition("compositionSplashLanding");
+        var comp = AdobeAn.getComposition("{{ compositionId }}");
         var lib = comp.getLibrary();
         handleComplete({}, comp);
     }
     function handleComplete(evt, comp) {
-        //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+        // This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
         var lib = comp.getLibrary();
         var ss = comp.getSpriteSheet();
-        exportRoot = new lib.sceneSplashLanding();
+        exportRoot = new lib.{{ sceneName }}();
         stage = new lib.Stage(canvas);
-        //Registers the "tick" event listener.
+
+        // Registers the "tick" event listener.
         fnStartAnimation = function () {
             stage.addChild(exportRoot);
             createjs.Ticker.framerate = lib.properties.fps;
@@ -40,8 +42,9 @@
                 .Ticker
                 .addEventListener("tick", stage);
         }
-        //Code to support hidpi screens and responsive scaling.
-        // TODO AdobeAn.makeResponsive(false, 'both', false, 1, [canvas, anim_container, dom_overlay_container]);
+
+        // Code to support hidpi screens and responsive scaling.
+        // NOTE: AdobeAn.makeResponsive(false, 'both', false, 1, [canvas, anim_container, dom_overlay_container]);
         AdobeAn.makeResponsive(true, 'both', true, 1, [canvas, anim_container, dom_overlay_container]);
         AdobeAn.compositionLoaded(lib.properties.id);
         fnStartAnimation();
