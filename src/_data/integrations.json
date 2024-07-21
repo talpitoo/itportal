@@ -1,0 +1,108 @@
+{
+    "items": [
+        {
+            "name": "Autotask",
+            "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=27&Method=View&Permalink=3F28241D47786040465B535C627E705C484754566371703F3F44DBE2ACCC0D08BC4F82843CA5241EED1391E1318F866C95371FAFB02CE26B642867989C26D31A67",
+            "img": "https://www.autotask.net/Mvc/FrameworkContent/Images/Authentication/AutotaskLogo.svg",
+            "category": "top"
+        },
+        {
+            "name": "Domotz",
+            "href": "https://www.domotz.com/integrations/software/documentation/it-portal.php",
+            "img": "/assets/integrations/logo-domotz.svg",
+            "category": "top"
+        },
+        {
+            "name": "ConnectWise",
+            "href": "https://marketplace.connectwise.com/si-portal",
+            "img": "https://www.connectwise.com/globalassets/media/logos/company-logos/connectwise_logo.svg",
+            "category": "top"
+        },
+        {
+            "name": "VMware vSphere",
+            "href": "https://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7371&Method=View&Permalink=3F28241D46786240434D4E5E6378684F4B4E545D697B684F333946D9ED92C50478BC5AF39031B833048622600816A4EE5B735977B683FA3605661D3AD5EFD31306577C9E",
+            "img": "https://www.vmware.com/content/dam/digitalmarketing/vmware/en/images/company/vmware-logo-grey.svg",
+            "category": "top"
+        },
+        {
+            "name": "Autotask Endpoint Management",
+            "href": "#",
+            "img": "https://www.autotask.net/Mvc/FrameworkContent/Images/Authentication/AutotaskLogo.svg",
+            "category": "top"
+        },
+        {
+            "name": "ConnectWise AUTOMATE",
+            "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7324&Method=View&Permalink=3F28241D477C7F5D5D46515D6B69615F48465856627C702E3F41DAF6973D0309BC5CF39E33B5C90D81048AF005BF9954662D12BBA9EAC63D6B6BCFCFE3D729C9B51D83",
+            "img": "https://www.connectwise.com/globalassets/media/logos/company-logos/connectwise_logo.svg",
+            "category": "top"
+        },
+
+        {
+            "name": "ConnectWise",
+            "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7324&Method=View&Permalink=3F28241D477C7F5D5D46515D6B69615F48465856627C702E3F41DAF6973D0309BC5CF39E33B5C90D81048AF005BF9954662D12BBA9EAC63D6B6BCFCFE3D729C9B51D83",
+            "img": "https://www.connectwise.com/globalassets/media/logos/company-logos/connectwise_logo.svg",
+            "category": "psa-rmm"
+        },
+        {
+            "name": "Autotask",
+            "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=27&Method=View&Permalink=3F28241D47786040465B535C627E705C484754566371703F3F44DBE2ACCC0D08BC4F82843CA5241EED1391E1318F866C95371FAFB02CE26B642867989C26D31A67",
+            "img": "https://www.autotask.net/Mvc/FrameworkContent/Images/Authentication/AutotaskLogo.svg",
+            "category": "psa-rmm"
+        },
+        {
+            "name": "HaloPSA",
+            "href": "#",
+            "img": "https://halopsa.wpenginepowered.com/wp-content/uploads/2024/05/cropped-HaloPSA_RZ_PNG4K-2048x332.png",
+            "category": "psa-rmm"
+        },
+        {
+            "name": "splashtop",
+            "href": "#",
+            "img": "/assets/integrations/logo-splashtop.svg",
+            "category": "psa-rmm"
+        },
+        {
+            "name": "ConnectWise Control",
+            "href": "#",
+            "img": "https://hipaa-software.com/wp-content/uploads/2021/09/connectwise-control-logo-563x150.png",
+            "category": "psa-rmm"
+        },
+        {
+            "name": "Liongard",
+            "href": "#",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx1tx5ytOn2roA05l3doTDrbi3-2YrC0sVXtbaf19CpSQcS_KjlGDZSf4iCexljNkcr28&usqp=CAU",
+            "category": "psa-rmm"
+        },
+
+        {
+            "name": "Nimble",
+            "href": "#",
+            "img": "https://www.nimble.com/wp-content/themes/new_nimble/images/nimble-logo-white.svg",
+            "category": "authentication-data"
+        },
+        {
+            "name": "Yubico",
+            "href": "#",
+            "img": "https://www.yubico.com/wp-content/themes/yubicool/img/logos/logo.svg",
+            "category": "authentication-data"
+        },
+        {
+            "name": "MyKi",
+            "href": "#",
+            "img": "https://myki.rs/media/42/122.png",
+            "category": "authentication-data"
+        },
+        {
+            "name": "Duo",
+            "href": "#",
+            "img": "https://duo.com/assets/img/duoLogo-web.png",
+            "category": "authentication-data"
+        },
+        {
+            "name": "N-able",
+            "href": "#",
+            "img": "https://www.n-able.com/wp-content/uploads/2022/12/icon-passportal-128x128-fullcolor.svg",
+            "category": "authentication-data"
+        }
+    ]
+}

@@ -17,60 +17,26 @@ permalink: /integrations/
             </div>
         </div>
         <div class="row gx-4 gy-4 services-row ">
-            <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                    <div class="service-icon">
-                        <img src="https://www.connectwise.com/globalassets/media/logos/company-logos/connectwise_logo.svg" class="img-fluid"/>
+            {# NOTE: data is coming from /src/_data/integrations.json #}
+            {% for item in integrations.items %}
+                {% if item.category == "psa-rmm" %}
+                    <div class="col-12 col-md-6  col-lg-4 mx-auto ">
+                        <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
+                            <div class="service-icon">
+                                {# <i class="flaticon-web-development font-icon"></i> #}
+                                <img src="{{ item.img }}" class="img-fluid"/>
+                            </div>
+                            <span class="service-num hollow-text">1    </span>
+                            <div class="service-content">
+                                <h3 class="service-title">{{ item.name }}</h3>
+                            </div>
+                            <a class="read-more" href="{{ item.href }}">read more<i class="bi bi-arrow-right icon "></i>
+                            </a>
+                        </div>
                     </div>
-                    <a class="read-more" href="/integrations/integration-01">read more<i class="bi bi-arrow-right icon "></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                    <div class="service-icon">
-                        <img src="https://www.autotask.net/Mvc/FrameworkContent/Images/Authentication/AutotaskLogo.svg" class="img-fluid"/>
-                    </div>
-                    <a class="read-more" href="/integrations/integration-01">read more<i class="bi bi-arrow-right icon "></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                    <div class="service-icon">
-                        <img src="https://halopsa.wpenginepowered.com/wp-content/uploads/2024/05/cropped-HaloPSA_RZ_PNG4K-2048x332.png" class="img-fluid"/>
-                    </div>
-                    <a class="read-more" href="/integrations/integration-01">read more<i class="bi bi-arrow-right icon "></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                    <div class="service-icon">
-                        <img class="img-fluid" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkxIiBoZWlnaHQ9IjM4IiB2aWV3Qm94PSIwIDAgMTkxIDM4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMTQwLjI5IDMxLjYwNjZMMTQxLjk4MyAxOC45MTg1SDE0MC40NDlMMTQwLjg5NyAxNS41MjE2SDE0Mi40MzFMMTQzLjIyOSA5LjU2MDU1SDE0Ny4wMzJMMTQ2LjIzMyAxNS41MjE2SDE0OC42NjJMMTQ4LjIxNCAxOC45MTg1SDE0NS43ODZMMTQ0LjEyNCAzMS42MDY2SDE0MC4yOVoiIGZpbGw9IiMyMzFGMjAiLz4KPHBhdGggZD0iTTU4LjQ4NTEgMTUuODU0N0M1Ni45NTEzIDE1LjAyMjIgNTUuMDY2IDE0Ljc4OTEgNTQuMTM5MyAxNC43ODkxQzUyLjc5NzIgMTQuNzg5MSA1MS42MTQ5IDE1LjIyMiA1MC42NTYyIDE2LjA1NDVDNDkuNjY1NiAxNi44ODcxIDQ5LjE4NjMgMTcuOTg2MSA0OS4xODYzIDE5LjM1MTVDNDkuMTg2MyAyMC4zMTcyIDQ5LjUwNTkgMjEuMjE2NCA1MC4xNDUgMjIuMDgyMkM1MC41OTIzIDIyLjcxNSA1MS40MjMxIDIzLjQ0NzYgNTIuNjA1NSAyNC4zMTM1QzUzLjYyOCAyNS4wNDYxIDU0LjIzNTEgMjUuNTc5IDU0LjQ5MDggMjUuODc4N0M1NC43MTQ1IDI2LjE3ODQgNTQuODQyMyAyNi40NDQ4IDU0Ljg0MjMgMjYuNzExMkM1NC44NDIzIDI3LjA0NDMgNTQuNzE0NSAyNy40MTA2IDU0LjQyNjkgMjcuNjc3QzU0LjEzOTMgMjcuOTEwMSA1My43MjM5IDI4LjA0MzMgNTMuMjEyNiAyOC4wNDMzQzUxLjkzNDQgMjguMDQzMyA0OS45MjEzIDI3LjQ3NzIgNDguNjExMSAyNi4yNzgzTDQ2LjQwNjIgMjkuMDA5MUM0Ny4zNjQ5IDI5LjkwODMgNDguNzA3IDMwLjY3NDIgNDkuNjk3NiAzMS4wNzM4QzUwLjY4ODIgMzEuNDQwMiA1MS44Mzg1IDMxLjY0IDUzLjAyMDkgMzEuNjczM0M1NC44MTAzIDMxLjcwNjYgNTYuMTg0NCAzMS4xNDA0IDU3LjE0MyAzMC4wNzQ4QzU4LjEwMTcgMjkuMDA5MSA1OC41NDkgMjcuODc2OCA1OC41NDkgMjYuNzExMkM1OC41NDkgMjUuODEyMSA1OC4zMjUzIDI0Ljk3OTUgNTcuODQ2IDI0LjIxMzZDNTcuMzY2NyAyMy40NDc2IDU2LjQwODEgMjIuNTE1MiA1NC45NzAxIDIxLjQ0OTVDNTQuMDQzNCAyMC43ODM1IDUzLjUwMDIgMjAuMzE3MiA1My4zMDg1IDIwLjA4NDFDNTMuMTE2NyAxOS44NTEgNTMuMDIwOSAxOS42MTc5IDUzLjAyMDkgMTkuMzg0OEM1My4wMjA5IDE5LjE1MTYgNTMuMTQ4NyAxOC45MTg1IDUzLjM3MjQgMTguNzE4N0M1My42MjggMTguNTE4OSA1My45MTU2IDE4LjQ1MjMgNTQuMjM1MSAxOC40MTlDNTUuMjg5NiAxOC4yODU4IDU2Ljc1OTYgMTguNzUyIDU3LjMwMjggMTkuMDE4NEM1Ny43MTgyIDE5LjI1MTYgNTguMjYxNCAxOS40ODQ3IDU4LjkzMjUgMjAuMDUwOEw2MC41OTQxIDE3LjM1MzNDNTkuNzk1MyAxNi41ODc0IDU5LjI1MiAxNi4yODc3IDU4LjQ4NTEgMTUuODU0N1oiIGZpbGw9IiMyMzFGMjAiLz4KPHBhdGggZD0iTTgwLjU2NTkgMzEuNTczNEg4NC4zNjg1TDg3LjMwODMgOS4zNjA4NEg4My41MDU3TDgwLjU2NTkgMzEuNTczNFoiIGZpbGw9IiMyMzFGMjAiLz4KPHBhdGggZD0iTTk3LjI3ODMgMTQuODU1OEM5NS44NDA0IDE0LjkyMjQgOTQuNDY2MyAxNS4yNTU0IDkzLjE1NjIgMTYuMDU0N0M5MS44NDYgMTYuODUzOSA5MC43OTE1IDE3Ljk4NjIgOTAuMDI0NiAxOS4zODQ5Qzg5LjI1NzcgMjAuODE2OSA4OC44NDIzIDIyLjMxNTUgODguODQyMyAyMy45MTRDODguODQyMyAyNS45Nzg3IDg5LjQ0OTQgMjcuODEwMyA5MC42NjM3IDI5LjM3NTVDOTEuODc4IDMwLjk0MDcgOTMuNTA3NyAzMS43MDY3IDk1LjU4NDcgMzEuNzA2N0M5Ni40Nzk0IDMxLjcwNjcgOTcuMjc4MyAzMS41NDAyIDk4LjAxMzMgMzEuMjQwNUM5OC43NDgyIDMwLjk0MDcgOTkuNTE1MSAzMC4zNzQ2IDEwMC4zNDYgMjkuNTc1M0wxMDAuMTIyIDMxLjQ3MzZIMTAzLjg5M0MxMDMuODkzIDMxLjQ3MzYgMTA1LjAxMSAyNS4wNDYzIDEwNS4wNzUgMjMuOTQ3M0MxMDUuMTM5IDIyLjg0ODMgMTA1LjQyNyAyMC41ODM4IDEwMy43OTcgMTguMjUyNkMxMDIuMTAzIDE1Ljc4ODIgOTkuMjI3NiAxNC43MjI2IDk3LjI3ODMgMTQuODU1OFpNMTAwLjUzOCAyNS4yNzk0QzEwMC4wNTggMjYuMjExOCA5OS40ODMyIDI2Ljg3NzkgOTguNzgwMiAyNy4zMTA4Qzk4LjA3NzIgMjcuNzQzNyA5Ny4yNDY0IDI3Ljk0MzUgOTYuMzE5NyAyNy45NDM1Qzk1LjIwMTMgMjcuOTQzNSA5NC4yNzQ2IDI3LjU0MzkgOTMuNTM5NiAyNi44MTEzQzkyLjgwNDcgMjYuMDQ1MyA5Mi40NTMyIDI1LjA0NjMgOTIuNDUzMiAyMy43ODA4QzkyLjQ1MzIgMjIuMTQ5IDkyLjkzMjUgMjAuODE2OSA5My44OTExIDE5Ljc4NDVDOTQuODQ5OCAxOC43NTIxIDk2LjAwMDEgMTguMjUyNiA5Ny4zNzQyIDE4LjI1MjZDOTguNTU2NSAxOC4yNTI2IDk5LjQ4MzIgMTguNjUyMiAxMDAuMjE4IDE5LjQxODJDMTAwLjkyMSAyMC4xODQxIDEwMS4yNzMgMjEuMjE2NSAxMDEuMjczIDIyLjQ4MkMxMDEuMjQxIDIzLjQxNDQgMTAwLjk4NSAyNC4zNDY5IDEwMC41MzggMjUuMjc5NFoiIGZpbGw9IiMyMzFGMjAiLz4KPHBhdGggZD0iTTEzMi40OTMgMTUuMTIyMkMxMzAuOTI3IDE1LjEyMjIgMTI5LjM5MyAxNS43ODgzIDEyNy45MjMgMTcuMTUzNkwxMjguOTQ2IDkuMzI3NjRIMTI1LjE0M0wxMjIuMjAzIDMxLjU0MDJIMTI2LjAwNkwxMjYuNzQxIDI1Ljg3ODhDMTI3LjAyOCAyMy42NDc2IDEyNy4zNDggMjIuMTE1NyAxMjcuNjk5IDIxLjMxNjRDMTI4LjA1MSAyMC41MTcyIDEyOC41MyAxOS44ODQ0IDEyOS4xNjkgMTkuNDE4MkMxMjkuODA4IDE4Ljk1MiAxMzAuNDQ3IDE4LjcxODggMTMxLjA4NyAxOC43MTg4QzEzMS43NTggMTguNzE4OCAxMzIuMjM3IDE4Ljg4NTQgMTMyLjYyIDE5LjI1MTdDMTMyLjk3MiAxOS41ODQ3IDEzMy4xNjQgMjAuMDg0MiAxMzMuMTY0IDIwLjc1MDNDMTMzLjE2NCAyMS4yMTY1IDEzMy4xIDIxLjg4MjYgMTMzLjAwNCAyMi43ODE3TDEzMS44NTMgMzEuNTQwMkgxMzUuNjU2TDEzNi44MzggMjIuNTQ4NkMxMzYuOTk4IDIxLjMxNjQgMTM3LjA5NCAyMC4zNTA3IDEzNy4wOTQgMTkuNzE3OUMxMzcuMDk0IDE4LjM4NTggMTM2LjY0NyAxNy4yODY5IDEzNS44MTYgMTYuMzg3N0MxMzQuOTUzIDE1LjU4ODQgMTMzLjgzNSAxNS4xMjIyIDEzMi40OTMgMTUuMTIyMloiIGZpbGw9IiMyMzFGMjAiLz4KPHBhdGggZD0iTTE2Mi40MDIgMTUuODIxOEMxNjEuMjgzIDE1LjE1NTggMTYwLjAwNSAxNC44MjI4IDE1OC42MzEgMTQuODIyOEMxNTYuMjY3IDE0LjgyMjggMTU0LjE4OSAxNS43MjE5IDE1Mi40IDE3LjQ4NjlDMTUwLjYxMSAxOS4yNTE5IDE0OS43MTYgMjEuNDgzMiAxNDkuNzE2IDI0LjE4MDdDMTQ5LjcxNiAyNi40MTE5IDE1MC4zODcgMjguMjEwMiAxNTEuNjk3IDI5LjYwODlDMTUzLjAwNyAzMC45NzQzIDE1NC43NjUgMzEuNjczNyAxNTcuMDAxIDMxLjY3MzdDMTU5LjU1OCAzMS42NzM3IDE2MS42OTkgMzAuODA3OCAxNjMuMzkyIDI5LjA0MjhDMTY1LjExOCAyNy4yNzc4IDE2NS45ODEgMjUuMTc5NyAxNjUuOTgxIDIyLjY4MjFDMTY1Ljk4MSAyMS4xODM1IDE2NS42NjEgMTkuODE4MSAxNjUuMDIyIDE4LjYxOTJDMTY0LjM4MyAxNy40MjAzIDE2My41MiAxNi40ODc5IDE2Mi40MDIgMTUuODIxOFpNMTYwLjkzMiAyNi4zNzg2QzE2MC4xMDEgMjcuNDc3NiAxNTguODU1IDI4LjA0MzcgMTU3LjI1NyAyOC4wNDM3QzE1Ni4xMzkgMjguMDQzNyAxNTUuMjEyIDI3LjY3NzQgMTU0LjU0MSAyNi45NDQ3QzE1My44NyAyNi4yMTIxIDE1My41MTggMjUuMjQ2MyAxNTMuNTE4IDI0LjA0NzVDMTUzLjUxOCAyMi43MTU0IDE1My45MzQgMjEuNDQ5OSAxNTQuNzY1IDIwLjI4NDNDMTU1LjU5NSAxOS4xMTg3IDE1Ni43NzggMTguNTUyNiAxNTguMzQ0IDE4LjU1MjZDMTU5LjQ2MiAxOC41NTI2IDE2MC4zODkgMTguOTE4OSAxNjEuMTI0IDE5LjY1MTZDMTYxLjgyNyAyMC4zODQyIDE2Mi4yMSAyMS4zNSAxNjIuMjEgMjIuNTE1NkMxNjIuMjEgMjMuOTgwOSAxNjEuNzYzIDI1LjI0NjMgMTYwLjkzMiAyNi4zNzg2WiIgZmlsbD0iIzIzMUYyMCIvPgo8cGF0aCBkPSJNMTE5LjA0IDE1Ljg1NDdDMTE3LjUwNiAxNS4wMjIyIDExNS42MiAxNC43ODkxIDExNC42OTQgMTQuNzg5MUMxMTMuMzUyIDE0Ljc4OTEgMTEyLjE2OSAxNS4yMjIgMTExLjIxMSAxNi4wNTQ1QzExMC4yMiAxNi44ODcxIDEwOS43NDEgMTcuOTg2MSAxMDkuNzQxIDE5LjM1MTVDMTA5Ljc0MSAyMC4zMTcyIDExMC4wNiAyMS4yMTY0IDExMC42OTkgMjIuMDgyMkMxMTEuMTQ3IDIyLjcxNSAxMTEuOTc4IDIzLjQ0NzYgMTEzLjEyOCAyNC4zMTM1QzExNC4xNSAyNS4wNDYxIDExNC43OSAyNS41NzkgMTE1LjAxMyAyNS44Nzg3QzExNS4yMzcgMjYuMTc4NCAxMTUuMzY1IDI2LjQ0NDggMTE1LjM2NSAyNi43MTEyQzExNS4zNjUgMjcuMDQ0MyAxMTUuMjM3IDI3LjQxMDYgMTE0Ljk0OSAyNy42NzdDMTE0LjY2MiAyNy45MTAxIDExNC4yNDYgMjguMDQzMyAxMTMuNzM1IDI4LjA0MzNDMTEyLjQ1NyAyOC4wNDMzIDExMC40NDQgMjcuNDc3MiAxMDkuMTM0IDI2LjI3ODNMMTA2LjkyOSAyOS4wMDkxQzEwNy44ODcgMjkuOTA4MyAxMDkuMjI5IDMwLjY3NDIgMTEwLjIyIDMxLjA3MzhDMTExLjIxMSAzMS40NDAyIDExMi4zNjEgMzEuNjQgMTEzLjU0MyAzMS42NzMzQzExNS4zMzMgMzEuNzA2NiAxMTYuNzA3IDMxLjE0MDQgMTE3LjY2NSAzMC4wNzQ4QzExOC42MjQgMjkuMDA5MSAxMTkuMDcxIDI3Ljg3NjggMTE5LjA3MSAyNi43MTEyQzExOS4wNzEgMjUuODEyMSAxMTguODQ4IDI0Ljk3OTUgMTE4LjM2OCAyNC4yMTM2QzExNy45MjEgMjMuNDQ3NiAxMTYuOTMxIDIyLjUxNTIgMTE1LjQ5MyAyMS40NDk1QzExNC41NjYgMjAuNzgzNSAxMTQuMDIzIDIwLjMxNzIgMTEzLjgzMSAyMC4wODQxQzExMy42MzkgMTkuODUxIDExMy41NDMgMTkuNjE3OSAxMTMuNTQzIDE5LjM4NDhDMTEzLjU0MyAxOS4xNTE2IDExMy42NzEgMTguOTE4NSAxMTMuODk1IDE4LjcxODdDMTE0LjExOSAxOC41MTg5IDExNC40MzggMTguNDUyMyAxMTQuNzU4IDE4LjQxOUMxMTUuODEyIDE4LjI4NTggMTE3LjI4MiAxOC43NTIgMTE3LjgyNSAxOS4wMTg0QzExOC4yNDEgMTkuMjUxNiAxMTguNzg0IDE5LjQ4NDcgMTE5LjQ1NSAyMC4wNTA4TDEyMS4xMTcgMTcuMzUzM0MxMjAuMzUgMTYuNTg3NCAxMTkuODA2IDE2LjI4NzcgMTE5LjA0IDE1Ljg1NDdaIiBmaWxsPSIjMjMxRjIwIi8+CjxwYXRoIGQ9Ik03Mi4wNjU4IDE0Ljg4OUM2OC41ODI4IDE0LjcyMjUgNjYuNDQxOCAxNi4zMjEgNjUuMjkxNCAxNy4zODY2QzY0LjY1MjMgMTcuOTg2MSA2My40MDYxIDE5LjY4NDUgNjMuMDIyNiAyMS45NDkxQzYyLjgzMDkgMjMuMjE0NSA2MC45Nzc1IDM3LjEwMTUgNjAuOTc3NSAzNy4xMDE1TDY0Ljc4MDEgMzUuNTY5Nkw2NS44MzQ3IDI5LjAwOTFDNjYuMzQ1OSAyOS44NzUgNjcuMDE3IDMwLjUwNzcgNjcuODE1OCAzMC45NzM5QzY4LjYxNDcgMzEuNDQwMiA2OS41MDk0IDMxLjY0IDcwLjQzNjEgMzEuNjRDNzEuODQyMSAzMS42NCA3My4xODQyIDMxLjI0MDQgNzQuNDk0NCAzMC40NDExQzc1Ljc3MjYgMjkuNjQxOSA3Ni44MjcxIDI4LjU0MjkgNzcuNTk0IDI3LjExMDlDNzguMzYwOSAyNS42Nzg5IDc4Ljc0NDQgMjQuMTgwMyA3OC43NDQ0IDIyLjYxNTFDNzguNzQ0NCAyMC41NTA0IDc4LjEzNzIgMTguNzUyIDc2Ljk1NDkgMTcuMTg2OEM3NS43NDA2IDE1LjY1NDkgNzQuMTEwOSAxNC45ODg5IDcyLjA2NTggMTQuODg5Wk03My41MzU3IDI2LjU0NDdDNzIuNjA5IDI3LjU3NzEgNzEuNDU4NyAyOC4wNzY2IDcwLjE0ODUgMjguMDc2NkM2OC45OTgyIDI4LjA3NjYgNjguMDcxNSAyNy43MTAzIDY3LjM2ODUgMjYuOTQ0NEM2Ni42NjU1IDI2LjE3ODQgNjYuMzE0IDI1LjE3OTQgNjYuMzE0IDIzLjkxMzlDNjYuMzE0IDIyLjk0ODEgNjYuNTM3NyAyMi4wMTU3IDY3LjAxNyAyMS4wODMyQzY3LjQ5NjMgMjAuMTUwNyA2OC4wNzE1IDE5LjQ4NDcgNjguNzQyNSAxOS4wNTE4QzY5LjQ0NTUgMTguNjE4OCA3MC4yNDQ0IDE4LjM4NTcgNzEuMTM5MSAxOC4zODU3QzcyLjI1NzUgMTguMzg1NyA3My4xNTIzIDE4Ljc4NTMgNzMuODU1MyAxOS41NTEzQzc0LjU1ODMgMjAuMzE3MiA3NC45MDk4IDIxLjMxNjMgNzQuOTA5OCAyMi41ODE4Qzc0Ljk0MTcgMjQuMTgwMyA3NC40NjI0IDI1LjUxMjQgNzMuNTM1NyAyNi41NDQ3WiIgZmlsbD0iIzIzMUYyMCIvPgo8cGF0aCBkPSJNMTc4LjA1OSAxNC43MjI1QzE3NC41NzYgMTQuNTU2IDE3Mi40MzUgMTYuMTU0NSAxNzEuMjg1IDE3LjIyMDFDMTcwLjY0NiAxNy44MTk2IDE2OS40IDE5LjUxOCAxNjkuMDE2IDIxLjc4MjVDMTY4LjgyNSAyMy4wNDggMTY2Ljk3MSAzNi45MzUgMTY2Ljk3MSAzNi45MzVMMTcwLjc3NCAzNS40MDMxTDE3MS44MjggMjguODQyNkMxNzIuMzQgMjkuNzA4NSAxNzMuMDExIDMwLjM0MTIgMTczLjgwOSAzMC44MDc0QzE3NC42MDggMzEuMjczNyAxNzUuNTAzIDMxLjQ3MzUgMTc2LjQzIDMxLjQ3MzVDMTc3LjgzNiAzMS40NzM1IDE3OS4xNzggMzEuMDczOSAxODAuNDg4IDMwLjI3NDZDMTgxLjc2NiAyOS40NzUzIDE4Mi44MjEgMjguMzc2NCAxODMuNTg4IDI2Ljk0NDRDMTg0LjM1NSAyNS41MTI0IDE4NC43MzggMjQuMDEzOCAxODQuNzM4IDIyLjQ0ODZDMTg0LjczOCAyMC4zODM5IDE4NC4xMzEgMTguNTg1NSAxODIuOTQ5IDE3LjAyMDNDMTgxLjczNCAxNS41MjE3IDE4MC4xMDUgMTQuODIyNCAxNzguMDU5IDE0LjcyMjVaTTE3OS41MjkgMjYuMzc4MkMxNzguNjAzIDI3LjQxMDYgMTc3LjQ1MiAyNy45MTAxIDE3Ni4xNDIgMjcuOTEwMUMxNzQuOTkyIDI3LjkxMDEgMTc0LjA2NSAyNy41NDM4IDE3My4zNjIgMjYuNzQ0NkMxNzIuNjU5IDI1Ljk3ODYgMTcyLjMwOCAyNC45Nzk2IDE3Mi4zMDggMjMuNzE0MUMxNzIuMzA4IDIyLjc0ODMgMTcyLjUzMSAyMS44MTU4IDE3My4wMTEgMjAuODgzNEMxNzMuNDkgMTkuOTUwOSAxNzQuMDY1IDE5LjI4NDkgMTc0LjczNiAxOC44NTJDMTc1LjQzOSAxOC40MTkgMTc2LjIzOCAxOC4xODU5IDE3Ny4xMzMgMTguMTg1OUMxNzguMjUxIDE4LjE4NTkgMTc5LjE0NiAxOC41ODU1IDE3OS44NDkgMTkuMzUxNUMxODAuNTUyIDIwLjExNzQgMTgwLjkwMyAyMS4xMTY1IDE4MC45MDMgMjIuMzgyQzE4MC45MzUgMjQuMDEzOCAxODAuNDU2IDI1LjM0NTkgMTc5LjUyOSAyNi4zNzgyWiIgZmlsbD0iIzIzMUYyMCIvPgo8cGF0aCBkPSJNMTg5LjgxOSAxMi40MjQ5QzE4OS44MTkgMTIuMzkxNiAxODkuODE5IDEyLjMyNSAxODkuODE5IDEyLjI5MTdDMTg5LjgxOSAxMi4yNTg0IDE4OS44MTkgMTIuMjI1MSAxODkuODE5IDEyLjE5MThDMTg5LjgxOSAxMi4xNTg1IDE4OS44MTkgMTIuMDkxOCAxODkuNzg3IDEyLjA1ODVDMTg5Ljc4NyAxMi4wMjUyIDE4OS43NTUgMTEuOTU4NiAxODkuNzU1IDExLjkyNTNDMTg5LjcyMyAxMS44OTIgMTg5LjY5MSAxMS44NTg3IDE4OS42NTkgMTEuODI1NEMxODkuNjI4IDExLjc5MjEgMTg5LjU5NiAxMS43NTg4IDE4OS41MzIgMTEuNzU4OEMxODkuNjI4IDExLjcyNTUgMTg5LjcyMyAxMS42NTg5IDE4OS43NTUgMTEuNTU5QzE4OS43ODcgMTEuNDkyNCAxODkuODE5IDExLjM5MjUgMTg5LjgxOSAxMS4yNTkzQzE4OS44MTkgMTEuMTkyNyAxODkuODE5IDExLjEyNjEgMTg5Ljc4NyAxMS4wNTk1QzE4OS43NTUgMTAuOTkyOSAxODkuNzIzIDEwLjkyNjMgMTg5LjY5MSAxMC44OTNDMTg5LjY1OSAxMC44NTk3IDE4OS41OTYgMTAuNzkzMSAxODkuNTMyIDEwLjc5MzFDMTg5LjQ2OCAxMC43NTk4IDE4OS40MDQgMTAuNzU5OCAxODkuMzA4IDEwLjc1OThIMTg4LjMxN1YxMi42NThIMTg4LjczM1YxMS45MjUzSDE4OS4xNDhDMTg5LjI0NCAxMS45MjUzIDE4OS4zMDggMTEuOTU4NiAxODkuMzcyIDExLjk5MTlDMTg5LjQwNCAxMi4wMjUzIDE4OS40MzYgMTIuMTI1MiAxODkuNDY4IDEyLjIyNTFDMTg5LjQ2OCAxMi4yOTE3IDE4OS41IDEyLjM5MTYgMTg5LjUgMTIuNDU4MkMxODkuNSAxMi41MjQ4IDE4OS41MzIgMTIuNjI0NyAxODkuNTMyIDEyLjY1OEgxODkuOTQ3QzE4OS45MTUgMTIuNjI0NyAxODkuOTE1IDEyLjU5MTQgMTg5LjkxNSAxMi41NTgxQzE4OS44MTkgMTIuNDkxNSAxODkuODE5IDEyLjQ1ODIgMTg5LjgxOSAxMi40MjQ5Wk0xODkuMzQgMTEuNTI1N0MxODkuMzA4IDExLjU1OSAxODkuMjEyIDExLjU5MjMgMTg5LjExNiAxMS41OTIzSDE4OC42NjlWMTEuMDU5NUgxODkuMTE2QzE4OS4yMTIgMTEuMDU5NSAxODkuMjc2IDExLjA5MjggMTg5LjM0IDExLjEyNjFDMTg5LjM3MiAxMS4xNTk0IDE4OS40MDQgMTEuMjI2IDE4OS40MDQgMTEuMzI1OUMxODkuNDA0IDExLjQyNTggMTg5LjM3MiAxMS40OTI0IDE4OS4zNCAxMS41MjU3WiIgZmlsbD0iIzIzMUYyMCIvPgo8cGF0aCBkPSJNMTg4Ljk4OCA5Ljk2MDQ1QzE4OC4wMyA5Ljk2MDQ1IDE4Ny4yNjMgMTAuNzU5NyAxODcuMjYzIDExLjc1ODhDMTg3LjI2MyAxMi43NTc4IDE4OC4wMyAxMy41NTcxIDE4OC45ODggMTMuNTU3MUMxODkuOTQ3IDEzLjU1NzEgMTkwLjcxNCAxMi43NTc4IDE5MC43MTQgMTEuNzU4OEMxOTAuNzE0IDEwLjc1OTcgMTg5Ljk0NyA5Ljk2MDQ1IDE4OC45ODggOS45NjA0NVpNMTg4Ljk4OCAxMy4xOTA4QzE4OC4yMjEgMTMuMTkwOCAxODcuNTgyIDEyLjUyNDcgMTg3LjU4MiAxMS43MjU1QzE4Ny41ODIgMTAuOTI2MiAxODguMjIxIDEwLjI2MDIgMTg4Ljk4OCAxMC4yNjAyQzE4OS43ODcgMTAuMjYwMiAxOTAuMzk0IDEwLjkyNjIgMTkwLjM5NCAxMS43MjU1QzE5MC4zOTQgMTIuNTU4IDE4OS43NTUgMTMuMTkwOCAxODguOTg4IDEzLjE5MDhaIiBmaWxsPSIjMjMxRjIwIi8+CjxwYXRoIGQ9Ik0zMS45MzA4IDIxLjI4M0MzMS45MzA4IDIxLjI4MyAzMS44OTg4IDIxLjE4MzEgMzEuODY2OSAyMS4wMTY2QzMxLjQ1MTQgMTkuMDg1IDMxLjA2OCAxNC43NTU4IDMzLjc1MjIgMTIuOTI0MUMzNi40MzY0IDExLjA5MjUgMzkuMDU2NyAxMy4yMjM5IDM5LjQ3MjEgMTQuMzg5NEM0MC4wNDczIDE2LjAyMTIgMzguNzM3MSAxNi43ODcyIDM2LjQzNjQgMTcuNDE5OUMzMi43OTM1IDE4LjM4NTcgMzEuOTk0NyAyMC44MTY4IDMxLjkzMDggMjEuMjgzWiIgZmlsbD0iIzBENkRDMCIvPgo8cGF0aCBkPSJNMzMuNjk3OCAyNC4yODA0QzI4LjI5NzUgMjEuNTgyOSAyOC45MDQ2IDE3LjA4NzEgMjguMjMzNiAxNC44NTU4QzI0LjM5OSAxLjAzNTQyIDE2Ljc2MTggMC4wMDMwNTQzNiAxNS44NjcxIDAuMDAzMDU0MzZDMTMuNzU4MSAtMC4wNjM1NTAxIDEwLjAxOTQgMC45MzU1MTYgOS43MzE3OSA1LjMzMTQxQzkuMzQ4MzMgMTEuNTkyMiAxNy44ODAyIDExLjE5MjYgMjEuMDQzNyAxMy43MjM2QzIzLjIxNjcgMTUuNDU1MyAyNC42ODY2IDE5LjMxODMgMjAuNzI0MiAxOC40ODU4QzE1LjkzMSAxNi42MjA5IDEwLjMwNyAxNy4xODcgNy45NzQyOCAxOC4xODYxQzQuMDQzODUgMTkuODg0NSAyLjYzNzg0IDIyLjA4MjQgMi4yNTQzOSAyMi41NDg2QzEuODcwOTMgMjMuMDE0OSAtMy4wMTgxNCAzMC4wMDgzIDIuOTI1NDQgMzUuNzY5NkM3LjU5MDgyIDQwLjI5ODcgMTMuOTQ5OCAzNy4xMDE3IDE2LjQ0MjMgMzMuNTA1MUMxNy45NDQxIDMxLjM0MDQgMTguOTk4NiAyOS4yMDkxIDIwLjE4MSAyNy4zMTA5QzI0Ljg0NjQgMjEuNDQ5NyAzMC40MDY1IDI1LjI3OTQgMzEuODc2NCAyOC4wMTAyQzM0LjExMzIgMzIuMTczIDM1LjcxMSAzNC4yNzEgMzcuNzI0MSAzMi44NzIzQzM5Ljc2OTIgMzEuNDczNiAzOS41MTM2IDI3LjE3NzYgMzMuNjk3OCAyNC4yODA0WiIgZmlsbD0iIzBENkRDMCIvPgo8L3N2Zz4K" width="191" height="38" alt="Splashtop" class="css-o8n0ze-Logo e9nvs209">
-                    </div>
-                    <a class="read-more" href="/integrations/integration-01">read more<i class="bi bi-arrow-right icon "></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                    <div class="service-icon">
-                        <img src="https://hipaa-software.com/wp-content/uploads/2021/09/connectwise-control-logo-563x150.png" class="img-fluid"/>
-                    </div>
-                    <a class="read-more" href="/integrations/integration-01">read more<i class="bi bi-arrow-right icon "></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                    <div class="service-icon">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx1tx5ytOn2roA05l3doTDrbi3-2YrC0sVXtbaf19CpSQcS_KjlGDZSf4iCexljNkcr28&usqp=CAU" class="img-fluid"/>
-                    </div>
-                    <a class="read-more" href="/integrations/integration-01">read more<i class="bi bi-arrow-right icon "></i>
-                    </a>
-                </div>
-            </div>
+                {% endif %}
+            {% endfor %}
+            
             <div class="col-12 col-md-6  col-lg-4 mx-auto ">
                 <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
                     <div class="service-icon">
@@ -94,51 +60,26 @@ permalink: /integrations/
             </div>
         </div>
         <div class="row gx-4 gy-4 services-row ">
-            <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                    <div class="service-icon">
-                        <img src="https://www.nimble.com/wp-content/themes/new_nimble/images/nimble-logo-white.svg" class="img-fluid"/>
+            {# NOTE: data is coming from /src/_data/integrations.json #}
+            {% for item in integrations.items %}
+                {% if item.category == "authentication-data" %}
+                    <div class="col-12 col-md-6  col-lg-4 mx-auto ">
+                        <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
+                            <div class="service-icon">
+                                {# <i class="flaticon-web-development font-icon"></i> #}
+                                <img src="{{ item.img }}" class="img-fluid"/>
+                            </div>
+                            <span class="service-num hollow-text">1    </span>
+                            <div class="service-content">
+                                <h3 class="service-title">{{ item.name }}</h3>
+                            </div>
+                            <a class="read-more" href="{{ item.href }}">read more<i class="bi bi-arrow-right icon "></i>
+                            </a>
+                        </div>
                     </div>
-                    <a class="read-more" href="/integrations/integration-01">read more<i class="bi bi-arrow-right icon "></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                    <div class="service-icon">
-                        <img src="https://www.yubico.com/wp-content/themes/yubicool/img/logos/logo.svg" class="img-fluid"/>
-                    </div>
-                    <a class="read-more" href="/integrations/integration-01">read more<i class="bi bi-arrow-right icon "></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                    <div class="service-icon">
-                        <img src="https://myki.rs/media/42/122.png" class="img-fluid"/>
-                    </div>
-                    <a class="read-more" href="/integrations/integration-01">read more<i class="bi bi-arrow-right icon "></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                    <div class="service-icon">
-                        <img class="img-fluid" src="https://duo.com/assets/img/duoLogo-web.png">
-                    </div>
-                    <a class="read-more" href="/integrations/integration-01">read more<i class="bi bi-arrow-right icon "></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                    <div class="service-icon">
-                        <img src="https://www.n-able.com/wp-content/uploads/2022/12/icon-passportal-128x128-fullcolor.svg" class="img-fluid"/>
-                    </div>
-                    <a class="read-more" href="/integrations/integration-01">read more<i class="bi bi-arrow-right icon "></i>
-                    </a>
-                </div>
-            </div>
+                {% endif %}
+            {% endfor %}
+            
             <div class="col-12 col-md-6  col-lg-4 mx-auto ">
                 <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
                     <div class="service-icon">
