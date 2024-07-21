@@ -4,10 +4,12 @@
     <!-- <div class="particles-js  dots" id="particles-js"></div> -->
     <div class="container position-relative">
 
-        {% set animationName = "splash-landing" %}
-        {% set compositionId = "compositionSplashLanding" %}
-        {% set sceneName = "sceneSplashLanding" %}
-        {% include "animations/animation-template.njk" %}
+        <div id="animationContainer">
+            {% set animationName = "splash-landing" %}
+            {% set compositionId = "compositionSplashLanding" %}
+            {% set sceneName = "sceneSplashLanding" %}
+            {% include "animations/animation-template.njk" %}
+        </div>
 
         <div class="row">
 
@@ -100,3 +102,108 @@
     </div>
 </section>
 <!-- End  Page hero-->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // toas/popup
+        const demoToastEl = document.getElementById('demoToast');
+        const demoToast = new bootstrap.Toast(demoToastEl);
+        demoToast.show();
+
+        demoToastEl.addEventListener('shown.bs.toast', () => {
+            console.debug("toast shown");
+        })
+
+
+
+        // dropdowns/different animations
+        const companySizeDropdown = document.getElementById('companySize');
+        const industryDropdown = document.getElementById('industry');
+        const animationContainer = document.getElementById('animationContainer');
+
+        function loadScript(src, callback) {
+            const script = document.createElement('script');
+            script.src = src;
+            script.onload = callback;
+            document
+                .head
+                .appendChild(script);
+        }
+
+        function updateAnimation(animationName, compositionId, sceneName) {
+            // Load the new animation script
+            loadScript(`/js/animations/${animationName}.js`, function () {
+                var canvas,
+                    stage,
+                    exportRoot,
+                    anim_container,
+                    dom_overlay_container,
+                    fnStartAnimation;
+                function init() {
+                    canvas = document.getElementById("canvas");
+                    anim_container = document.getElementById("animation_container");
+                    dom_overlay_container = document.getElementById("dom_overlay_container");
+                    var comp = AdobeAn.getComposition(compositionId);
+                    var lib = comp.getLibrary();
+                    handleComplete({}, comp);
+                }
+                function handleComplete(evt, comp) {
+                    var lib = comp.getLibrary();
+                    var ss = comp.getSpriteSheet();
+                    exportRoot = new lib[sceneName]();
+                    stage = new lib.Stage(canvas);
+
+                    fnStartAnimation = function () {
+                        stage.addChild(exportRoot);
+                        createjs.Ticker.framerate = lib.properties.fps;
+                        createjs
+                            .Ticker
+                            .addEventListener("tick", stage);
+                    }
+
+                    AdobeAn.makeResponsive(true, 'both', true, 1, [canvas, anim_container, dom_overlay_container]);
+                    AdobeAn.compositionLoaded(lib.properties.id);
+                    fnStartAnimation();
+                }
+                init();
+            });
+        }
+
+        function updateHeroImage() {
+            const companySize = companySizeDropdown.value;
+            const industry = industryDropdown.value;
+
+            let animationName = 'splash-landing'; // default animation
+            let compositionId = 'compositionSplashLanding';
+            let sceneName = 'sceneSplashLanding';
+
+            if (companySize === '5000+') {
+                animationName = 'splash-msp';
+                compositionId = 'compositionSplashMSP';
+                sceneName = 'sceneSplashMSP';
+            } else if (companySize === '50-249') {
+                animationName = 'splash-msp';
+                compositionId = 'compositionSplashMSP';
+                sceneName = 'sceneSplashMSP';
+            } else if (companySize === '10-49') {
+                animationName = 'splash-msp';
+                compositionId = 'compositionSplashMSP';
+                sceneName = 'sceneSplashMSP';
+            } else if (industry === 'msp') {
+                animationName = 'splash-msp';
+                compositionId = 'compositionSplashMSP';
+                sceneName = 'sceneSplashMSP';
+            } else if (industry === 'it') {
+                animationName = 'splash-education';
+                compositionId = 'compositionSplashEducation';
+                sceneName = 'sceneSplashEducation';
+            }
+
+            updateAnimation(animationName, compositionId, sceneName);
+        }
+
+        companySizeDropdown.addEventListener('change', updateHeroImage);
+        industryDropdown.addEventListener('change', updateHeroImage);
+
+    });
+</script>

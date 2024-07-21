@@ -74,50 +74,6 @@
     <!--     main     -->
     <script src="/js/main.js"></script>
 
-    <!--     local, page-level JS     -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        // toas/popup
-        const demoToastEl = document.getElementById('demoToast');
-        const demoToast = new bootstrap.Toast(demoToastEl);
-        demoToast.show();
-
-        demoToastEl.addEventListener('shown.bs.toast', () => {
-          console.debug("toast shown");
-        })
-
-        // dropdowns/different images
-        const companySizeDropdown = document.getElementById('companySize');
-        const industryDropdown = document.getElementById('industry');
-        const heroImageWrapper = document.querySelector('.hero-img-wraper img');
-
-        function updateHeroImage() {
-          const companySize = companySizeDropdown.value;
-          const industry = industryDropdown.value;
-
-          let imagePath = 'assets/images/hero/hero-portal.png'; // default image
-
-          if (companySize === '5000+') {
-            imagePath = 'assets/images/hero/hero-portal-02.png';
-          } else if (companySize === '50-249') {
-            imagePath = 'assets/images/hero/hero-portal-03.png';
-          } else if (companySize === '10-49') {
-            imagePath = 'assets/images/hero/hero-portal-04.png';
-          } else if (industry === 'msp') {
-            imagePath = 'assets/images/hero/hero-portal-05.png';
-          } else if (industry === 'it') {
-            imagePath = 'assets/images/hero/hero-portal-06.png';
-          }
-
-          heroImageWrapper.src = imagePath;
-        }
-
-        companySizeDropdown.addEventListener('change', updateHeroImage);
-        industryDropdown.addEventListener('change', updateHeroImage);
-
-      });
-    </script>
-
     <script src="/js/cookieconsent.js"></script>
     <script src="/js/cookieconsent-init.js"></script>
   </body>
