@@ -21,6 +21,15 @@ permalink: /about-us/
                 </ul>
             </nav>
 
+            {% set animationName = "testimonials" %}
+            {% set compositionId = "compositionTestimonials" %}
+            {% set sceneName = "sceneTestimonials" %}
+            {% set wrapperClass = "canvas-features" %}
+            {% set width = 363 %}
+            {% set height = 270 %}
+            {% set position = "static" %}
+            {% include "animations/animation-template.njk" %}
+
         </div>
     </div>
 </section>
@@ -118,3 +127,4 @@ permalink: /about-us/
 
     </div>
 </div>
+{% include "sections/testimonials.njk" %}
