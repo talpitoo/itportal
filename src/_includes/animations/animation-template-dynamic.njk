@@ -1,0 +1,5 @@
+{# NOTE: not used, aspect-ratio: {{ width | default(725)}} / {{ height | default(540)}} !important; #}
+<div id="animation_container" class="{{ wrapperClass }}" style="position: {{ position | default("absolute")}}; right: 0; z-index: -1; width:{{ width | default(725)}}px; height:{{ height | default(540)}}px;">
+    <canvas id="canvas" width="{{ width | default(725)}}" height="{{ height | default(540)}}" style="position: {{ position | default("absolute")}}; right: 0; z-index: -1; display: block;"></canvas>
+    <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:{{ width | default(725)}}px; height:{{ height | default(540)}}px; position: absolute; left: 0px; top: 0px; display: block;"></div>
+</div>
