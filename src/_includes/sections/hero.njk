@@ -64,21 +64,29 @@
                     let compositionId = 'compositionSplashLanding';
                     let sceneName = 'sceneSplashLanding';
 
-                    if (companySize === '5000+') {
+                    if (companySize === '5') {
                         // Handle this case if needed
                         // animationName = 'splash-government';
                         // compositionId = 'compositionSplashGovernment';
                         // sceneName = 'sceneSplashGovernment';
-                    } else if (companySize === '50-249') {
+                    } else if (companySize === '2') {
                         // Handle this case if needed
-                    } else if (companySize === '10-49') {
+                    } else if (companySize === '1') {
                         // Handle this case if needed
                     } else if (industry === 'msp') {
                         animationName = 'splash-msp';
                         compositionId = 'compositionSplashMSP';
                         sceneName = 'sceneSplashMSP';
                     } else if (industry === 'it') {
-                        animationName = 'splash-education';
+                        animationName = 'splash-landing';
+                        compositionId = 'compositionSplashLanding';
+                        sceneName = 'sceneSplashLanding';
+                    } else if (industry === 'government') {
+                        animationName = 'splash-government';
+                        compositionId = 'compositionSplashGovernment';
+                        sceneName = 'sceneSplashGovernment';
+                    } else if (industry === 'education') {
+                        animationName = 'splash-government';
                         compositionId = 'compositionSplashEducation';
                         sceneName = 'sceneSplashEducation';
                     }
@@ -99,7 +107,7 @@
                 <!--Start of .hero-text-area-->
                 <div class="hero-text-area   ">
                     <div class="row">
-                        <div class="col-12   ">
+                        {# <div class="col-12   ">
                             <div class="hero-social-icons mb-3 ">
                                 <div class="sc-wrapper dir-row sc-flat">
                                     <ul class="sc-list">
@@ -126,9 +134,9 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div> #}
                         <div class="col-12       ">
-                            <div class="pre-title ">New Website coming soon!</div>
+                            {# <div class="pre-title ">IT</div> #}
                             <h1 class="hero-title  ">Empowering IT Teams with an <span class="featured-text">innovative gateway {% include "components/svg-wave.njk" %}
                                 </span>
                                 <span class="design-element rounded-shape stripes"></span> for secure documentation</h1>
@@ -144,13 +152,18 @@
                 <form class="g-3 mb-4">
                     <div class="col-12 mb-3">
                         <label class="" for="companySize">I work in a</label>
-                        <select class="form-select" aria-label="Company size" id="companySize">
+                        {# <select class="form-select" aria-label="Company size" id="companySize">
                             <option selected>Select company size</option>
                             <option value="5000+">Enterprise (5,000+ employees)</option>
-                            <!-- <option value="250-4999">Mid-market (250-4,999 employees)</option> -->
                             <option value="50-249">Medium-sized (50-249 employees)</option>
                             <option value="10-49">Small (10-49 employees)</option>
-                            <!-- <option value="1-9">Emerging (1-9 employees)</option> -->
+                        </select> #}
+                        <select class="form-select" aria-label="Company size" id="companySize">
+                            <option selected>Select company size</option>
+                            <option value="1">1</option>
+                            <option value="2">2-3</option>
+                            <option value="4">4</option>
+                            <option value="5">5+</option>
                         </select>
                     </div>
                     <div class="col-12">
@@ -159,8 +172,8 @@
                             <option value="" selected="">Select Industry</option>
                             <option value="msp">MSP</option>
                             <option value="it">IT</option>
-                            <!-- 
-                        <option value="Other">Other</option> -->
+                            <option value="education">Education</option>
+                            <option value="government">Government</option>
                         </select>
                     </div>
                 </form>
