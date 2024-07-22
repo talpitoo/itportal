@@ -16,4 +16,4 @@ IT Portal Export connects to your current IT Portal and sends your IT documentat
 
 Concerned about access? Only the main contact will receive the tool and each user must be approved.
 
-[See it now!](http://demosync.it-portal.com/#start.html)
+[See it now!](https://export.it-portal.com/#start.html)

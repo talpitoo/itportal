@@ -1,6 +1,6 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
     // Copy the `img` and `css` folders to the output
@@ -13,7 +13,12 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/browserconfig.xml');
     eleventyConfig.addPassthroughCopy('src/robots.txt');
     // TODO/DEBUG copy the .json files with dummy data
-    eleventyConfig.addPassthroughCopy({"src/_data/brokers": "data/brokers"});
+    eleventyConfig.addPassthroughCopy({ "src/_data/brokers": "data/brokers" });
+
+    // features collection
+    eleventyConfig.addCollection("featuresCollection", function (collectionApi) {
+        return collectionApi.getFilteredByGlob("src/pages/features/*.md");
+    });
 
     // Nunjucks for templating
     return {
@@ -21,7 +26,7 @@ module.exports = function(eleventyConfig) {
             input: "src",
             output: "_site"
         },
-        templateFormats: ["html", "njk"],
+        templateFormats: ["html", "njk", "md"],
         htmlTemplateEngine: "njk",
         markdownTemplateEngine: "njk"
     };
