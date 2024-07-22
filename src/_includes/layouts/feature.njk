@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+---
+
+{% include "sections/hero-single-feature.njk" %}
+{# {% include "sections/features-sticky-sidebar.njk" %} #}
+
+<div class="service-single ">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-xl-8  ">
+                {{ content | safe }}
+            </div>
+            <div class="col-12 col-xl-4">
+                {% include "components/sidebar.njk" %}
+            </div>
+        </div>
+    </div>
+</div>
