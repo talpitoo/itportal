@@ -12,7 +12,7 @@ eleventyNavigation:
 category: "top-features"
 ---
 
-[![TODO Screenshot](https://www.itportal.com/v4/images/portal-export-1a.png?rid=3)](http://demosync.it-portal.com/#start.html)
+[![Screenshot](https://www.itportal.com/v4/images/portal-export-1a.png?rid=3)](http://demosync.it-portal.com/#start.html)
 
 ## Portal Export
 

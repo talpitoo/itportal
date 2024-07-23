@@ -12,11 +12,11 @@ eleventyNavigation:
 category: "top-features"
 ---
 
-[![TODO Screenshot](https://www.itportal.com/v4/images/office.gif?rID=6)](https://youtu.be/8tnVN1Fy6iY)
+[![Screenshot](https://www.itportal.com/v4/images/office.gif?rID=6)](https://youtu.be/8tnVN1Fy6iY)
 
-[![TODO Screenshot](https://www.itportal.com/v4/images/drawing.png?rID=6)](https://www.youtube.com/watch?v=utRC0zhmqaE)
+[![Screenshot](https://www.itportal.com/v4/images/drawing.png?rID=6)](https://www.youtube.com/watch?v=utRC0zhmqaE)
 
-[![TODO Screenshot](https://www.itportal.com/v4/images/froala-editor.gif?rID=6)](https://www.froala.com/wysiwyg-editor)
+[![Screenshot](https://www.itportal.com/v4/images/froala-editor.gif?rID=6)](https://www.froala.com/wysiwyg-editor)
 
 ## Microsoft 365 Editor, Drawing Tool, and Next Generation WYSIWYG Editor
 

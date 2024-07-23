@@ -11,14 +11,23 @@
             <div class=" cta-area   wow fadeInUp" data-wow-delay=".8s">
                 {# <a class="cta-btn btn-solid    " href="pricing.html">see all plans<i class="bi bi-arrow-right icon "></i>
                 </a> #}
-                <form class="g-3">
-                    <label class="" for="numberOfUsers">How many users? More users, Pay less!</label>
-                    <select class="form-select" aria-label="Number of users" id="numberOfUsers">
-                        <option value="1">1</option>
-                        <option value="2">2-3</option>
-                        <option value="4">4</option>
-                        <option value="5">5+</option>
-                    </select>
+                <form class="d-flex gap-4">
+                    <div>
+                        <label class="" for="cloud-vs-on-premises">Cloud vs. On Premises</label>
+                        <select class="form-select" aria-label="Cloud/On Premises" id="cloud-vs-on-premises">
+                            <option value="cloud">Cloud</option>
+                            <option value="on-premises">On Premises</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="" for="numberOfUsers">How many users? More users, Pay less!</label>
+                        <select class="form-select" aria-label="Number of users" id="numberOfUsers">
+                            <option value="1">1</option>
+                            <option value="2">2-3</option>
+                            <option value="4">4</option>
+                            <option value="5">5+</option>
+                        </select>
+                    </div>
                 </form>
             </div>
         </div>
@@ -45,8 +54,10 @@
                                 <span class="feat-text">* 2GBs storage per defined user</span></li>
                             <li class="plan-feat ">
                                 <span class="feat-text">Add-on Portal Rotate Pricing & Info</span></li>
-                            <li class="plan-feat "><span class="feat-text">Add-on My Portal Pricing & Info?</span></li>
-                            <li class="plan-feat "><span class="feat-text">10% Yearly discounts at checkout</span></li>
+                            <li class="plan-feat ">
+                                <span class="feat-text">Add-on My Portal Pricing & Info?</span></li>
+                            <li class="plan-feat ">
+                                <span class="feat-text">10% Yearly discounts at checkout</span></li>
                         </ul>
                     </div>
                     <div class="plan-cta">
