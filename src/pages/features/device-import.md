@@ -3,7 +3,7 @@ title: Device Import
 excerpt: >
   Run our script on devices to import them directly into the portal. We have five ways ways to import.
 icon: flaticon-strategy
-layout: layouts/feature.njk
+layout: layouts/layout-feature.njk
 permalink: /features/device-import/
 eleventyNavigation:
   key: Device Import

@@ -3,7 +3,7 @@ title: Companies
 excerpt: >
   If you are a MSP, you can view documentation on all the companies you support. IT Departments will see everything in thier one company.
 icon: flaticon-strategy
-layout: layouts/documentation.njk
+layout: layouts/layout-documentation.njk
 permalink: /documentation/companies/
 eleventyNavigation:
   key: Companies

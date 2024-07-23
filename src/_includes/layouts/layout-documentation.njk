@@ -1,0 +1,18 @@
+---
+layout: layouts/layout-base.njk
+---
+
+{% include "sections/hero-breadcrumb.njk" %}
+
+<div class="service-single ">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-xl-8  ">
+                {{ content | safe }}
+            </div>
+            <div class="col-12 col-xl-4">
+                {% include "components/sidebar-documentation.njk" %}
+            </div>
+        </div>
+    </div>
+</div>

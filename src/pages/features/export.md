@@ -3,7 +3,7 @@ title: Export
 excerpt: >
   IT Portal Export connects to your current IT Portal and sends your IT documentation to a remote host for off-line or DR access. Portal Export can be used on a web server or on a thumb drive using Firefox. All contents from the portal are exported to a web friendly read-only format. It is a true export, but it can export CSV files if needed as well.
 icon: flaticon-strategy
-layout: layouts/feature.njk
+layout: layouts/layout-feature.njk
 permalink: /features/export/
 eleventyNavigation:
   key: Export

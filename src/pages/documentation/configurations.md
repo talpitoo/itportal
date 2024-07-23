@@ -3,7 +3,7 @@ title: Configurations
 excerpt: >
   Configurations are objects that are considered attributes of a device or a physical peripheral attached to a device.
 icon: flaticon-strategy
-layout: layouts/documentation.njk
+layout: layouts/layout-documentation.njk
 permalink: /documentation/configurations/
 eleventyNavigation:
   key: Configurations

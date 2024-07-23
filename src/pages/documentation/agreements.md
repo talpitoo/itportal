@@ -3,7 +3,7 @@ title: Agreements
 excerpt: >
   Keep track of agreements like licenses, support contracts, domain names, SSL certificates, and SLAs.
 icon: flaticon-strategy
-layout: layouts/documentation.njk
+layout: layouts/layout-documentation.njk
 permalink: /documentation/agreements/
 eleventyNavigation:
   key: Agreements

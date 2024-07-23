@@ -3,7 +3,7 @@ title: Documents
 excerpt: >
   Save important files, images, and notes about your environment as documents and relate them to devices and other objects.
 icon: flaticon-strategy
-layout: layouts/documentation.njk
+layout: layouts/layout-documentation.njk
 permalink: /documentation/documents/
 eleventyNavigation:
   key: Documents

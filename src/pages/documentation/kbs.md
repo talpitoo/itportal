@@ -3,7 +3,7 @@ title: KBs
 excerpt: >
   Create searchable knowledge base articles in the Portal. Use KBs for general how-to guides rating to the technologies in your infrastructure environment. 
 icon: flaticon-strategy
-layout: layouts/documentation.njk
+layout: layouts/layout-documentation.njk
 permalink: /documentation/kbs/
 eleventyNavigation:
   key: KBs

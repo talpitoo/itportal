@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/layout-base.njk
 ---
 
 {% include "sections/hero-breadcrumb.njk" %}
@@ -11,7 +11,7 @@ layout: layouts/base.njk
                 {{ content | safe }}
             </div>
             <div class="col-12 col-xl-4">
-                {% include "components/sidebar-documentation.njk" %}
+                {# { % include "components/sidebar-documentation.njk" % } #}
             </div>
         </div>
     </div>
