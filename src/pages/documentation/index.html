@@ -6,7 +6,6 @@ permalink: /documentation/
 ---
 
 {# {% include "sections/hero-features.njk" %} #}
-<!-- Start inner Page hero-->
 <section class="d-flex align-items-center page-hero  inner-page-hero " id="page-hero" style="height: 75vh; min-height: 75vh;">
     <div class="overlay-photo-image-bg parallax" data-bg-img="/assets/images/hero/inner-page-hero.jpg" data-bg-opacity="1"></div>
     <div class="overlay-color" data-bg-opacity=".75"></div>
@@ -22,17 +21,41 @@ permalink: /documentation/
                     <li class="breadcrumb-item active">Documentation</li>
                 </ul>
             </nav>
-            
-            {# {% set animationName = "features" %}
-            {% set compositionId = "compositionFeatures" %}
-            {% set sceneName = "sceneFeatures" %}
-            {% set wrapperClass = "canvas-features" %}
-            {% set width = 363 %}
-            {% set height = 270 %}
-            {% set position = "static" %}
-            {% include "animations/animation-template.njk" %} #}
         </div>
     </div>
 </section>
-<!-- End inner Page hero-->
+
 {# {% include "sections/top-features.njk" %} #}
+<!-- Start  services Section-->
+<section class="services services-boxed mega-section  " id="services">
+    <div class="container">
+        <div class="sec-heading  ">
+            <div class="content-area">
+                <span class=" pre-title       wow fadeInUp " data-wow-delay=".2s">Documentation</span>
+                <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">
+                    <span class='hollow-text'>IT Portal</span> Documentation</h2>
+                <p class="subtitle   wow fadeInUp " data-wow-delay=".6s">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="row gx-4 gy-4 services-row ">
+            {% for item in collections.documentationCollection %}
+                {% if item.data.category == "documentation" %}
+                    <div class="col-12 col-md-6  col-lg-4 mx-auto ">
+                        <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
+                            <div class="service-icon">
+                                <i class="{{ item.data.icon | default("flaticon-web-development") }} font-icon"></i>
+                            </div>
+                            {# <span class="service-num hollow-text">1    </span> #}
+                            <div class="service-content">
+                                <h3 class="service-title">{{ item.data.title }}</h3>
+                                <p class="service-text">{{ item.data.excerpt }}</p>
+                            </div>
+                            <a class="read-more" href="{{ item.data.permalink }}">read more<i class="bi bi-arrow-right icon "></i>
+                            </a>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
