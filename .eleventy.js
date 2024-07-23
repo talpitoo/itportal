@@ -25,6 +25,11 @@ module.exports = function (eleventyConfig) {
         return collectionApi.getFilteredByGlob("src/pages/documentation/*.md");
     });
 
+    // security collection
+    eleventyConfig.addCollection("securityCollection", function (collectionApi) {
+        return collectionApi.getFilteredByGlob("src/pages/security/*.md");
+    });
+
     // Nunjucks for templating
     return {
         dir: {
