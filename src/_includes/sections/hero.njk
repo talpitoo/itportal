@@ -55,6 +55,7 @@
 
                 const companySizeDropdown = document.getElementById('companySize');
                 const industryDropdown = document.getElementById('industry');
+                const solutionsLink = document.getElementById('solutions-link');
 
                 function updateHeroImage() {
                     const companySize = companySizeDropdown.value;
@@ -63,6 +64,7 @@
                     let animationName = 'splash-landing'; // default animation
                     let compositionId = 'compositionSplashLanding';
                     let sceneName = 'sceneSplashLanding';
+                    let findMySolutionHref = '/it'; // default link
 
                     if (companySize === '5') {
                         // Handle this case if needed
@@ -77,22 +79,28 @@
                         animationName = 'splash-msp';
                         compositionId = 'compositionSplashMSP';
                         sceneName = 'sceneSplashMSP';
+                        findMySolutionHref = '/msp';
                     } else if (industry === 'it') {
                         animationName = 'splash-landing';
                         compositionId = 'compositionSplashLanding';
                         sceneName = 'sceneSplashLanding';
+                        findMySolutionHref = '/it';
                     } else if (industry === 'government') {
                         animationName = 'splash-government';
                         compositionId = 'compositionSplashGovernment';
                         sceneName = 'sceneSplashGovernment';
+                        findMySolutionHref = '/government';
                     } else if (industry === 'education') {
                         animationName = 'splash-government';
                         compositionId = 'compositionSplashEducation';
                         sceneName = 'sceneSplashEducation';
+                        findMySolutionHref = '/education';
                     }
 
                     // Update animation by reinitializing
                     initAnimation(compositionId, sceneName);
+                    // Update link
+                    solutionsLink.href = findMySolutionHref;
                 }
 
                 companySizeDropdown.addEventListener('change', updateHeroImage);
@@ -179,16 +187,18 @@
                 </form>
 
                 <div class="cta-links-area ">
-                    <a class=" btn-outline cta-link cta-link-primary " href="/msp">Find My Solution</a>
-                    <div class="play-btn-row-dir ">
-                        <a class="video-link" href="/it" role="button" title="play" data-fancybox="data-fancybox">
-                            <div class="play-video-btn">
-                                <div class="play-btn">
-                                    <i class="fas fa-play icon"></i>
+                    <a href="#" id="solutions-link">
+                        <span class="btn-outline cta-link cta-link-primary">Find My Solution</span>
+                        <div class="play-btn-row-dir ">
+                            <span class="video-link">
+                                <div class="play-video-btn">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play icon"></i>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </span>
+                        </div>
+                    </a>
                 </div>
                 <p class="mt-4">I prefer to <a href="#" class="btn btn-link px-0 py-0 header-search-btn">search on my own</a>.</p>
             </div>
