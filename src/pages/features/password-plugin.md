@@ -5,6 +5,10 @@ excerpt: >
 icon: flaticon-web-development
 layout: layouts/feature.njk
 permalink: /features/password-plugin-DISABLED/
+eleventyNavigation-DISABLED:
+  key: Password Plugin
+  parent: Features
+  order: 1
 category: "top-features, but a custom page will be used for this feature to show the animation"
 ---
 

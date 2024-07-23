@@ -5,6 +5,10 @@ excerpt: >
 icon: flaticon-strategy
 layout: layouts/documentation.njk
 permalink: /documentation/contacts/
+eleventyNavigation:
+  key: Contacts
+  parent: Documentation
+  order: 4
 category: "documentation"
 ---
 

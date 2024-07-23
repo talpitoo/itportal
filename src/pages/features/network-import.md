@@ -5,6 +5,10 @@ excerpt: >
 icon: flaticon-search
 layout: layouts/feature.njk
 permalink: /features/network-import/
+eleventyNavigation:
+  key: Network Import
+  parent: Features
+  order: 5
 category: "top-features"
 ---
 

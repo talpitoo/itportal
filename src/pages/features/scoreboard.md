@@ -5,6 +5,10 @@ excerpt: >
 icon: flaticon-nanotechnology
 layout: layouts/feature.njk
 permalink: /features/scoreboard/
+eleventyNavigation:
+  key: Scoreboard
+  parent: Features
+  order: 2
 category: "top-features"
 ---
 

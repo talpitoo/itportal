@@ -5,6 +5,10 @@ excerpt: >
 icon: flaticon-profile
 layout: layouts/feature.njk
 permalink: /features/mobile/
+eleventyNavigation:
+  key: Mobile
+  parent: Features
+  order: 4
 category: "top-features"
 ---
 

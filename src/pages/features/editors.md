@@ -5,6 +5,10 @@ excerpt: >
 icon: flaticon-web-domain
 layout: layouts/feature.njk
 permalink: /features/editors/
+eleventyNavigation:
+  key: Editors
+  parent: Features
+  order: 3
 category: "top-features"
 ---
 

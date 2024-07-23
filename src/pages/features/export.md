@@ -5,6 +5,10 @@ excerpt: >
 icon: flaticon-strategy
 layout: layouts/feature.njk
 permalink: /features/export/
+eleventyNavigation:
+  key: Export
+  parent: Features
+  order: 7
 category: "top-features"
 ---
 

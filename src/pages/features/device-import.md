@@ -5,6 +5,10 @@ excerpt: >
 icon: flaticon-strategy
 layout: layouts/feature.njk
 permalink: /features/device-import/
+eleventyNavigation:
+  key: Device Import
+  parent: Features
+  order: 6
 category: "top-features"
 ---
 
