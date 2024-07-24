@@ -18,35 +18,31 @@
         <div class="row">
             <div class="col-lg-6">
                 <form class="d-flex gap-4 mb-4">
-                    {# <div>
-                        <label class="" for="cloud-vs-on-premises">Cloud vs. On Premises</label>
-                        <select class="form-select" aria-label="Cloud/On Premises" id="cloud-vs-on-premises">
-                            <option value="cloud">Cloud</option>
-                            <option value="on-premises">On Premises</option>
-                        </select>
-                    </div> #}
                     <div>
                         <label class="" for="numberOfUsers">How many users? More users, Pay less!</label>
                         <select class="form-select" aria-label="Number of users" id="numberOfUsers">
                             <option value="1">1</option>
                             <option value="2">2-3</option>
                             <option value="4">4</option>
-                            <option value="5">5+</option>
+                            <option value="5">5-9</option>
+                            <option value="10" selected>10-24</option>
+                            <option value="25">25+</option>
                         </select>
                     </div>
                 </form>
             </div>
             <div class="col-lg-6 text-end">
                 <div class="form-check form-switch d-flex align-items-center justify-content-end mt-lg-4 pt-lg-2">
-                    <label class="form-check-label fw-bold" for="flexSwitchCheckChecked">Cloud</label>
-                    <input class="form-check-input float-none mx-2 my-0" type="checkbox" role="switch" id="flexSwitchCheckChecked">
-                    <label class="form-check-label text-primary text-nowrap fw-bold" for="flexSwitchCheckChecked">On Premises</label>
+                    <label class="form-check-label fw-bold" for="checkCloudVsOnPremises">Cloud</label>
+                    <input class="form-check-input float-none mx-2 my-0" type="checkbox" role="switch" id="checkCloudVsOnPremises">
+                    <label class="form-check-label text-primary text-nowrap fw-bold" for="checkCloudVsOnPremises">On Premises</label>
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="d-flex gap-4">
             <!--First Plan-->
-            <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
+            {# col-12 col-md-6 col-xl-3 #}
+            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="1" data-type="cloud" style="max-width: 33%">
                 <div class="plan    wow fadeInUp  " data-wow-delay=".1s ">
                     <div class="plan-head">
                         <i class="flaticon-nft-1 plan-icon"></i>
@@ -54,15 +50,11 @@
                         <div class="plan-price">
                             <h3 class="price">45<sup class="currency-symbol">$</sup>
                             </h3>
-                            <span class="per">user/month</span>
+                            <span class="per">1 user/month</span>
                         </div>
                     </div>
                     <div class="plan-details">
                         <ul class="plan-list">
-                            {# <li class="plan-feat ">
-                                <span class="feat-text">For the first user / month</span></li> #}
-                            {# <li class="plan-feat ">
-                                <span class="feat-text">Pricing is tiered, see pricing popup...</span></li> #}
                             <li class="plan-feat ">
                                 <span class="feat-text">* 2GBs storage per defined user</span></li>
                             <li class="plan-feat ">
@@ -83,7 +75,7 @@
                 </div>
             </div>
             <!--Second-plan-->
-            <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
+            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="2" data-type="cloud" style="max-width: 33%">
                 <div class="plan    wow fadeInUp  " data-wow-delay=".3s ">
                     <div class="plan-head">
                         <i class="flaticon-virtual-reality plan-icon"></i>
@@ -91,7 +83,7 @@
                         <div class="plan-price">
                             <h3 class="price">25<sup class="currency-symbol">$</sup>
                             </h3>
-                            <span class="per">user/month</span>
+                            <span class="per">2-3 users/month</span>
                         </div>
                     </div>
                     <div class="plan-details">
@@ -116,7 +108,7 @@
                 </div>
             </div>
             <!--Third-plan-->
-            <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
+            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="4" data-type="cloud" style="max-width: 33%">
                 <div class="plan   featured  wow fadeInUp  " data-wow-delay=".5s ">
                     <div class="plan-head">
                         <i class="flaticon-box plan-icon"></i>
@@ -124,7 +116,7 @@
                         <div class="plan-price">
                             <h3 class="price">20<sup class="currency-symbol">$</sup>
                             </h3>
-                            <span class="per">user/month</span>
+                            <span class="per">4-9 users/month</span>
                         </div>
                     </div>
                     <div class="plan-details">
@@ -149,32 +141,67 @@
                 </div>
             </div>
             <!--fourth-plan-->
-            {# NOTE: left out, the difference between the 3rd plan is "20% Yearly discounts at checkout"
-            discount:   https://www.itportal.com/forms/Registration/?p=4&y=1&u=10&op=0&ServiceArea=US&Currency=US
-            start noew: https://www.itportal.com/forms/Registration/?p=4&y=0&u=10&op=0&ServiceArea=US&Currency=US #}
+            {# NOTE: left out, the difference between the 3rd plan is "20% Yearly discounts at checkout" #}
+            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="10" data-type="cloud" style="max-width: 33%">
+                <div class="plan    wow fadeInUp  " data-wow-delay=".3s ">
+                    <div class="plan-head">
+                        <i class="flaticon-dna plan-icon"></i>
+                        <h4 class="plane-name">XL plan</h4>
+                        <div class="plan-price">
+                            <h3 class="price">20<sup class="currency-symbol">$</sup>
+                            </h3>
+                            <span class="per">10-24 users/month</span>
+                        </div>
+                    </div>
+                    <div class="plan-details">
+                        <ul class="plan-list">
+                            <li class="plan-feat ">
+                                <span class="feat-text">* 2GBs storage per defined user</span></li>
+                            <li class="plan-feat ">
+                                <a href="https://kb.itportal.com/?U=5lLEG1TN" class="read-more">Add-on Portal Rotate Pricing & Info</a>
+                            </li>
+                            <li class="plan-feat ">
+                                <a href="https://kb.itportal.com/?U=Wim2Y7C2" class="read-more">Add-on My Portal Pricing & Info</a>
+                            </li>
+                        </ul>
+                        <hr/>
+                        <p class="text-center mb-4">
+                            <a href="https://www.itportal.com/forms/Registration/?p=4&y=1&u=10&op=0&ServiceArea=US&Currency=US" class="text-muted">20% Yearly discounts at checkout</a>
+                        </p>
+                    </div>
+                    <div class="plan-cta">
+                        <a class="cta-btn btn-outline " href="https://www.itportal.com/forms/Registration/?p=4&y=0&u=10&op=0&ServiceArea=US&Currency=US">start now  </a>
+                    </div>
+                </div>
+            </div>
 
             <!--fifth-plan-->
-            <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
-                <div class="plan    wow fadeInUp  " data-wow-delay=".6s ">
+            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="25" data-type="cloud" style="max-width: 33%">
+                <div class="plan">
                     <div class="plan-head">
                         <i class="flaticon-basic-shapes plan-icon"></i>
                         <h4 class="plane-name">ultimate plan</h4>
                         <div class="plan-price">
-                            <p class="mb-0">5-35 Users <span class="fs-6">
+                            <p class="mb-0">
+                                <span class="fs-6">
                                     <span class="text-primary">$</span>20</span>
-                                <span class="per">/User/Month</span></p>
-                            <p class="mb-0">36-50 Users <span class="fs-6">
+                                <span class="per">5-35 Users/Month</span></p>
+                            <p class="mb-0">
+                                <span class="fs-6">
                                     <span class="text-primary">$</span>700</span>
-                                <span class="per">/Month</span></p>
-                            <p class="mb-0">51-100 Users <span class="fs-6">
+                                <span class="per">36-50 Users/Month</span></p>
+                            <p class="mb-0">
+                                <span class="fs-6">
                                     <span class="text-primary">$</span>14</span>
-                                <span class="per">/User/Month</span></p>
-                            <p class="mb-0">100-125 Users <span class="fs-6">
+                                <span class="per">51-100 Users/Month</span></p>
+                            <p class="mb-0">
+                                <span class="fs-6">
                                     <span class="text-primary">$</span>1400</span>
-                                <span class="per">/Month</span></p>
-                            <p class="mb-0">125+ Users <span class="fs-6">
+                                <span class="per">100-125 Users/Month</span></p>
+                            <p class="mb-0">
+                                <span class="fs-6">
                                     <span class="text-primary">$</span>12</span>
-                                <span class="per">/User/Month</span></p>
+                                <span class="per">125+ Users/Month</span></p>
                         </div>
                     </div>
                     <div class="plan-details">
@@ -209,3 +236,35 @@
     </div>
 </section>
 <!-- End  pricing Section-->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const numberOfUsers = document.getElementById('numberOfUsers');
+        const checkCloudVsOnPremises = document.getElementById('checkCloudVsOnPremises');
+        const pricePlans = document.querySelectorAll('.price-plan');
+
+        function filterPlans() {
+            const selectedUsers = parseInt(numberOfUsers.value);
+            const isOnPremises = checkCloudVsOnPremises.checked
+                ? 'on-premises'
+                : 'cloud';
+
+            pricePlans.forEach(plan => {
+                const planUsers = parseInt(plan.dataset.users);
+                const planType = plan.dataset.type;
+
+                if (planUsers <= selectedUsers && planType === isOnPremises) {
+                    plan.style.display = 'block';
+                } else {
+                    plan.style.display = 'none';
+                }
+            });
+        }
+
+        numberOfUsers.addEventListener('change', filterPlans);
+        checkCloudVsOnPremises.addEventListener('change', filterPlans);
+
+        // Initial filtering
+        filterPlans();
+    });
+</script>
