@@ -28,19 +28,23 @@
     "GSAP",
     "Swiper"
   ],
-  "author": "IT Portal",
+  "author": "IT Portal Inc.",
   "contributors": [
     {
       "name": "Arnaldo Cabral",
       "url": "https://www.itportal.com/"
     },
     {
-      "name": "Tóth Tamás",
-      "url": "https://talpitoo.com/"
+      "name": "Gail Sloan",
+      "url": "https://www.itportal.com/"
     },
     {
       "name": "Nenad Bogar",
       "url": "https://heavyform.com/"
+    },
+    {
+      "name": "Tóth Tamás",
+      "url": "https://talpitoo.com/"
     }
   ],
   "license": "TODO",
