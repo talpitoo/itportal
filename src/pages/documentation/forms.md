@@ -2,7 +2,7 @@
 title: Forms
 excerpt: >
   Publish forms online and store the data in the Portal.
-icon: flaticon-strategy
+icon: flaticon-list
 layout: layouts/layout-documentation.njk
 permalink: /documentation/forms/
 eleventyNavigation:

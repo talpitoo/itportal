@@ -11294,6 +11294,68 @@ body.rounded-btns .read-more {
   font-size: 1.5rem;
 }
 
+text-primary {
+  color: var(--clr-main) !important;
+}
+
+.page-hero.tringle-bg::before {
+  clip-path: polygon(100vw 20vw, 100vw 100vw, -35vw 100vw);
+}
+
+@media (max-width: 991px) {
+  .page-hero.tringle-bg::before {
+    clip-path: polygon(0 100%, 100% 50%, 100% 100%);
+  }
+}
+/* a[target="_blank"]::after {
+        content: "🔗";
+        margin-left: 0.5rem;
+        filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(180deg);
+    }
+    */
+.canvas-features,
+.canvas-integrations,
+.canvas-security {
+  width: 50% !important;
+  height: auto !important;
+  margin: 1rem auto 0;
+}
+
+.canvas-features canvas,
+.canvas-integrations canvas,
+.canvas-security canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.services-boxed .service-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.services-boxed .service-content {
+  flex-grow: 1;
+}
+
+.hero-swiper-slider .slide-title,
+.page-hero .hero-text-area .hero-title {
+  font-size: 40px !important;
+  font-weight: normal !important;
+}
+
+.page-hero .hero-text-area .hero-title .featured-text svg {
+  display: none;
+}
+
+.pricing .plan .plan-list .plan-feat {
+  padding: 0.25rem 0 !important;
+}
+
+.featured-no-stripe::before {
+  display: none !important;
+}
+
 /*ُEnd global, helper classes , components Rules*/
 /* Start .page-header Rules   */
 .header-basic .has-sub-menu > .sub-menu .sub-menu-link::before, .header-basic .menu-link::before {

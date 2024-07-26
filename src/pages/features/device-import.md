@@ -2,7 +2,7 @@
 title: Device Import
 excerpt: >
   Run our script on devices to import them directly into the portal. We have five ways ways to import.
-icon: flaticon-strategy
+icon: flaticon-database
 layout: layouts/layout-feature.njk
 permalink: /features/device-import/
 eleventyNavigation:
@@ -12,7 +12,7 @@ eleventyNavigation:
 category: "top-features"
 ---
 
-![Device Import Screenshot](https://www.itportal.com/v4/images/wmi-1.png?=2)
+<img class="img-fluid mb-4" src="https://www.itportal.com/v4/images/wmi-1.png?=2" alt="Screenshot">
 
 ## Mac, Linux, Windows, and SNMP Import
 

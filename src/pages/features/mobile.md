@@ -2,7 +2,7 @@
 title: Mobile
 excerpt: >
   Download the app and use the settings below to test. The mobile app provides a quick search function for when you are on the go. Note: Your production URL will depend on your Cloud or on-premise Portal server. Click the image to the left to see a video of all the screens..
-icon: flaticon-profile
+icon: flaticon-responsive
 layout: layouts/layout-feature.njk
 permalink: /features/mobile/
 eleventyNavigation:

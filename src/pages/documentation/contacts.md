@@ -2,7 +2,7 @@
 title: Contacts
 excerpt: >
   Record information regarding a variety of users and consultants that work for a company
-icon: flaticon-strategy
+icon: flaticon-list
 layout: layouts/layout-documentation.njk
 permalink: /documentation/contacts/
 eleventyNavigation:

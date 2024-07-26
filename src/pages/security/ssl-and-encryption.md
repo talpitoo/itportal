@@ -2,7 +2,7 @@
 title: SSL and Encryption
 excerpt: >
   We have customers that prefer do on-premises and safeguard it themselves. For those needing cloud services we offer some options.
-icon: flaticon-web-development
+icon: flaticon-unlock
 layout: layouts/layout-security.njk
 permalink: /security/ssl-and-encryption/
 eleventyNavigation:

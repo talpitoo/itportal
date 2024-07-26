@@ -2,7 +2,7 @@
 title: Recycle Bin
 excerpt: >
   Recovery & purge allows admins to recover deleted items (recycle bin).
-icon: flaticon-web-development
+icon: flaticon-unlock
 layout: layouts/layout-security.njk
 permalink: /security/recycle-bin/
 eleventyNavigation:
