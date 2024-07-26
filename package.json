@@ -16,14 +16,13 @@
     "x-build": "run-s lint:sass build:sass build:js build:eleventy",
     "build": "run-s build:sass build:js build:eleventy",
     "start": "npm run dev",
-    "svg": "npx svg-sprite --symbol --dest src/img/icons/ src/img/icons/*.svg",
+    "svg": "npx svg-sprite --symbol --dest src/assets/icons/ src/assets/icons/*.svg",
     "lint:sass": "stylelint 'src/sass/**/*.scss'",
     "lint:fix": "stylelint 'src/sass/**/*.scss' --fix"
   },
   "keywords": [
     "11ty",
     "Bootstrap",
-    "Flowbite",
     "Alpine.js",
     "Axios",
     "GSAP",
