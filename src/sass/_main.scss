@@ -1,120 +1,92 @@
-/*===================================================
-Project: flex-it - IT Solutions & Business Services Responsive HTML5 Bootstrap5  Website Template 
-Auther: amin-themes
-Version: 2.0
-Last change: 22 March 2023
-Template Description: IT Solutions & Business Services Responsive HTML5 Bootstrap5  Website Template 
-====================================================*/
+// Override Bootstrap's Sass default variables
+//
+// Nearly all variables in Bootstrap are written with the `!default` flag.
+// This allows you to override the default values of those variables before
+// you import Bootstrap's source Sass files.
+//
+// Overriding the default variable values is the best way to customize your
+// CSS without writing _new_ styles. For example, you can either change
+// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
+// `body { color: red; }`.
 
-/*==
-- global-rules and helper classes
-- page-header
-- page-hero 
-- services
-- about 
-- portfolio 
-- portfolio-single  
-- our-team 
-- our-clients 
-- faq 
-- testimonials 
-- contact-us 
-- take-action 
-- page-footer 
-- blog
-- 404 Page
-- pricing
-- stats
-- Dark Theme Rules
-===*/
+// Toggle global options
+$enable-gradients: true;
+$enable-shadows: true;
 
-/* start global, helper classes , Components Rules*/
-@import "1-helpers/_variables";
-@import "1-helpers/_mixins";
-@import "1-helpers/_globals";
-@import "1-helpers/_custom-animations";
+$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 
-@import "2-components/_buttons";
-@import "2-components/_breadcrumb";
-@import "2-components/_forms";
-@import "2-components/_loading-screen";
-@import "2-components/_header-search-box";
-/*ُEnd global, helper classes , components Rules*/
+// Include functions first
+@import "../../node_modules/bootstrap/scss/functions";
 
-/* Start .page-header Rules   */
-@import "3-layout/_page-header";
-/*
- End .page-header Rules    
-*/
+// IMPORTANT: Override/customize Bootstrap's default variables for IT Portal
+// @import "theme-variables";
+// @import "vendor/vendor-variables";
 
-/*   Start .page-hero Rules   */
-@import "3-layout/_page-hero";
-/*   End .page-hero Rules   */
+// Required
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
 
-/*    Start .services Section Rules    */
-@import "3-layout/_services";
-/*    End .services Section Rules   */
+// IMPORTANT: Override/customize Bootstrap's default utilities for IT Portal
+// @import "theme-utilities";
 
-/*   Start about Section   */
-@import "3-layout/_about";
-/*   End about Section    */
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
 
-/*    Start portfolio Section  */
-@import "3-layout/_portfolio";
-/*    End portfolio Section  */
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/tables";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/dropdown";
+@import "../../node_modules/bootstrap/scss/button-group";
+@import "../../node_modules/bootstrap/scss/nav";
+// @import "../../node_modules/bootstrap/scss/navbar"; // Requires nav
+// @import "../../node_modules/bootstrap/scss/card";
+@import "../../node_modules/bootstrap/scss/breadcrumb";
+@import "../../node_modules/bootstrap/scss/accordion";
+// @import "../../node_modules/bootstrap/scss/pagination";
+// @import "../../node_modules/bootstrap/scss/badge";
+// @import "../../node_modules/bootstrap/scss/alert";
+// @import "../../node_modules/bootstrap/scss/progress";
+// @import "../../node_modules/bootstrap/scss/list-group";
+@import "../../node_modules/bootstrap/scss/close";
+// @import "../../node_modules/bootstrap/scss/toasts";
+@import "../../node_modules/bootstrap/scss/modal"; // Requires transitions
+// @import "../../node_modules/bootstrap/scss/tooltip";
+@import "../../node_modules/bootstrap/scss/popover";
+// @import "../../node_modules/bootstrap/scss/carousel";
+// @import "../../node_modules/bootstrap/scss/spinners";
+// @import "../../node_modules/bootstrap/scss/offcanvas"; // Requires transitions
+// @import "../../node_modules/bootstrap/scss/placeholders";
 
-/*    Start portfolio-single Section  */
-@import "3-layout/_portfolio-single";
-/*     End portfolio-single Section  */
+// Helpers
+@import "../../node_modules/bootstrap/scss/helpers";
 
-/*   Start our-team Section   */
-@import "3-layout/_our-team";
-/*   End our-team Section   */
+// Utilities
+@import "../../node_modules/bootstrap/scss/utilities/api";
 
-/*   Start our-clients Section   */
-@import "3-layout/_our-clients";
-/*   End our-clients Section   */
+/**
+ * 3rd party/vendor plugins
+ */
 
-/*   Start faq Section   */
-@import "3-layout/_faq";
-/*   End faq Section  */
+/* @import "../../node_modules/swiper/swiper-bundle.css"; // the whole swiper CSS bundle, OR */
+// @import "../../node_modules/swiper/swiper"; /* only the minimum CSS for swiper */
+// @import "../../node_modules/swiper/modules/pagination";
+// @import "vendor/swiper-override";
 
-/*   Start testimonials Section   */
-@import "3-layout/_testimonials";
-/*   End testimonials Section   */
-
-/*    Start contact-us Section  */
-@import "3-layout/_contact-us";
-/*    End contact-us Section  */
-
-/*   Start take-action Section   */
-@import "3-layout/_take-action";
-/*   End take-action Section   */
-
-/*    Start page-footer Section  */
-@import "3-layout/_page-footer";
-/*    End page-footer Section  */
-
-/*    Start blog Page  */
-@import "3-layout/_blog";
-/*    End blog Page  */
-
-/*   Start 404 Page  */
-@import "3-layout/_404";
-/*   End 404 Page  */
-
-/*   Start benefits Section  */
-@import "3-layout/_benefits";
-/*    End benefits Section  */
-
-/*   Start pricing Section  */
-@import "3-layout/_pricing";
-/*    End pricing Section  */
-
-/*   Start stats section Rules  */
-@import "3-layout/_stats";
-/*  End  stats section Rules    */
-
-/*    Start dark theme rules  */
-@import "1-helpers/_dark-theme";
-/*    End dark theme rules  */
+// Custom/additional/IT Portal theme styles
+// @import "theme-base";
+// @import "typography";
+// @import "theme-components";
+// @import "components/top-navbar";
+// @import "components/footer";
+// @import "components/buttons";
+// @import "components/forms";
+// @import "components/animations";
+// @import "fonts"; NOTE: the fonts are loaded via CDN for smaller CSS size and caching

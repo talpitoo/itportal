@@ -2,7 +2,7 @@
 title: Granular Permissions
 excerpt: >
   The Portal gives you many options to restrict users.
-icon: flaticon-web-development
+icon: flaticon-unlock
 layout: layouts/layout-security.njk
 permalink: /security/granular-permissions/
 eleventyNavigation:

@@ -2,7 +2,7 @@
 title: Granular Access Controls
 excerpt: >
   The Portal gives you many options to restrict users.
-icon: flaticon-web-development
+icon: flaticon-unlock
 layout: layouts/layout-security.njk
 permalink: /security/granular-access-controls/
 eleventyNavigation:

@@ -2,7 +2,7 @@
 title: Active Directory
 excerpt: >
   Active Directory contains a plethora of information and functions; why not use it with the Portal?
-icon: flaticon-web-development
+icon: flaticon-unlock
 layout: layouts/layout-security.njk
 permalink: /security/active-directory/
 eleventyNavigation:

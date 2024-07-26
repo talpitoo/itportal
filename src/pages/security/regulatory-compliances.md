@@ -2,7 +2,7 @@
 title: Regulatory Compliances
 excerpt: >
   Our SOC 2 Type II compliance is the next step in our organization’s investments in security.
-icon: flaticon-web-development
+icon: flaticon-unlock
 layout: layouts/layout-security.njk
 permalink: /security/regulatory-compliances/
 eleventyNavigation:

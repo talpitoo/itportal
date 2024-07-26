@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>
-    {% if page.url == '/' %}IT Portal{% else %}{{ title }} | IT Portal{% endif %}
+    {% if page.url == '/' %}IT Portal | IT Documentation | MSP Documentation Inc.{% else %}{{ title }} | IT Portal{% endif %}
 </title>
 {% if description %}
     <meta name="description" content="{{ description }}">
@@ -9,7 +9,7 @@
     <meta name="description" content="IT Portal is a cloud and on premise offering for IT Documentation and MSP Documentation. IT Portal securely centralize docs, licenses, logins, contacts, apps, & devices. IT Portal transforms Documentation.">
 {% endif %}
 <meta name="keywords" content="TODO">
-<meta name="author" content="IT Portal">
+<meta name="author" content="IT Portal Inc.">
 
 {# fonts, CSS #}
 {# <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,14 +30,6 @@
 <meta property="twitter:image" content="/assets/og-cover-logo-TODO.png"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/> #}
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="IT Portal is a cloud and on premise offering for IT Documentation and MSP Documentation. IT Portal securely centralize docs, licenses, logins, contacts, apps, & devices. IT Portal transforms Documentation.">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-<!-- fav icon -->
-<link rel="icon" href="assets/images/fav-icon/fav-icon.png">
 
 <!-- bootstarp -->
 <link rel="stylesheet" href="/css/vendors/bootstrap.min.css">
@@ -69,11 +61,7 @@
 <!-- Font Family -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&amp;display=swap">
 
-<!-- main-LTR -->
-{# <link rel="stylesheet" href="/css/main-LTR.css"> #}
+<!-- main -->
 <link rel="stylesheet" href="/css/main.css">
-<title>IT Portal | IT Documentation | MSP Documentation Inc.</title>
 
-{# TODO: fix the sass compilation #}
-{% include "components/css-temporary.njk" %}
 <link rel="stylesheet" href="/css/cookieconsent.css" media="print" onload="this.media='all'">

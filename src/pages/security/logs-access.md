@@ -2,7 +2,7 @@
 title: Logs Access
 excerpt: >
   Admins have a complete list of log options. You can run reports on:
-icon: flaticon-web-development
+icon: flaticon-unlock
 layout: layouts/layout-security.njk
 permalink: /security/logs-access/
 eleventyNavigation:

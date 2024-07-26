@@ -3,7 +3,7 @@
   <head>
     {% include "../components/meta.njk" %}
   </head>
-  <body class="dark-theme" onload="init();">
+  <body class="dark-theme" onload="if (typeof init === 'function') { init(); }">
     <div id="top" class="itportal-anchor-offset"></div>
 
     {% include "../components/navigation.njk" %}

@@ -2,7 +2,7 @@
 title: IP Access Control
 excerpt: >
   You may have scenarios where you would want to restrict access to the Portal.
-icon: flaticon-web-development
+icon: flaticon-unlock
 layout: layouts/layout-security.njk
 permalink: /security/ip-access-control/
 eleventyNavigation:

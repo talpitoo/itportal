@@ -2,7 +2,7 @@
 title: Accounts
 excerpt: >
   They are used to record credential logins, subscriptions, and support accounts used by a particular company.
-icon: flaticon-strategy
+icon: flaticon-list
 layout: layouts/layout-documentation.njk
 permalink: /documentation/accounts/
 eleventyNavigation:

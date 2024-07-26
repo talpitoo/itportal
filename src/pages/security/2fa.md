@@ -2,7 +2,7 @@
 title: Two Factor Authentication
 excerpt: >
   The Portal provides a variety of two-factor authentication options.
-icon: flaticon-web-development
+icon: flaticon-unlock
 layout: layouts/layout-security.njk
 permalink: /security/2fa/
 eleventyNavigation:
