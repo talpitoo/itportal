@@ -64,3 +64,9 @@ text-primary {
 .featured-no-stripe::before {
   display: none !important;
 }
+
+.price-plan {
+  @include media-breakpoint-up(lg) {
+    max-width: 33%;
+  }
+}

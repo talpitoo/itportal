@@ -32,21 +32,21 @@
                 </form>
             </div>
             <div class="col-lg-6 text-end">
-                <div class="form-check form-switch d-flex align-items-center justify-content-end mt-lg-4 pt-lg-2">
+                <div class="form-check form-switch d-flex align-items-center justify-content-end mt-lg-4 pt-lg-2 mb-4">
                     <label class="form-check-label fw-bold" for="checkCloudVsOnPremises">Cloud</label>
                     <input class="form-check-input float-none mx-2 my-0" type="checkbox" role="switch" id="checkCloudVsOnPremises">
                     <label class="form-check-label text-primary text-nowrap fw-bold" for="checkCloudVsOnPremises">On Premises</label>
                 </div>
             </div>
         </div>
-        <div class="d-flex gap-4">
+        <div class="d-lg-flex gap-4">
             <!--First Plan-->
             {# col-12 col-md-6 col-xl-3 #}
-            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="1" data-type="cloud" style="max-width: 33%">
+            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="1" data-type="cloud">
                 <div class="plan">
                     <div class="plan-head">
                         <i class="flaticon-nft-1 plan-icon"></i>
-                        <h4 class="plane-name">starter plan</h4>
+                        <h4 class="plane-name">Single User</h4>
                         <div class="plan-price">
                             <h3 class="price">45<sup class="currency-symbol">$</sup>
                             </h3>
@@ -75,11 +75,11 @@
                 </div>
             </div>
             <!--Second-plan-->
-            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="2" data-type="cloud" style="max-width: 33%">
+            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="2" data-type="cloud">
                 <div class="plan">
                     <div class="plan-head">
                         <i class="flaticon-virtual-reality plan-icon"></i>
-                        <h4 class="plane-name">standard plan</h4>
+                        <h4 class="plane-name">Small Team</h4>
                         <div class="plan-price">
                             <h3 class="price">25<sup class="currency-symbol">$</sup>
                             </h3>
@@ -108,11 +108,11 @@
                 </div>
             </div>
             <!--Third-plan-->
-            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="4" data-type="cloud" style="max-width: 33%">
+            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="4" data-type="cloud">
                 <div class="plan featured">
                     <div class="plan-head">
                         <i class="flaticon-box plan-icon"></i>
-                        <h4 class="plane-name">pro plan</h4>
+                        <h4 class="plane-name">Average Team</h4>
                         <div class="plan-price">
                             <h3 class="price">20<sup class="currency-symbol">$</sup>
                             </h3>
@@ -142,11 +142,11 @@
             </div>
             <!--fourth-plan-->
             {# NOTE: left out, the difference between the 3rd plan is "20% Yearly discounts at checkout" #}
-            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="10" data-type="cloud" style="max-width: 33%">
+            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="10" data-type="cloud">
                 <div class="plan">
                     <div class="plan-head">
                         <i class="flaticon-dna plan-icon"></i>
-                        <h4 class="plane-name">XL plan</h4>
+                        <h4 class="plane-name">Large Team</h4>
                         <div class="plan-price">
                             <h3 class="price">20<sup class="currency-symbol">$</sup>
                             </h3>
@@ -176,11 +176,11 @@
             </div>
 
             <!--fifth-plan-->
-            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="25" data-type="cloud" style="max-width: 33%">
+            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="25" data-type="cloud">
                 <div class="plan">
                     <div class="plan-head">
                         <i class="flaticon-basic-shapes plan-icon"></i>
-                        <h4 class="plane-name">ultimate plan</h4>
+                        <h4 class="plane-name">Enterprise Team</h4>
                         <div class="plan-price">
                             <p class="mb-0">
                                 <span class="fs-6">
@@ -228,24 +228,21 @@
 
             <!-- On Premises plans -->
             <!--On Premises UNAVAILABLE plan-->
-            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="1" data-type="on-premises" data-unavailable style="max-width: 33%">
+            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="1" data-type="on-premises" data-unavailable>
                 <div class="plan   featured featured-no-stripe">
                     <div class="plan-head">
                         <i class="flaticon-box plan-icon"></i>
                         <h4 class="plane-name pb-4">On Premises Unavailable</h4>
                     </div>
-                    <div class="plan-details">
-                        
-                    </div>
+                    <div class="plan-details"></div>
                     <div class="plan-cta text-center">
                         <p>Try changing the number of users</p>
                     </div>
                 </div>
             </div>
 
-
             <!--On Premises 1st plan-->
-            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="5" data-type="on-premises" style="max-width: 33%">
+            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="5" data-type="on-premises">
                 <div class="plan   featured featured-no-stripe">
                     <div class="plan-head">
                         <i class="flaticon-box plan-icon"></i>
@@ -279,7 +276,7 @@
             </div>
 
             <!--On Premises 2nd plan-->
-            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="10" data-type="on-premises" style="max-width: 33%">
+            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="10" data-type="on-premises">
                 <div class="plan   featured featured-no-stripe">
                     <div class="plan-head">
                         <i class="flaticon-box plan-icon"></i>
@@ -313,7 +310,7 @@
             </div>
 
             <!--On Premises 3rd plan-->
-            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="25" data-type="on-premises" style="max-width: 33%">
+            <div class="flex-grow-1 mx-auto price-plan mb-4" data-users="25" data-type="on-premises">
                 <div class="plan   featured featured-no-stripe">
                     <div class="plan-head">
                         <i class="flaticon-box plan-icon"></i>
@@ -362,13 +359,21 @@
                     </div>
                 </div>
             </div>
+
+            <div class="flex-grow-1 mx-auto mb-4">
+                <div class="text-center my-5">
+                    <h2 class=" title    " data-wow-delay=".4s">30 Day Money Back Guarantee</h2>
+                    <p class="subtitle    mb-4" data-wow-delay=".6s">If you feel IT Portal is not adding value to your business, we will give you a full refund</p>
+                    <img src="https://www.itportal.com/v4/images/guarantee-30.png" alt="30 day money back guarantee" class="" data-wow-delay=".8s">
+                </div>
+            </div>
         </div>
 
-        <div class="text-center my-5">
+        {# <div class="text-center my-5">
             <h2 class=" title    " data-wow-delay=".4s">30 Day Money Back Guarantee</h2>
             <p class="subtitle    mb-4" data-wow-delay=".6s">If you feel IT Portal is not adding value to your business, we will give you a full refund</p>
             <img src="https://www.itportal.com/v4/images/guarantee-30.png" alt="30 day money back guarantee" class="" data-wow-delay=".8s">
-        </div>
+        </div> #}
 
     </div>
 </section>
@@ -381,29 +386,46 @@
         const pricePlans = document.querySelectorAll('.price-plan');
 
         function filterPlans() {
-            const selectedUsers = parseInt(numberOfUsers.value);
+            const selectedUsers = numberOfUsers.value;
             const isOnPremises = checkCloudVsOnPremises.checked
                 ? 'on-premises'
                 : 'cloud';
 
             pricePlans.forEach(plan => {
-                const planUsers = parseInt(plan.dataset.users);
-                const availability = plan.dataset.unavailable !== undefined;
+                const planUsers = plan.dataset.users;
                 const planType = plan.dataset.type;
+                const isUnavailable = plan.dataset.unavailable !== undefined;
 
                 if (planType === isOnPremises) {
-                    if (availability && selectedUsers < 5) {
-                        plan.style.display = 'block';
-                    } else if (!availability && planUsers <= selectedUsers) {
-                        plan.style.display = 'block';
-                    } else {
-                        plan.style.display = 'none';
+                    if (isOnPremises === 'on-premises') {
+                        if (parseInt(selectedUsers) < 5 && isUnavailable) {
+                            plan.style.display = 'block';
+                        } else if (parseInt(selectedUsers) >= 5 && matchesUserRange(selectedUsers, planUsers)) {
+                            plan.style.display = 'block';
+                        } else {
+                            plan.style.display = 'none';
+                        }
+                    } else { // cloud plans
+                        plan.style.display = matchesUserRange(selectedUsers, planUsers)
+                            ? 'block'
+                            : 'none';
                     }
                 } else {
-                    plan.style.display = planUsers <= selectedUsers && planType === isOnPremises ? 'block' : 'none';
+                    plan.style.display = 'none';
                 }
-
             });
+        }
+
+        function matchesUserRange(selected, planUsers) {
+            if (selected === planUsers) 
+                return true;
+            if (selected === '5' && planUsers === '4') 
+                return true;
+            if (selected === '10' && planUsers === '10') 
+                return true;
+            if (selected === '25' && planUsers === '25') 
+                return true;
+            return false;
         }
 
         numberOfUsers.addEventListener('change', filterPlans);

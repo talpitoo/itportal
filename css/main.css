@@ -11356,6 +11356,12 @@ text-primary {
   display: none !important;
 }
 
+@media (min-width: 992px) {
+  .price-plan {
+    max-width: 33%;
+  }
+}
+
 /*ُEnd global, helper classes , components Rules*/
 /* Start .page-header Rules   */
 .header-basic .has-sub-menu > .sub-menu .sub-menu-link::before, .header-basic .menu-link::before {
