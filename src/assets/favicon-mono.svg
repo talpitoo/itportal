@@ -3,9 +3,16 @@
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
     width="1225.000000pt" height="1225.000000pt" viewBox="0 0 1225.000000 1225.000000"
     preserveAspectRatio="xMidYMid meet">
+    <style>
+        .custom-fill { fill: black }
+
+        @media (prefers-color-scheme: dark) {
+        .custom-fill { fill: white }
+        }
+    </style>
 
     <g transform="translate(0.000000,1225.000000) scale(0.100000,-0.100000)"
-        fill="#000000" stroke="none">
+        style="custom-fill" stroke="none">
         <path
             d="M5870 12073 c-1547 -65 -2983 -679 -4069 -1738 -708 -691 -1211
 -1493 -1509 -2406 -196 -600 -284 -1158 -285 -1799 0 -307 9 -462 44 -740 110
