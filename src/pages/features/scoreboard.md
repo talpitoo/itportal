@@ -1,7 +1,7 @@
 ---
 title: Scoreboard
 excerpt: >
-  The scoreboard will automatically query the system and ensure you meet documentation requirements. We give you 18 items to score against by default, but you can create your own or remove ours.
+  IT Portal Scorecard allows IT departments to automate checks to ensure documentation compliance
 icon: flaticon-clipboard
 layout: layouts/layout-feature.njk
 permalink: /features/scoreboard/
@@ -14,4 +14,13 @@ category: "top-features"
 
 <img class="img-fluid mb-4" src="https://www.itportal.com/v4/images/scoreboard2.png" alt="Screenshot">
 
-The scoreboard will automatically query the system and ensure you meet documentation requirements. We give you 18 items to score against by default, but you can create your own or remove ours.
+## Achieve Documentation Compliance with Scoreboard
+
+Ensure your IT documentation meets all necessary standards with the IT Portal Scoreboard. Our automated system simplifies compliance by conducting regular checks against your documentation.
+
+## Key Features:
+
+- **Automated Compliance Checks**: Automatically assess your documentation against 18 predefined scoring criteria.
+- **Customizable**: Use our criteria or create and manage your own to align with specific requirements.
+- **Actionable Insights**: Identify areas of non-compliance and prioritize corrective actions.
+- **Improved Efficiency**: Streamline documentation management and reduce compliance risks.

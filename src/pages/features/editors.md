@@ -1,7 +1,7 @@
 ---
 title: Editors
 excerpt: >
-  Users can open office files directly from our IT Portal. Work on them online, and save them automatically to the portal. Design your diagrams and flow charts using our drawing tool. We also have a clean and elegant editor. You can choose to keep or clean formatting when pasting from Microsoft Word and Excel and the rich text editor does it all for you.
+  Edit and create documents, diagrams, and more in the IT Portal with our powerful editors.
 icon: flaticon-web-domain
 layout: layouts/layout-feature.njk
 permalink: /features/editors/
@@ -12,12 +12,22 @@ eleventyNavigation:
 category: "top-features"
 ---
 
-[![Screenshot](https://www.itportal.com/v4/images/office.gif?rID=6)](https://youtu.be/8tnVN1Fy6iY)
+## Streamline your document workflow with our integrated editors.
 
-[![Screenshot](https://www.itportal.com/v4/images/drawing.png?rID=6)](https://www.youtube.com/watch?v=utRC0zhmqaE)
+Work seamlessly on your documents from within the  IT Portal - open, edit, and save Microsoft 365 files automatically. 
 
-[![Screenshot](https://www.itportal.com/v4/images/froala-editor.gif?rID=6)](https://www.froala.com/wysiwyg-editor)
+## Our tools include:
 
-## Microsoft 365 Editor, Drawing Tool, and Next Generation WYSIWYG Editor
+- A Microsoft 365 editor for efficient document management
 
-Users can open office files directly from our IT Portal. Work on them online, and save them automatically to the portal. Design your diagrams and flow charts using our drawing tool. We also have a clean and elegant editor. You can choose to keep or clean formatting when pasting from Microsoft Word and Excel and the rich text editor does it all for you. 
+<a href="https://youtu.be/8tnVN1Fy6iY"><img class="img-fluid" src="https://www.itportal.com/v4/images/office.gif?rID=6" alt="Screenshot"></a>
+
+- A drawing tool to create visuals and diagrams
+
+<a href="https://www.youtube.com/watch?v=utRC0zhmqaE"><img class="img-fluid" src="https://www.itportal.com/v4/images/drawing.png?rID=6" alt="Screenshot"></a>
+
+- A WYSIWYG editor for precise formatting
+
+<a href="https://www.froala.com/wysiwyg-editor"><img class="img-fluid mb-4" src="https://www.itportal.com/v4/images/froala-editor.gif?rID=6)" alt="Screenshot"></a>
+
+Easily transfer content from Microsoft Word and Excel while customizing the formatting to your preferences.

@@ -1,7 +1,7 @@
 ---
 title: Device Import
 excerpt: >
-  Run our script on devices to import them directly into the portal. We have five ways ways to import.
+  Quickly import your devices into the IT Portal with our simple script.
 icon: flaticon-database
 layout: layouts/layout-feature.njk
 permalink: /features/device-import/
@@ -14,14 +14,16 @@ category: "top-features"
 
 <img class="img-fluid mb-4" src="https://www.itportal.com/v4/images/wmi-1.png?=2" alt="Screenshot">
 
-## Mac, Linux, Windows, and SNMP Import
+## Effortlessly populate your IT Portal with device information.
 
-Run our script on devices to import them directly into the portal. We have five ways ways to import.
+Simplify your IT management with our flexible device import options to bring your entire IT environment into view.
 
-1. Run our AD Version to collect AD Sites, IP Networks, and every windows server and PC.
-2. Run the script directly on a PC/Server.
-3. Add our script to your RMM.
-4. Scan your network for SNMP Devices.
-5. Use Excel files to import devices.
+## Choose from five import methods:
 
-* Windows Import, also imports WMI. Ex. Disk drives, Services, shares, process...
+1. Run our script directly on your devices (Mac, Linux, Windows)
+2. Utilize our Active Directory (AD) version to gather comprehensive data
+3. Integrate our script into your Remote Monitoring and Management (RMM) tool
+4. Discover SNMP devices with our network scan
+5. Import device details from Excel files
+
+Gain valuable insights including WMI data on disk drives, services, shares, and processes.

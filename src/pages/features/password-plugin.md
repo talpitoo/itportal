@@ -1,7 +1,7 @@
 ---
 title: Browser Password Plugin
 excerpt: >
-  The IT Portal Password Plug-in will allow you to find any shared and personal passwords from your IT Portal. It searches the Portal for the site you are on and recommends credentials to use for login. Use the plug-in to search for credentials and 2FA codes without having to log in to the IT Portal.
+  Easily find and manage your IT Portal passwords with the IT Portal Browser Password plugin.
 icon: flaticon-web-development
 layout: layouts/layout-feature.njk
 permalink: /features/password-plugin-DISABLED/

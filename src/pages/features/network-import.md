@@ -1,7 +1,7 @@
 ---
 title: Network Import
 excerpt: >
-  Automatically upload device configurations to the Portal from your switches, firewalls, and other network devices. You can save them as files or upload them as text. When uploaded as text, you can run comparisons between uploads.
+  Easily import and centrally manage network configurations
 icon: flaticon-nanotechnology
 layout: layouts/layout-feature.njk
 permalink: /features/network-import/
@@ -14,6 +14,13 @@ category: "top-features"
 
 <img class="img-fluid mb-4" src="https://www.itportal.com/v4/images/configurations.png" alt="Screenshot">
 
-## Network Configurations Import
+## Streamline Network Management with Configuration Import
 
-Automatically upload device configurations to the Portal from your switches, firewalls, and other network devices. You can save them as files or upload them as text. When uploaded as text, you can run comparisons between uploads.
+Gain visibility and control over your network infrastructure by importing device configurations directly into the IT Portal. Easily upload configuration files from your switches, routers, firewalls, and other network devices.
+
+## Key Benefits:
+
+- **Centralized Management**: Store and manage all network configurations in one location for efficient administration.
+- **Configuration Comparison**: Identify changes and discrepancies between configuration versions to troubleshoot issues and maintain consistency.
+- **Change Tracking**: Monitor configuration changes over time to enhance security and compliance.
+- **Backup and Recovery**: Create a reliable backup of your network configurations to protect against data loss.
