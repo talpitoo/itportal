@@ -9,6 +9,7 @@ eleventyNavigation:
   key: Password Management
   parent: Features
   order: 10
+  hideFromDesktopNavbar: true
 category: "all-features"
 ---
 

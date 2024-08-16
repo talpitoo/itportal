@@ -23,7 +23,7 @@ Take a look at the reusable snippets at http://localhost:8080/ui-library/
 
 ## 👨‍💻 Development notes
 
-* the top navbar (and the footer) uses semantic, auto-generated nested navigation. It is based on the folder structure, the template `/src/_includes/components/navigation.njk` and the front matter in individual files, e.g.
+* the top navbar (and the footer) uses semantic, auto-generated nested navigation. It is based on the folder structure, the template `/src/_includes/components/navigation-dynamic.njk` and the front matter in individual files, e.g.
 
 ```
 ---

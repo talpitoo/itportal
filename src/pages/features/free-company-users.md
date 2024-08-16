@@ -9,6 +9,7 @@ eleventyNavigation:
   key: Free Company Users
   parent: Features
   order: 8
+  hideFromDesktopNavbar: true
 category: "all-features"
 ---
 

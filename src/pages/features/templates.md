@@ -9,6 +9,7 @@ eleventyNavigation:
   key: Templates
   parent: Features
   order: 15
+  hideFromDesktopNavbar: true
 category: "all-features"
 ---
 

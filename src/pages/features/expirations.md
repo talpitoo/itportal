@@ -9,6 +9,7 @@ eleventyNavigation:
   key: Expirations
   parent: Features
   order: 9
+  hideFromDesktopNavbar: true
 category: "all-features"
 ---
 

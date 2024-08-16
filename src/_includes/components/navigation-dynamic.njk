@@ -1,0 +1,80 @@
+<!--Start Page Header-->
+<header class=" page-header   header-basic" id="page-header">
+  <div class="header-search-box">
+    <div class="close-search"></div>
+    <form class="nav-search search-form" role="search" method="get" action="#">
+      <div class="search-wrapper">
+        <label class="search-lbl">Search for:</label>
+        <input class="search-input" type="search" placeholder="Hi...Ask me anything about the IT Portal" name="searchInput" autofocus="autofocus"/>
+        <button class="search-btn" type="submit">
+          <i class="bi bi-search icon"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+  <div class="container">
+    <nav class="menu-navbar">
+      <div class="header-logo">
+        <a class="logo-link" href="/">
+          <img class="logo-img light-logo" loading="lazy" src="/assets/logo/logo-itportal-light.svg" alt="logo"/>
+          <img class="logo-img  dark-logo" loading="lazy" src="/assets/logo/logo-itportal-dark.svg" alt="logo"/>
+        </a>
+      </div>
+      <div class="links menu-wrapper ">
+        <ul class="list-js links-list">
+          {% set navPages = collections.all | eleventyNavigation %}
+          {% for entry in navPages %}
+            {% if entry.includeSelf != false %}
+              <div>
+                {% if entry.children.length %}
+                  <li class="menu-item has-sub-menu">
+                    {# NOTE: adaptive markup a vs. span #}
+                    <a href="{{ entry.url }}" class="menu-link d-none {% if 'solutions' in entry.url %}d-lg-none{% else %}d-lg-flex{% endif %} {% if entry.url in page.url %}active{% endif %}">
+                      {{ entry.title }}
+                      {# NOTE: only show the dropdown caret if there are subpages #}
+                      <i class="fas fa-plus  plus-icon"></i>
+                    </a>
+                    <span class="menu-link {% if not 'solutions' in entry.url %}d-lg-none{% endif %} {% if entry.url in page.url %}active{% endif %}">
+                      {{ entry.title }}
+                      {# NOTE: only show the dropdown caret if there are subpages #}
+                      <i class="fas fa-plus  plus-icon"></i>
+                    </span>
+                    <ul class="sub-menu ">
+                      {# NOTE: adaptive markup for mobile dropdwns: on mobile we need an additional <li> child since the parent is used for the dropdown in the lack of hover state #}
+                      <li class="menu-item sub-menu-item d-lg-none">
+                        <a href="{{ entry.url }}" class="menu-link sub-menu-link {{'active' if child.url in page.url}}">{{ entry.title }}</a>
+                      </li>
+                      {% for child in entry.children %}
+                        <li class="menu-item sub-menu-item {% if child.hideFromDesktopNavbar %}d-lg-none{%endif%}">
+                          <a href="{{ child.url }}" class="menu-link sub-menu-link {{'active' if child.url in page.url}}">{{ child.title }}</a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                {% else %}
+                  <li class="menu-item">
+                    <a href="{{ entry.url }}" class="menu-link {{'active' if entry.url in page.url}}">
+                      {{ entry.title }}
+                    </a>
+                  </li>
+                {% endif %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="controls-box">
+        <!--Menu Toggler button-->
+        <div class="control  menu-toggler">
+          <span></span>
+          <span></span>
+          <span></span></div>
+        <!--search Icon button-->
+        <div class="control header-search-btn">
+          <i class="bi bi-search icon"></i>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<!--End Page Header-->

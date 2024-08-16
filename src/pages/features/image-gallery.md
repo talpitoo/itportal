@@ -9,6 +9,7 @@ eleventyNavigation:
   key: Image Galleries and Folders
   parent: Features
   order: 13
+  hideFromDesktopNavbar: true
 category: "all-features"
 ---
 

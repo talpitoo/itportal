@@ -9,6 +9,7 @@ eleventyNavigation:
   key: Synopsis View
   parent: Features
   order: 12
+  hideFromDesktopNavbar: true
 category: "all-features"
 ---
 

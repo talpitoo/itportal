@@ -9,6 +9,7 @@ eleventyNavigation:
   key: Relationships
   parent: Features
   order: 11
+  hideFromDesktopNavbar: true
 category: "all-features"
 ---
 

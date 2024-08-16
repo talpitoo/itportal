@@ -9,6 +9,7 @@ eleventyNavigation:
   key: Change History
   parent: Features
   order: 14
+  hideFromDesktopNavbar: true
 category: "all-features"
 ---
 

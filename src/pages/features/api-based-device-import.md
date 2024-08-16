@@ -9,6 +9,7 @@ eleventyNavigation:
   key: API Based Device Import
   parent: Features
   order: 16
+  hideFromDesktopNavbar: true
 category: "all-features"
 ---
 

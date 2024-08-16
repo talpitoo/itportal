@@ -9,6 +9,7 @@ eleventyNavigation:
   key: Full Open API
   parent: Features
   order: 17
+  hideFromDesktopNavbar: true
 category: "all-features"
 ---
 
