@@ -1,67 +1,50 @@
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: $primary;
+body,
+button,
+.btn,
+input,
+select,
+ul,
+ol,
+.page-hero .cta-links-area .cta-link {
+  font-size: 20px !important;
 }
 
-p + h2,
-p + h3,
-p + h4,
-p + h5,
-p + h6,
-ul + h2,
-ul + h3,
-ul + h4,
-ul + h5,
-ul + h6 {
-  margin-top: 32px;
+.footer-menu-link,
+.contact-info-card .info,
+.terms-links {
+  font-size: 18px !important;
 }
 
-b,
-strong {
-  font-weight: $font-weight-semibold;
+.copyrights .creadits {
+  font-size: 18px !important;
 }
 
-.list-bullet {
-  padding-left: 0;
-  line-height: 2;
-  list-style: none;
-
-  li {
-    padding-left: 20px;
-
-    &::before {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      margin-right: 10px;
-      margin-left: -18px;
-      content: "";
-      background-color: $tertiary;
-      border-radius: 100%;
-    }
-  }
-
-  &.list-bullet-danger {
-    li {
-      &::before {
-        background-color: $danger;
-      }
-    }
-  }
+.copyrights .creadits {
+  font-weight: normal !important;
 }
 
-.list-bullet-active {
-  &::before {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    margin-right: 10px;
-    margin-left: -18px;
-    content: "";
-    background-color: $tertiary;
-    border-radius: 100%;
-  }
-}
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   color: $primary;
+// }
+
+// p + h2,
+// p + h3,
+// p + h4,
+// p + h5,
+// p + h6,
+// ul + h2,
+// ul + h3,
+// ul + h4,
+// ul + h5,
+// ul + h6 {
+//   margin-top: 32px;
+// }
+
+// b,
+// strong {
+//   font-weight: $font-weight-semibold;
+// }

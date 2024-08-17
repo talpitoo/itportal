@@ -9661,6 +9661,31 @@ textarea.form-control-lg {
  * 3rd party/vendor plugins
  */
 /* @import "../../node_modules/swiper/swiper-bundle.css"; // the whole swiper CSS bundle, OR */
+body,
+button,
+.btn,
+input,
+select,
+ul,
+ol,
+.page-hero .cta-links-area .cta-link {
+  font-size: 20px !important;
+}
+
+.footer-menu-link,
+.contact-info-card .info,
+.terms-links {
+  font-size: 18px !important;
+}
+
+.copyrights .creadits {
+  font-size: 18px !important;
+}
+
+.copyrights .creadits {
+  font-weight: normal !important;
+}
+
 /*===================================================
 Project: flex-it - IT Solutions & Business Services Responsive HTML5 Bootstrap5  Website Template 
 Auther: amin-themes
