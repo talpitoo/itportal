@@ -41,9 +41,11 @@
                     </span>
                     <ul class="sub-menu ">
                       {# NOTE: adaptive markup for mobile dropdwns: on mobile we need an additional <li> child since the parent is used for the dropdown in the lack of hover state #}
+                      {% if not 'solutions' in entry.url %}
                       <li class="menu-item sub-menu-item d-lg-none">
                         <a href="{{ entry.url }}" class="menu-link sub-menu-link {{'active' if child.url in page.url}}">{{ entry.title }}</a>
                       </li>
+                      {% endif %}
                       {% for child in entry.children %}
                         <li class="menu-item sub-menu-item {% if child.hideFromDesktopNavbar %}d-lg-none{%endif%}">
                           <a href="{{ child.url }}" class="menu-link sub-menu-link {{'active' if child.url in page.url}}">{{ child.title }}</a>

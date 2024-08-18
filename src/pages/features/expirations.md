@@ -1,7 +1,7 @@
 ---
 title: Expirations
 excerpt: >
-  The Portal will let you know when a device, agreement, configuration, KB, or account is going to expire. Get notifications via the UI or emails on expiring SSL Certificates, domain registrations, device warranties, and login accounts.
+  Prevent unexpected disruptions and ensure business continuity with IT Portal’s proactive expiration management.
 icon: flaticon-web-development
 layout: layouts/layout-feature.njk
 permalink: /features/expirations/
@@ -13,8 +13,10 @@ eleventyNavigation:
 category: "all-features"
 ---
 
-## Expirations and Notifications
+<img class="img-fluid mb-4" src="https://www.itportal.com/v4/images/expirations.png" alt="Screenshot">
 
-The Portal will let you know when a device, agreement, configuration, KB, or account is going to expire. Get notifications via the UI or emails on expiring SSL Certificates, domain registrations, device warranties, and login accounts. You can see these by clicking the notification icon.
+## Safeguard your operations with advanced expiration management. 
 
-<img class="img-fluid" src="https://www.itportal.com/v4/images/expirations.png" alt="Screenshot">
+The Portal proactively monitors critical assets like devices, agreements, configurations, knowledge base articles, and accounts for upcoming expiration dates. Receive timely notifications via email or in-app alerts for expiring SSL certificates, domain registrations, device warranties, and login accounts. 
+
+Stay ahead of potential issues and maintain uninterrupted operations.

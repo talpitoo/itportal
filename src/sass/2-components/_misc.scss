@@ -6,12 +6,13 @@ text-primary {
 }
 
 .page-hero.tringle-bg::before {
-  clip-path: polygon(100vw 20vw, 100vw 100vw, -35vw 100vw);
+  clip-path: polygon(100vw 20vw, 100vw 100vw, -35vw 100vw) !important;
 }
 
 @media (max-width: 991px) {
   .page-hero.tringle-bg::before {
-    clip-path: polygon(0 100%, 100% 50%, 100% 100%);
+    display: none !important;
+    clip-path: polygon(0 100%, 100% 50%, 100% 100%) !important;
   }
 }
 
@@ -22,12 +23,27 @@ text-primary {
     }
     */
 
-.canvas-features,
-.canvas-integrations,
-.canvas-security {
-  width: 50% !important;
-  height: auto !important;
-  margin: 1rem auto 0;
+#animation_container {
+  position: static !important;
+  margin-top: 40px;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 0;
+    position: absolute !important;
+  }
+
+  &.canvas-features,
+  &.canvas-integrations,
+  &.canvas-security,
+  &.canvas-password-management {
+    width: 50% !important;
+    height: auto !important;
+    margin: 1rem auto 0;
+  
+    @include media-breakpoint-up(lg) {
+      position: static !important;
+    }
+  }
 }
 
 .canvas-features canvas,
@@ -68,5 +84,27 @@ text-primary {
 .price-plan {
   @include media-breakpoint-up(lg) {
     max-width: 33%;
+  }
+}
+
+.linear-gradient {
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    content: "";
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent);
+  }
+}
+
+.itp-hero-msp,
+.itp-hero-it,
+.itp-hero-government,
+.itp-hero-education {
+  @include media-breakpoint-up(lg) {
+    margin-top: 555px;
+    margin-bottom: 55px;
   }
 }

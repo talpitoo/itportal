@@ -1,7 +1,7 @@
 ---
 title: Full Open API
 excerpt: >
-  We implemented an Open API to allow you to import and export data.
+  Customize and integrate seamlessly. Our open API empowers you to import and export data, building custom solutions and extending platform capabilities.
 icon: flaticon-web-development
 layout: layouts/layout-feature.njk
 permalink: /features/full-open-api/
@@ -13,6 +13,6 @@ eleventyNavigation:
 category: "all-features"
 ---
 
-We implemented an Open API to allow you to import and export data. Our open API comes with complete documentation, including a documentation site that will enable you to test the API with your data.
+**Unlock the full potential of your data with our open API.** We've made it easy to integrate with your existing systems and workflows. Our open API comes with complete documentation and a testing environment to help you get started quickly. Import and export data effortlessly to build custom solutions and enhance your platform's functionality.
 
 <img class="img-fluid" src="https://www.itportal.com/v4/images/api.png" alt="Screenshot">

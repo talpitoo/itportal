@@ -1,7 +1,7 @@
 ---
 title: API Based Device Import
 excerpt: >
-  Fill a form to create an API KEY.
+  Connect your devices effortlessly using our API. It’s easy to get started.
 icon: flaticon-web-development
 layout: layouts/layout-feature.njk
 permalink: /features/api-based-device-import/
@@ -13,4 +13,6 @@ eleventyNavigation:
 category: "all-features"
 ---
 
-Fill a form to create an API KEY. It will generate a TXT file with the KEY and instructions on how to use it. When executed, it connects to the windows machine running the script, collecting WMI information about the device, and automatically import it into the Portal. For Mac and Linux machines, we will import basic machine details. 
+Connect your devices effortlessly using our API. 
+
+Simply fill out a form to create an API key and get started. An API key will be generated and sent to you via email as a TXT file, along with detailed instructions. The script connects to the windows machine, collects WMI information, and automatically imports it into the Portal. For Mac and Linux machines, basic machine details will be imported.

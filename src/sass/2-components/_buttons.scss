@@ -462,7 +462,7 @@ body {
   text-transform: capitalize;
   color: $clr-main;
   font-weight: 600;
-  position: relative;
+  // position: relative;
   display: inline-flex;
   align-items: center;
   @include ma-transition(all, 0.3s);

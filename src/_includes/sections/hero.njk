@@ -53,7 +53,7 @@
             document.addEventListener('DOMContentLoaded', function () {
                 initAnimation('{{ compositionId }}', '{{ sceneName }}');
 
-                const companySizeDropdown = document.getElementById('companySize');
+                const companySizeDropdown = document.getElementById('numberOfUsers');
                 const industryDropdown = document.getElementById('industry');
                 const solutionsLink = document.getElementById('solutions-link');
 
@@ -160,18 +160,15 @@
                 <form class="g-3 mb-4">
                     <div class="col-12 mb-3">
                         <label class="" for="companySize">I work in a</label>
-                        {# <select class="form-select" aria-label="Company size" id="companySize">
-                            <option selected>Select company size</option>
-                            <option value="5000+">Enterprise (5,000+ employees)</option>
-                            <option value="50-249">Medium-sized (50-249 employees)</option>
-                            <option value="10-49">Small (10-49 employees)</option>
-                        </select> #}
-                        <select class="form-select" aria-label="Company size" id="companySize">
-                            <option selected>Select company size</option>
+                        {# <label class="" for="numberOfUsers">How many users? More users, Pay less!</label> #}
+                        <select class="form-select" aria-label="Number of users" id="numberOfUsers">
+                            <option value="" selected="">Select Comapny Size</option>
                             <option value="1">1</option>
                             <option value="2">2-3</option>
                             <option value="4">4</option>
-                            <option value="5">5+</option>
+                            <option value="5">5-9</option>
+                            <option value="10" selected>10-24</option>
+                            <option value="25">25+</option>
                         </select>
                     </div>
                     <div class="col-12">
@@ -200,7 +197,7 @@
                         </div>
                     </a>
                 </div>
-                <p class="mt-4">I prefer to <a href="#" class="btn btn-link px-0 py-0 header-search-btn">search on my own</a>.</p>
+                <p class="mt-4">I prefer to <a href="#" class="read-more header-search-btn">search on my own</a>.</p>
             </div>
 
         </div>

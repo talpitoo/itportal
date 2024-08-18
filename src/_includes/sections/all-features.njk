@@ -1,4 +1,3 @@
-<!-- Start  services Section-->
 <section class="services services-boxed mega-section" id="all-features">
     <div class="container">
 
@@ -15,7 +14,7 @@
             {% for item in collections.featuresCollection %}
                 {% if item.data.category == "all-features" %}
                     <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                        <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
+                        <div class="box service-box  wow fadeInUp reveal-start position-relative" data-wow-offset="0" data-wow-delay=".1s">
                             <div class="service-icon">
                                 <i class="{{ item.data.icon | default("flaticon-web-development") }} font-icon"></i>
                             </div>
@@ -24,168 +23,12 @@
                                 <h3 class="service-title">{{ item.data.title }}</h3>
                                 <p class="service-text">{{ item.data.excerpt }}</p>
                             </div>
-                            <a class="read-more" href="{{ item.data.permalink }}">read more<i class="bi bi-arrow-right icon "></i>
+                            <a class="read-more stretched-link" href="{{ item.data.permalink }}">read more<i class="bi bi-arrow-right icon "></i>
                             </a>
                         </div>
                     </div>
                 {% endif %}
             {% endfor %}
-
-            {# <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                    <div class="service-icon">
-                        <i class="flaticon-web-development font-icon"></i>
-                    </div>
-                    <span class="service-num hollow-text">1    </span>
-                    <div class="service-content">
-                        <h3 class="service-title">Free Company Users</h3>
-                        <p class="service-text">Customers need their data. Give them access as company users. Assign a license only if they need to change items.</p>
-                    </div>
-                    <a class="read-more" href="/features/free-company-users">read more<i class="bi bi-arrow-right icon "></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                    <div class="service-icon">
-                        <i class="flaticon-web-development font-icon"></i>
-                    </div>
-                    <span class="service-num hollow-text">2    </span>
-                    <div class="service-content">
-                        <h3 class="service-title">Branding</h3>
-                        <p class="service-text">We get it. You want your look and feel. We want you happy :) hide us from your customers, but share us with the world!</p>
-                    </div>
-                    <a class="read-more" href="/features/branding">read more<i class="bi bi-arrow-right icon "></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                    <div class="service-icon">
-                        <i class="flaticon-web-development font-icon"></i>
-                    </div>
-                    <span class="service-num hollow-text">3    </span>
-                    <div class="service-content">
-                        <h3 class="service-title">Expirations</h3>
-                        <p class="service-text">The Portal will let you know when a device, agreement, configuration, KB, or account is going to expire. Get notifications via the UI or emails on expiring SSL Certificates, domain registrations, device warranties, and login accounts. You can see these by clicking the notification icon.</p>
-                    </div>
-                    <a class="read-more" href="/features/expirations">read more<i class="bi bi-arrow-right icon "></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                    <div class="service-icon">
-                        <i class="flaticon-web-development font-icon"></i>
-                    </div>
-                    <span class="service-num hollow-text">4    </span>
-                    <div class="service-content">
-                        <h3 class="service-title">Password Management</h3>
-                        <p class="service-text">Give your users the ability to store their personal passwords. This password list is only accessible by the user. When first accessed, they must enter their encryption key. This key is never stored anywhere.</p>
-                    </div>
-                    <a class="read-more" href="/features/password-management">read more<i class="bi bi-arrow-right icon "></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                    <div class="service-icon">
-                        <i class="flaticon-web-development font-icon"></i>
-                    </div>
-                    <span class="service-num hollow-text">5    </span>
-                    <div class="service-content">
-                        <h3 class="service-title">Relationships</h3>
-                        <p class="service-text">The real power of the Portal is in the relationship matrices you can create. Show how a particular object in the Portal interacts with others.</p>
-                    </div>
-                    <a class="read-more" href="/features/relationships">read more<i class="bi bi-arrow-right icon "></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                    <div class="service-icon">
-                        <i class="flaticon-web-development font-icon"></i>
-                    </div>
-                    <span class="service-num hollow-text">6    </span>
-                    <div class="service-content">
-                        <h3 class="service-title">Synopsis View</h3>
-                        <p class="service-text">This view is an aggregate of all the objects in the system for all the companies you can access. This object counts provides a good understanding of your support environment</p>
-                    </div>
-                    <a class="read-more" href="/features/synopsis-view">read more<i class="bi bi-arrow-right icon "></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                    <div class="service-icon">
-                        <i class="flaticon-web-development font-icon"></i>
-                    </div>
-                    <span class="service-num hollow-text">7    </span>
-                    <div class="service-content">
-                        <h3 class="service-title">Image Gallery</h3>
-                        <p class="service-text">Create objects in the Portal that contain folders. Use the image galleries to view the pictures stored in folders quickly.</p>
-                    </div>
-                    <a class="read-more" href="/features/image-gallery">read more<i class="bi bi-arrow-right icon "></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                    <div class="service-icon">
-                        <i class="flaticon-web-development font-icon"></i>
-                    </div>
-                    <span class="service-num hollow-text">8    </span>
-                    <div class="service-content">
-                        <h3 class="service-title">Change History</h3>
-                        <p class="service-text">Always know what has been added or changed in the portal. Review the change history widget at login to see what has changed since your last login or last week.</p>
-                    </div>
-                    <a class="read-more" href="/features/change-history">read more<i class="bi bi-arrow-right icon "></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                    <div class="service-icon">
-                        <i class="flaticon-web-development font-icon"></i>
-                    </div>
-                    <span class="service-num hollow-text">9    </span>
-                    <div class="service-content">
-                        <h3 class="service-title">Templates</h3>
-                        <p class="service-text">Our portal provides 99% of the fields you want. Add fields to any object in the portal by creating a template.</p>
-                    </div>
-                    <a class="read-more" href="/features/templates">read more<i class="bi bi-arrow-right icon "></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                    <div class="service-icon">
-                        <i class="flaticon-web-development font-icon"></i>
-                    </div>
-                    <span class="service-num hollow-text">10    </span>
-                    <div class="service-content">
-                        <h3 class="service-title">API Based Device Import</h3>
-                        <p class="service-text">Fill a form to create an API KEY. It will generate a TXT file with the KEY and instructions on how to use it. When executed, it connects to the windows machine running the script, collecting WMI information about the device, and automatically import it into the Portal. For Mac and Linux machines, we will import basic machine details. </p>
-                    </div>
-                    <a class="read-more" href="/features/api-based-device-import">read more<i class="bi bi-arrow-right icon "></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                    <div class="service-icon">
-                        <i class="flaticon-web-development font-icon"></i>
-                    </div>
-                    <span class="service-num hollow-text">11    </span>
-                    <div class="service-content">
-                        <h3 class="service-title">Full Open API</h3>
-                        <p class="service-text">We implemented an Open API to allow you to import and export data. Our open API comes with complete documentation, including a documentation site that will enable you to test the API with your data.</p>
-                    </div>
-                    <a class="read-more" href="/features/full-open-api">read more<i class="bi bi-arrow-right icon "></i>
-                    </a>
-                </div>
-            </div> #}
         </div>
     </div>
 </section>
-<!-- End  services Section-->

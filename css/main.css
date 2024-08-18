@@ -9662,16 +9662,16 @@ textarea.form-control-lg {
  */
 /* @import "../../node_modules/swiper/swiper-bundle.css"; // the whole swiper CSS bundle, OR */
 body,
-button,
-.btn,
-input,
-select,
 ul,
 ol,
 .page-hero .cta-links-area .cta-link {
   font-size: 20px !important;
 }
 
+button,
+.btn,
+input,
+select,
 .footer-menu-link,
 .contact-info-card .info,
 .terms-links {
@@ -9684,6 +9684,17 @@ ol,
 
 .copyrights .creadits {
   font-weight: normal !important;
+}
+
+.itportal-snap-container {
+  scroll-snap-type: y proximity;
+}
+.itportal-snap-container body {
+  scroll-snap-type: y proximity;
+}
+.itportal-snap-container .itportal-scroll-snap {
+  scroll-snap-align: start;
+  scroll-margin: 16px;
 }
 
 /*===================================================
@@ -10739,7 +10750,6 @@ body.rounded-btns .read-more {
   text-transform: capitalize;
   color: var(--clr-main);
   font-weight: 600;
-  position: relative;
   display: inline-flex;
   align-items: center;
   transition: all 0.3s ease-in-out 0s;
@@ -11324,12 +11334,13 @@ text-primary {
 }
 
 .page-hero.tringle-bg::before {
-  clip-path: polygon(100vw 20vw, 100vw 100vw, -35vw 100vw);
+  clip-path: polygon(100vw 20vw, 100vw 100vw, -35vw 100vw) !important;
 }
 
 @media (max-width: 991px) {
   .page-hero.tringle-bg::before {
-    clip-path: polygon(0 100%, 100% 50%, 100% 100%);
+    display: none !important;
+    clip-path: polygon(0 100%, 100% 50%, 100% 100%) !important;
   }
 }
 /* a[target="_blank"]::after {
@@ -11338,12 +11349,25 @@ text-primary {
         filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(180deg);
     }
     */
-.canvas-features,
-.canvas-integrations,
-.canvas-security {
+#animation_container {
+  position: static !important;
+  margin-top: 40px;
+}
+@media (min-width: 992px) {
+  #animation_container {
+    margin-top: 0;
+    position: absolute !important;
+  }
+}
+#animation_container.canvas-features, #animation_container.canvas-integrations, #animation_container.canvas-security, #animation_container.canvas-password-management {
   width: 50% !important;
   height: auto !important;
   margin: 1rem auto 0;
+}
+@media (min-width: 992px) {
+  #animation_container.canvas-features, #animation_container.canvas-integrations, #animation_container.canvas-security, #animation_container.canvas-password-management {
+    position: static !important;
+  }
 }
 
 .canvas-features canvas,
@@ -11384,6 +11408,28 @@ text-primary {
 @media (min-width: 992px) {
   .price-plan {
     max-width: 33%;
+  }
+}
+
+@media (min-width: 992px) {
+  .linear-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    content: "";
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent);
+  }
+}
+
+@media (min-width: 992px) {
+  .itp-hero-msp,
+  .itp-hero-it,
+  .itp-hero-government,
+  .itp-hero-education {
+    margin-top: 555px;
+    margin-bottom: 55px;
   }
 }
 
@@ -11734,7 +11780,7 @@ text-primary {
 */
 /*   Start .page-hero Rules   */
 .hero-swiper-slider .slide-title, .page-hero .hero-text-area .hero-title {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 3.5rem;
   text-transform: capitalize;
   margin-bottom: 1.75rem;
@@ -11750,8 +11796,8 @@ text-primary {
 }
 @media (max-width: 575px) {
   .hero-swiper-slider .slide-title, .page-hero .hero-text-area .hero-title {
-    font-size: 2rem !important;
-    font-weight: 700 !important;
+    font-size: 1.75rem !important;
+    font-weight: 500 !important;
   }
 }
 
@@ -12336,7 +12382,6 @@ text-primary {
   padding: 8rem 0;
 }
 .service-single .service-sidebar {
-  padding-inline-end: 1rem;
   position: sticky;
   top: 7.5rem;
 }

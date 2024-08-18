@@ -1,5 +1,6 @@
 %hero-title-rules {
-  font-weight: 700;
+  // font-weight: 700;
+  font-weight: 400;
   font-size: 3.5rem;
   text-transform: capitalize;
   margin-bottom: 1.75rem;
@@ -14,8 +15,8 @@
   }
 
   @include screen-xs {
-    font-size: 2rem !important;
-    font-weight: 700 !important;
+    font-size: 1.75rem !important;
+    font-weight: 500 !important;
   }
 }
 
@@ -67,9 +68,6 @@
       height: 100%;
 
       clip-path: polygon(50% 100%, 100% 0%, 100% 100%, 0 100%);
-      @if $direction== "rtl" {
-        clip-path: polygon(0 0, 0% 100%, 50% 100%);
-      }
 
       background: rgba($clr-secondary-rgb, 0.5);
       @include ma-transition(all, 0.25s);

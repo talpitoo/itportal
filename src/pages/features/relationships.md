@@ -1,7 +1,7 @@
 ---
 title: Relationships
 excerpt: >
-  The real power of the Portal is in the relationship matrices you can create. Show how a particular object in the Portal interacts with others.
+  Uncover hidden insights and optimize operations with powerful relationship mapping.
 icon: flaticon-web-development
 layout: layouts/layout-feature.njk
 permalink: /features/relationships/
@@ -13,14 +13,12 @@ eleventyNavigation:
 category: "all-features"
 ---
 
-## Relationships
+The true power of the Portal lies in its ability to visualize complex connections between your IT assets. Create relationship matrices to understand how objects interact within your environment.
 
-The real power of the Portal is in the relationship matrices you can create. Show how a particular object in the Portal interacts with others.
+- **Document dependencies**: Map service accounts to dependent services or devices, databases to referencing applications, and shared credentials to associated routers.
+- **Visualize infrastructure**: Create image libraries of server rooms to relate and manage physical components.
+- **Optimize software licensing**: Connect software agreements to licensed users for efficient management.
 
-- Document a service account and then document the relationships to the services or devices that use it
-- Document a database and the applications that reference it
-- Document the common enable password used on all routers and link it to those routers for quick reference
-- Create an image library of a server room and relate all the devices in the library
-- Create a software agreement and connect all the users that are licensed to use the software
+By visualizing these relationships, you can identify inefficiencies, optimize resource allocation, and make data-driven decisions to improve overall IT operations.
 
 <img class="img-fluid" src="https://www.itportal.com/v4/images/relationships.png" alt="Screenshot">

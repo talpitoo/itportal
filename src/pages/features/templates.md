@@ -1,7 +1,7 @@
 ---
 title: Templates
 excerpt: >
-  Always know what has been added or changed in the portal. Review the change history widget at login to see what has changed since your last login or last week.
+  Your Platform, Your Way. Customize the platform to your exact needs with flexible customization options. 
 icon: flaticon-web-development
 layout: layouts/layout-feature.njk
 permalink: /features/templates/
@@ -13,13 +13,8 @@ eleventyNavigation:
 category: "all-features"
 ---
 
-## Customization via Templates
+Our portal offers unparalleled flexibility with template-based customization. Add custom fields to any object, download pre-built templates from our library, and assign fields based on company, object type, or other criteria. 
 
-Our portal provides 99% of the fields you want. Add fields to any object in the portal by creating a template.
-
-- Download already created templates from an online library
-- Unlike our competitors, assign fields to objects based on company, object type (Example Firewall), and more
-- Copy templates to customize them for specific companies
-- Create fields of type Date | Numerical | File Upload | Password | Pull Down | Portal Objects | Text | Yes/No | Multi-Select Checkboxes | and Key/Value Pairs
+Create highly specific templates for different departments or projects. Enjoy the freedom to define custom field types, including date, numerical, file upload, password, dropdown, object references, text, yes/no, multi-select checkboxes, and key-value pairs. Tailor the platform to your unique requirements and streamline your workflows.
 
 <img class="img-fluid" src="https://www.itportal.com/v4/images/templates.gif?rID=3" alt="Screenshot">
