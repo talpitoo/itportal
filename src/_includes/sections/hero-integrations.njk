@@ -1,8 +1,8 @@
 <!-- Start inner Page hero-->
-<section class="d-flex align-items-center page-hero  inner-page-hero " id="page-hero" style="height: 75vh; min-height: 75vh;">
+<section class="d-flex align-items-center page-hero  inner-page-hero" id="page-hero" style="height: 75vh; min-height: 75vh;">
     <div class="overlay-photo-image-bg parallax" data-bg-img="/assets/hero/inner-page-hero.jpg" data-bg-opacity="1"></div>
     <div class="overlay-color" data-bg-opacity=".75"></div>
-    <div class="container">
+    <div class="container position-relative">
         <div class="hero-text-area centerd">
             <h1 class="hero-title  wow fadeInUp" data-wow-delay=".2s">Integrations</h1>
             <nav aria-label="breadcrumb ">
@@ -24,6 +24,8 @@
             {% set position = "static" %}
             {% include "animations/animation-template.njk" %}
         </div>
+        <p class="h2 position-absolute top-0 w-25 mt-5">You have data in a variety of sources.. </p>
+        <p class="h2 text-end">It’s easy to bring them into the Portal and add your documentation</p>
     </div>
 </section>
 <!-- End inner Page hero-->
