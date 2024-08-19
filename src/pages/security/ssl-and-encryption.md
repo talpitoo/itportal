@@ -12,10 +12,12 @@ eleventyNavigation:
 category: "security"
 ---
 
-We have customers that prefer do on-premises and safeguard it themselves. For those needing cloud services we offer the options below.
+## On-Premises or Cloud Flexibility
 
-- AES 256 Bit Encryption.
-- Optional Encryption key. Encrypt usernames and passwords with this key. Uploaded files will be encrypted as well using this same key. The default key will encrypt data if you do not have an optional key.
-- Built-in 2 Factor Authentication
-- Encryption at rest
-- Our web servers are not open to the Internet. Our web servers are only accessible by the CloudFlare CDN (Content Delivery Network). You transparently connect to CloudFlare, and they present you with your data. Also, note that CloudFlare handles 10% of the world's web traffic and is very secure.
+We understand that some customers prefer to manage their data on-premises, while others require cloud-based solutions. We offer both options to meet your specific needs.
+
+- **AES 256-Bit Encryption**: Your data is protected with industry-standard encryption.
+- **Optional Encryption Key**: Add an extra layer of security by using a custom encryption key for usernames, passwords, and uploaded files.
+- **Built-in 2-Factor Authentication**: Safeguard your account with strong two-factor verification.
+- **Encryption at Rest**: Your data remains encrypted even when stored on our servers.
+- **Secure Cloud Infrastructure**: Our cloud platform utilizes Cloudflare's Content Delivery Network (CDN) for enhanced security and performance. Cloudflare handles a significant portion of global web traffic, ensuring your data is protected by their robust infrastructure.

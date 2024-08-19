@@ -1,7 +1,7 @@
 ---
 title: Granular Permissions
 excerpt: >
-  The Portal gives you many options to restrict users.
+  Tailor access rights to specific users and groups.
 icon: flaticon-unlock
 layout: layouts/layout-security.njk
 permalink: /security/granular-permissions/
@@ -12,17 +12,18 @@ eleventyNavigation:
 category: "security"
 ---
 
-The Portal gives you many options to restrict users.
+Empower administrators with precise control over user access and actions.
 
-1. Access
-    - Create users that have access to a group/list of companies
-    - Create users that have access to all companies
-    - Create users that have access to a single company. See KB - Free read-only users.
+## Flexible Access Levels
 
+- Assign users to specific groups or companies for tailored access.
+- Grant comprehensive access across all companies for administrative roles.
+- Create restricted user accounts with read-only permissions to sensitive data.
 
-2. Permission
-    - Add, Edit, Delete, Password, Password List, Mobile App
+## Customizable Permissions
 
+- Control user actions with settings for adding, editing, deleting, managing passwords, and mobile app access.
 
-3. Disable access to objects for each user
-    - Accounts, Agreements, Configurations, Contacts, Devices, Documents, and KBs
+## Object-Level Security
+
+- Precisely determine which users can view or modify specific data objects like accounts, agreements, and more.

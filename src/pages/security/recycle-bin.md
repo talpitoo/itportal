@@ -12,4 +12,10 @@ eleventyNavigation:
 category: "security"
 ---
 
-Recovery & purge allows admins to recover deleted items (recycle bin). You can recover or purge each item. We also give you an option to purge all. 
+## Secure Data Recovery & Purge
+
+Prevent accidental data loss and maintain data integrity with our robust Recycle Bin recovery and purge system.
+
+- **Recover Deleted Items**: Easily restore mistakenly deleted items from the recycle bin.
+- **Selective Purging**: Choose to permanently delete individual items or all contents within the recycle bin.
+- **Data Security**: Maintain control over sensitive information by selectively recovering or purging items.

@@ -21,7 +21,10 @@ eleventyNavigation:
             </div>
         </div>
         <div class="row gx-4 gy-4 services-row ">
-            {% for item in collections.securityCollection %}
+            {% set sortedSecurityCollection = collections.securityCollection | sort(false, false, 'data.eleventyNavigation.order') %}
+            {% for item in sortedSecurityCollection %}
+
+            {# {% for item in collections.securityCollection %} #}
                 {% if item.data.category == "security" %}
                     <div class="col-12 col-md-6  col-lg-4 mx-auto ">
                         <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
