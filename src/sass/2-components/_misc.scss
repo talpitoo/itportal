@@ -108,3 +108,54 @@ text-primary {
     margin-bottom: 55px;
   }
 }
+
+// roadmap
+.roadmapAndChanges__listBttmText {
+  display: table-row;
+  // background-color: lightblue;
+}
+
+.roadmapAndChanges__itemBttmText,
+.roadmapAndChanges__itemBttmText1 {
+  display: table-cell;
+  font-size: 14px;
+  padding: 6px;
+  line-height: 1.3;
+  border: 1px solid rgb(167, 167, 167);
+  vertical-align: middle;
+}
+
+.roadmapAndChanges__nrTable {
+  // font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  // font-size: 20px;
+  // color: #238de9;
+}
+
+.roadmapAndChanges__spanSubtitle {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.MsoNormal {
+  margin-top: 50px;
+}
+
+.roadmapAndChanges__spanTitle {
+  padding-bottom: 25px;
+  padding-top: 50px;
+}
+
+.roadmapAndChanges__linktoListChanges {
+  padding-top: 30px;
+}
+
+#page-roadmap a {
+  text-transform: capitalize;
+  color: var(--clr-main);
+  // font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out 0s;
+}
