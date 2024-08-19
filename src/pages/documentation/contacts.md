@@ -1,7 +1,7 @@
 ---
 title: Contacts
 excerpt: >
-  Record information regarding a variety of users and consultants that work for a company
+  Improved collaboration! Build and maintain strong relationships with your team and partners through our centralized contact management system.
 icon: flaticon-list
 layout: layouts/layout-documentation.njk
 permalink: /documentation/contacts/
@@ -12,9 +12,11 @@ eleventyNavigation:
 category: "documentation"
 ---
 
-Record information regarding a variety of users and consultants that work for a company
+Build and maintain strong relationships with your team and partners to collaborate efficiently and resolve issues quickly. Record information about users and consultants, linking them to managed devices and assigning specific skill sets for easy identification. Enhance security by assigning pictures for data center access and managing user credentials.
 
-Link contacts to devices they may manage.
-Assign skill sets to contacts to quickly find expertise.
-Assign a picture for verification when entering data centers.
-Record credentials used by users that may require frequent reminders 
+## Key benefits:
+
+- Improve communication and collaboration
+- Streamline device management and support
+- Accelerate problem-solving with skill-based matching
+- Strengthen security with user verification and credential management
