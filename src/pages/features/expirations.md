@@ -13,7 +13,7 @@ eleventyNavigation:
 category: "all-features"
 ---
 
-<img class="img-fluid mb-4" src="https://www.itportal.com/v4/images/expirations.png" alt="Screenshot">
+<img class="img-fluid mb-4" src="/assets/migrated/expirations.png" alt="Screenshot">
 
 ## Safeguard your operations with advanced expiration management. 
 

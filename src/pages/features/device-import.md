@@ -12,7 +12,7 @@ eleventyNavigation:
 category: "top-features"
 ---
 
-<img class="img-fluid mb-4" src="https://www.itportal.com/v4/images/wmi-1.png?=2" alt="Screenshot">
+<img class="img-fluid mb-4" src="/assets/migrated/wmi-1.png" alt="Screenshot">
 
 ## Effortlessly populate your IT Portal with device information.
 

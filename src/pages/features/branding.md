@@ -28,4 +28,4 @@ For total branding control, choose our **Branding Pro** option:
 - Advanced branding requires additional setup and potential support time.
 - Contact [support@siportal.com](mailto:support@siportal.com) for Pro setup assistance.
 
-<img class="img-fluid" src="https://www.itportal.com/v4/images/branding1.png" alt="Screenshot">
+<img class="img-fluid" src="/assets/migrated/branding1.png" alt="Screenshot">

@@ -12,7 +12,7 @@ eleventyNavigation:
 category: "top-features"
 ---
 
-<a href="http://demosync.it-portal.com/#start.html"><img class="img-fluid mb-4" src="https://www.itportal.com/v4/images/portal-export-1a.png?rid=3" alt="Screenshot"></a>
+<a href="http://demosync.it-portal.com/#start.html"><img class="img-fluid mb-4" src="/assets/migrated/portal-export-1a.png" alt="Screenshot"></a>
 
 ## Protect Your IT Documentation with Portal Export
 

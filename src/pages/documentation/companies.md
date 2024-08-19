@@ -12,7 +12,7 @@ eleventyNavigation:
 category: "documentation"
 ---
 
-<img class="img-fluid mb-4" src="https://www.itportal.com/v4/images/expirations.png" alt="Screenshot">
+<img class="img-fluid mb-4" src="/assets/migrated/expirations.png" alt="Screenshot">
 
 Get a complete overview of your organization or your clients' environments. Whether you're an MSP managing multiple clients, or an IT department focused on a single entity, our platform provides unparalleled visibility. Create a hierarchical structure to organize your IT resources by location with Sites, Facilities, Cabinets, and IP Networks. Easily navigate through your infrastructure and access relevant documentation with a few clicks.
 

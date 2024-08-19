@@ -12,7 +12,7 @@ eleventyNavigation:
 category: "top-features"
 ---
 
-<img class="img-fluid mb-4" src="https://www.itportal.com/v4/images/configurations.png" alt="Screenshot">
+<img class="img-fluid mb-4" src="/assets/migrated/configurations.png" alt="Screenshot">
 
 ## Streamline Network Management with Configuration Import
 

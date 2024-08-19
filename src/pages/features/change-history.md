@@ -19,4 +19,4 @@ The Change History widget offers a comprehensive record of updates, enhancements
 
 Understand the platform's evolution, optimize workflows, and troubleshoot effectively with detailed change logs. Gain valuable insights to support your strategic initiatives.
 
-<img class="img-fluid" src="https://www.itportal.com/v4/images/change.png" alt="Screenshot">
+<img class="img-fluid" src="/assets/migrated/change.png" alt="Screenshot">

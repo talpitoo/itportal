@@ -15,4 +15,4 @@ category: "all-features"
 
 **Unlock the full potential of your data with our open API.** We've made it easy to integrate with your existing systems and workflows. Our open API comes with complete documentation and a testing environment to help you get started quickly. Import and export data effortlessly to build custom solutions and enhance your platform's functionality.
 
-<img class="img-fluid" src="https://www.itportal.com/v4/images/api.png" alt="Screenshot">
+<img class="img-fluid" src="/assets/migrated/api.png" alt="Screenshot">

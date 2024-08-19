@@ -12,7 +12,7 @@ eleventyNavigation:
 category: "top-features"
 ---
 
-<img class="img-fluid mb-4" src="https://www.itportal.com/v4/images/scoreboard2.png" alt="Screenshot">
+<img class="img-fluid mb-4" src="/assets/migrated/scoreboard2.png" alt="Screenshot">
 
 ## Achieve Documentation Compliance with Scoreboard
 

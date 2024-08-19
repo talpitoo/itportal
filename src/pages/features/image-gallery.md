@@ -13,7 +13,7 @@ eleventyNavigation:
 category: "all-features"
 ---
 
-<img class="img-fluid mb-4" src="https://www.itportal.com/v4/images/1550146314963.png" alt="Screenshot">
+<img class="img-fluid mb-4" src="/assets/migrated/1550146314963.png" alt="Screenshot">
 
 ## An Engineer’s Favorite Tool!
 

@@ -17,4 +17,4 @@ Our portal offers unparalleled flexibility with template-based customization. Ad
 
 Create highly specific templates for different departments or projects. Enjoy the freedom to define custom field types, including date, numerical, file upload, password, dropdown, object references, text, yes/no, multi-select checkboxes, and key-value pairs. Tailor the platform to your unique requirements and streamline your workflows.
 
-<img class="img-fluid" src="https://www.itportal.com/v4/images/templates.gif?rID=3" alt="Screenshot">
+<img class="img-fluid" src="/assets/migrated/templates.gif" alt="Screenshot">

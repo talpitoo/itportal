@@ -15,4 +15,4 @@ category: "all-features"
 
 Synopsis View, an engineer's go-to tool, provides a consolidated snapshot of all accessible objects across your organization. Gain valuable insights into your support environment by quickly analyzing object counts and identifying potential issues or areas for optimization.
 
-<img class="img-fluid" src="https://www.itportal.com/v4/images/synopsis.png" alt="Screenshot">
+<img class="img-fluid" src="/assets/migrated/synopsis.png" alt="Screenshot">

@@ -21,4 +21,4 @@ The true power of the Portal lies in its ability to visualize complex connection
 
 By visualizing these relationships, you can identify inefficiencies, optimize resource allocation, and make data-driven decisions to improve overall IT operations.
 
-<img class="img-fluid" src="https://www.itportal.com/v4/images/relationships.png" alt="Screenshot">
+<img class="img-fluid" src="/assets/migrated/relationships.png" alt="Screenshot">
