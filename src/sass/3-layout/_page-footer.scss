@@ -15,7 +15,7 @@
 
 .footer-col-title {
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: capitalize;
   margin-bottom: 1.5rem;
 
@@ -41,7 +41,7 @@
 }
 
 .contact-info-card {
-  font-weight: 600;
+  font-weight: 700;
   padding: 0;
   padding-bottom: 1rem;
   border-radius: 0.5rem;
@@ -117,15 +117,15 @@
   padding: 0.5rem 0;
   overflow: hidden;
 
-  .creadits {
+  .credits {
     text-align: #{$start-direction};
-    font-weight: 600;
+    font-weight: 700;
     margin: 0;
     font-size: 0.85rem;
     color: ($clr-dark-grey);
 
     .link {
-      font-weight: 600;
+      font-weight: 700;
       color: $clr-main;
       text-decoration: none;
     }
@@ -134,7 +134,7 @@
   .terms-links {
     & > a {
       text-decoration: none !important;
-      font-weight: 600;
+      font-weight: 700;
       @include ma-transition();
       color: ($clr-dark-grey);
       text-decoration: none;
@@ -147,7 +147,7 @@
 
   .sc-wrapper .sc-list .sc-item:hover .sc-icon,
   .terms-links,
-  .copyrights .creadits .link {
+  .copyrights .credits .link {
     color: $clr-main;
   }
 
@@ -159,7 +159,7 @@
   .contact-info-card .info,
   .contact-info-card .info:hover,
   .footer-menu .footer-menu-link,
-  .copyrights .creadits,
+  .copyrights .credits,
   .terms-links > a {
     color: $clr-grey;
   }
@@ -167,7 +167,7 @@
   .sc-wrapper .sc-list .sc-item .sc-icon,
   .contact-info-card .info:hover,
   .footer-menu .footer-menu-link:hover,
-  .copyrights .creadits .link {
+  .copyrights .credits .link {
     color: $clr-white;
   }
 }
@@ -178,7 +178,7 @@
   .footer-menu-item .icon,
   .contact-info-card .icon,
   .terms-links,
-  .copyrights .creadits .link,
+  .copyrights .credits .link,
   .sc-wrapper .sc-list .sc-item:hover .sc-icon {
     color: $clr-main;
   }
@@ -186,7 +186,7 @@
   .footer-text-about-us,
   .contact-info-card .info,
   .footer-menu .footer-menu-link,
-  .copyrights .creadits,
+  .copyrights .credits,
   .terms-links > a {
     color: $clr-dark-grey;
   }
@@ -213,7 +213,7 @@
   .footer-menu-item .icon,
   .contact-info-card .icon,
   .terms-links,
-  .copyrights .creadits .link {
+  .copyrights .credits .link {
     color: $clr-grey;
   }
 
@@ -221,7 +221,7 @@
   .footer-text-about-us,
   .contact-info-card .info,
   .footer-menu .footer-menu-link,
-  .copyrights .creadits,
+  .copyrights .credits,
   .terms-links > a {
     color: $clr-grey;
   }

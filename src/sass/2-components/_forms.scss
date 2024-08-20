@@ -12,7 +12,7 @@
   %label-rules {
     margin: 0;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: capitalize;
     position: absolute;
     #{$start-direction}: 0;
@@ -309,7 +309,7 @@
     padding-bottom: 0.75rem;
     text-transform: capitalize;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   .highlight {
@@ -323,7 +323,7 @@
     display: inline-block;
     margin-bottom: 0.25rem;
     color: $clr-semi-dark-blue;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   input:not([type="submit"]) {

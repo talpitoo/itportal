@@ -3,19 +3,19 @@
         {
             "name": "Autotask",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=27&Method=View&Permalink=3F28241D47786040465B535C627E705C484754566371703F3F44DBE2ACCC0D08BC4F82843CA5241EED1391E1318F866C95371FAFB02CE26B642867989C26D31A67",
-            "img": "/assets/integrations/AutotaskLogo.svg",
+            "img": "/assets/integrations/box-autotask.png",
             "category": "top"
         },
         {
             "name": "Domotz",
             "href": "https://www.domotz.com/integrations/software/documentation/it-portal.php",
-            "img": "/assets/logo/logo-domotz.svg",
+            "img": "/assets/integrations/box-domotz.png",
             "category": "top"
         },
         {
             "name": "ConnectWise",
             "href": "https://marketplace.connectwise.com/si-portal",
-            "img": "/assets/integrations/connectwise_logo.svg",
+            "img": "/assets/integrations/box-connectwise.png",
             "category": "top"
         },
         {

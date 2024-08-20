@@ -2,10 +2,9 @@
   @return #{red($hexcode), green($hexcode), blue($hexcode)};
 }
 $fonts: (
-  "main": "",
+  "main": "Roboto, sans-serif",
 );
 $colors: (
-  // "main": #bc08e9,
   "main": #09aff4,
   "accent": #0d1857,
   "secondary": #4820a7,
@@ -22,7 +21,12 @@ $colors: (
 
   "danger": #fc0000,
   "success": #217234,
-  "warning": #9b6a01
+  "warning": #9b6a01,
+
+  "itportal-primary": #2b56ab,
+  "itportal-primary-dark": #002a54,
+  "itportal-secondary": #ffba2f,
+  "itportal-secondary-dark": #ed7d31
 );
 :root {
   /*Colors CSS Varibales*/
@@ -31,11 +35,19 @@ $colors: (
     --clr-#{$key}: #{$val};
     --clr-#{$key}-rgb: #{hexToRgb($val)};
   }
-  --ltr-main-font-f: "Jost", "sans-serif";
-  --rtl-main-font-f: "Tajawal", "sans-serif";
+  --ltr-main-font-f: "Roboto", "sans-serif";
+
+  --bs-link-color: #09aff4;
+  --bs-link-hover-color: #09aff4;
 }
 
 //colors varibales
+$itportal-main: #09aff4;
+$itportal-primary: #2b56ab;
+$itportal-primary-dark: #002a54;
+$itportal-secondary: #ffba2f;
+$itportal-secondary-dark: #ed7d31;
+
 $clr-white: var(--clr-white);
 $clr-white-rgb: var(--clr-white-rgb);
 

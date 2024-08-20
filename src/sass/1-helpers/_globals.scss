@@ -1,6 +1,6 @@
 /*========== Start Global Rules ==========*/
 
-$fontMain: "";
+$fontMain: "Roboto", sans-serif;
 
 @if $direction==ltr {
   $fontMain: $fontMainLtr;
@@ -21,7 +21,7 @@ $fontMain: "";
 %pre-title {
   position: relative;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1px;
   text-align: #{$start-direction};
   text-transform: uppercase;
@@ -482,7 +482,7 @@ $g-colors: red, blue, green;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 0.5rem;
-    font-weight: 600;
+    font-weight: 700;
 
     .skill-name {
       text-transform: capitalize;
