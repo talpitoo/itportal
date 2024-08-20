@@ -1,31 +1,25 @@
-<!-- Start inner Page hero-->
-<section class="d-flex align-items-center page-hero  inner-page-hero" id="page-hero" style="height: 75vh; min-height: 75vh;">
+<section class="d-flex align-items-center page-hero inner-page-hero" id="page-hero">
     <div class="overlay-photo-image-bg parallax" data-bg-img="/assets/hero/inner-page-hero.jpg" data-bg-opacity="1"></div>
     <div class="overlay-color" data-bg-opacity=".75"></div>
     <div class="container position-relative">
         <div class="hero-text-area centerd">
-            <h1 class="hero-title  wow fadeInUp" data-wow-delay=".2s">Integrations</h1>
-            <nav aria-label="breadcrumb ">
-                <ul class="breadcrumb wow fadeInUp" data-wow-delay=".6s">
-                    <li class="breadcrumb-item">
-                        <a class="breadcrumb-link" href="/">
-                            <i class="bi bi-house icon "></i>home</a>
-                    </li>
-                    <li class="breadcrumb-item active">integrations</li>
-                </ul>
-            </nav>
-
-            {% set animationName = "integrations" %}
-            {% set compositionId = "compositionIntegrations" %}
-            {% set sceneName = "sceneIntegrations" %}
-            {% set wrapperClass = "canvas-integrations" %}
-            {% set width = 363 %}
-            {% set height = 270 %}
-            {% set position = "static" %}
-            {% include "animations/animation-template.njk" %}
+            <div class="row">
+                <div class="col-lg-4 d-flex flex-column justify-content-center text-start">
+                    <div class="pre-title d-inline-block wow fadeInUp" data-wow-delay=".1s">IT Portal</div>
+                    <h1 class="hero-title  wow fadeInUp" data-wow-delay=".2s">Integrations</h1>
+                    <p class="mb-0  wow fadeInUp" data-wow-delay=".3s">You have data in a variety of sources. It’s easy to bring them into the Portal and add your documentation.</p>
+                </div>
+                <div class="col-lg-8">
+                    {% set animationName = "integrations" %}
+                    {% set compositionId = "compositionIntegrations" %}
+                    {% set sceneName = "sceneIntegrations" %}
+                    {% set wrapperClass = "canvas-integrations" %}
+                    {% set width = 363 %}
+                    {% set height = 270 %}
+                    {% set position = "static" %}
+                    {% include "animations/animation-template.njk" %}
+                </div>
+            </div>
         </div>
-        <p class="h2 position-absolute top-0 w-25 mt-5">You have data in a variety of sources.. </p>
-        <p class="h2 text-end">It’s easy to bring them into the Portal and add your documentation</p>
     </div>
 </section>
-<!-- End inner Page hero-->

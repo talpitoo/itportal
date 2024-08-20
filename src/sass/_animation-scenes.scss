@@ -1,0 +1,47 @@
+#animation_container {
+  position: static !important;
+  margin-top: 40px;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 0;
+    position: absolute !important;
+  }
+
+  &.canvas-features,
+  &.canvas-security,
+  &.canvas-password-management {
+    width: 50% !important;
+    height: auto !important;
+    margin: 1rem auto 0;
+
+    @include media-breakpoint-up(lg) {
+      position: static !important;
+    }
+  }
+
+  &.canvas-integrations {
+    width: 100% !important;
+    height: auto !important;
+
+    @include media-breakpoint-up(lg) {
+      position: static !important;
+    }
+
+    canvas {
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+}
+
+// .page-integrations {
+//     .page-hero {
+//         padding-top: 100px;
+//     }
+// }
+
+.canvas-features canvas,
+.canvas-security canvas {
+  width: 100% !important;
+  height: auto !important;
+}

@@ -9826,6 +9826,12 @@ Template Description: IT Solutions & Business Services Responsive HTML5 Bootstra
   height: 4px;
   background: var(--clr-main);
   border-radius: 1rem;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .sec-heading.centered .bottom-line, .sec-heading .bottom-line, .line-on-side, .line {
+    overflow: unset;
+  }
 }
 
 .pre-title {
@@ -9883,7 +9889,6 @@ body {
   background: var(--clr-white);
   overflow-x: hidden;
   scroll-behavior: smooth;
-  transition: all 0.25s ease-in-out 0s;
 }
 
 section {
@@ -10110,10 +10115,6 @@ a:hover {
 }
 .has-dark-bg .sec-heading .bottom-line {
   background-color: var(--clr-white);
-}
-
-.parallax {
-  background-attachment: fixed !important;
 }
 
 .overlay-color {
@@ -11762,9 +11763,12 @@ body.rounded-btns .read-more {
 .page-hero {
   position: relative;
   z-index: 0;
-  max-height: 1280px;
-  min-height: 100vh;
-  padding: 100px 0;
+  padding: 150px 0 100px 0;
+}
+@media (min-width: 992px) {
+  .page-hero {
+    padding: 100px 0;
+  }
 }
 .page-hero.tringle-bg::before {
   content: "";
@@ -12114,8 +12118,6 @@ body.rounded-btns .read-more {
 }
 
 .inner-page-hero {
-  height: 60vh;
-  min-height: 60vh;
   opacity: 1;
 }
 .inner-page-hero:before {
@@ -14869,19 +14871,44 @@ strong {
   font-weight: 700;
 }
 
-.itportal-snap-container {
-  scroll-snap-type: y proximity;
+#animation_container {
+  position: static !important;
+  margin-top: 40px;
 }
-.itportal-snap-container body {
-  scroll-snap-type: y proximity;
+@media (min-width: 992px) {
+  #animation_container {
+    margin-top: 0;
+    position: absolute !important;
+  }
 }
-.itportal-snap-container .itportal-scroll-snap {
-  scroll-snap-align: start;
-  scroll-margin: 16px;
+#animation_container.canvas-features, #animation_container.canvas-security, #animation_container.canvas-password-management {
+  width: 50% !important;
+  height: auto !important;
+  margin: 1rem auto 0;
+}
+@media (min-width: 992px) {
+  #animation_container.canvas-features, #animation_container.canvas-security, #animation_container.canvas-password-management {
+    position: static !important;
+  }
+}
+#animation_container.canvas-integrations {
+  width: 100% !important;
+  height: auto !important;
+}
+@media (min-width: 992px) {
+  #animation_container.canvas-integrations {
+    position: static !important;
+  }
+}
+#animation_container.canvas-integrations canvas {
+  width: 100% !important;
+  height: auto !important;
 }
 
-text-primary {
-  color: var(--clr-main) !important;
+.canvas-features canvas,
+.canvas-security canvas {
+  width: 100% !important;
+  height: auto !important;
 }
 
 .page-hero.tringle-bg::before {
@@ -14900,34 +14927,6 @@ text-primary {
         filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(180deg);
     }
     */
-#animation_container {
-  position: static !important;
-  margin-top: 40px;
-}
-@media (min-width: 992px) {
-  #animation_container {
-    margin-top: 0;
-    position: absolute !important;
-  }
-}
-#animation_container.canvas-features, #animation_container.canvas-integrations, #animation_container.canvas-security, #animation_container.canvas-password-management {
-  width: 50% !important;
-  height: auto !important;
-  margin: 1rem auto 0;
-}
-@media (min-width: 992px) {
-  #animation_container.canvas-features, #animation_container.canvas-integrations, #animation_container.canvas-security, #animation_container.canvas-password-management {
-    position: static !important;
-  }
-}
-
-.canvas-features canvas,
-.canvas-integrations canvas,
-.canvas-security canvas {
-  width: 100% !important;
-  height: auto !important;
-}
-
 .services-boxed .service-box {
   display: flex;
   flex-direction: column;
@@ -14938,8 +14937,13 @@ text-primary {
   flex-grow: 1;
 }
 
-.hero-swiper-slider .slide-title,
 .page-hero .hero-text-area .hero-title {
+  font-size: 64px;
+  font-weight: 500 !important;
+}
+
+.hero-swiper-slider .slide-title,
+.page-hero .hero-text-area .hero-title-solutions {
   font-size: 40px !important;
   font-weight: normal !important;
 }
@@ -15053,7 +15057,22 @@ text-primary {
   color: #09aff4 !important;
 }
 
-.page-hero .hero-text-area .hero-title {
-  font-size: 54px !important;
-  font-weight: 500 !important;
+.text-itportal-main {
+  color: #09aff4 !important;
+}
+
+.text-itportal-primary {
+  color: #2b56ab !important;
+}
+
+.text-itportal-primary-dark {
+  color: #002a54 !important;
+}
+
+.text-itportal-secondary {
+  color: #ffba2f !important;
+}
+
+.text-itportal-secondary-dark {
+  color: #ed7d31 !important;
 }

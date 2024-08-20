@@ -714,14 +714,14 @@ $(function () {
   }
 
   /* *******  loading simpleParallax.js library ********/
-  if (!(typeof window.simpleParallax === "undefined")) {
-    let parallaxblock = document.querySelectorAll(".parallax-img ");
-    if (parallaxblock.length) {
-      new simpleParallax(parallaxblock, {
-        delay: 1,
-      });
-    }
-  }
+  // if (!(typeof window.simpleParallax === "undefined")) {
+  //   let parallaxblock = document.querySelectorAll(".parallax-img ");
+  //   if (parallaxblock.length) {
+  //     new simpleParallax(parallaxblock, {
+  //       delay: 1,
+  //     });
+  //   }
+  // }
   /* ----------------------------------
     End Vendors plugins options Area 
      ---------------------------------- */

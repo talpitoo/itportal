@@ -16,6 +16,11 @@ $fontMain: "Roboto", sans-serif;
   height: 4px;
   background: $clr-main;
   border-radius: 1rem;
+  overflow: hidden; // TODO: double-check
+
+  @include media-breakpoint-up(lg) {
+    overflow: unset; // TODO: double-check
+  }
 }
 
 %pre-title {
@@ -80,7 +85,7 @@ body {
   background: $clr-white;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  @include ma-transition(all, 0.25s);
+  // @include ma-transition(all, 0.25s);
 }
 section {
   // overflow: hidden;
@@ -352,7 +357,7 @@ $g-colors: red, blue, green;
 }
 
 .parallax {
-  background-attachment: fixed !important;
+  // background-attachment: fixed !important;
 }
 
 .overlay-color {
