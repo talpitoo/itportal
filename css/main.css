@@ -15039,6 +15039,10 @@ text-primary {
 .service-box-integrations .service-icon img {
   border-radius: 0.5rem;
 }
+.service-box-integrations .service-title {
+  font-weight: 400;
+  display: none;
+}
 .service-box-integrations::before {
   background-color: white !important;
 }
@@ -15047,4 +15051,9 @@ text-primary {
 }
 .service-box-integrations:hover .read-more {
   color: #09aff4 !important;
+}
+
+.page-hero .hero-text-area .hero-title {
+  font-size: 54px !important;
+  font-weight: 500 !important;
 }

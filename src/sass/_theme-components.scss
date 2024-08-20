@@ -204,6 +204,11 @@ text-primary {
     }
   }
 
+  .service-title {
+    font-weight: 400;
+    display: none;
+  }
+
   &::before {
     background-color: white !important;
   }
@@ -217,4 +222,9 @@ text-primary {
       color: $itportal-main !important;
     }
   }
+}
+
+.page-hero .hero-text-area .hero-title {
+  font-size: 54px !important;
+  font-weight: 500 !important;
 }
