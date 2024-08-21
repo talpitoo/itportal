@@ -8,7 +8,7 @@
                     {# <div class="featured-img-area part"><img class="feat-img img-fluid" src="/assets/images/services/service-single-featured-img.jpg" alt="featured image"></div> #}
                     <div class="service-content">
                         <div class="part">
-                            <h3 class="service-title">Browser Password Plugin</h3>
+                            <h1 class="hero-title  wow fadeInUp mb-0">{{ title }}</h1>
 
                             {% set animationName = "password-management" %}
                             {% set compositionId = "compositionPasswordManagement" %}
@@ -19,7 +19,6 @@
                             {% set position = "static" %}
                             {% include "animations/animation-template.njk" %}
 
-                            <img class="img-fluid mb-4" loading="lazy" src="/assets/migrated/chrome.png" alt="TODO"/>
                             <h2>Revolutionize password management with our innovative browser plugin.</h2>
                             <p class="service-text">Tired of password searches and security concerns? Effortlessly access your IT Portal passwords and 2FA codes directly from your browser without compromising security.</p>
                             <h2>How the Browser Password Plugin works:</h2>
@@ -28,8 +27,9 @@
                                 <li>Instantly searches your IT Portal for the required credentials</li>
                                 <li>Auto-fills login information for a swift and secure experience</li>
                                 <li>Enhances productivity by eliminating manual password entry</li>
-                                </ul>
+                            </ul>
                             <p class="service-text">Try it now - Download for <a href="https://chrome.google.com/webstore/detail/it-portal-password-lookup/dijocadohljfnagfjhpglffpmcodjpgn" target="_blank" class="read-more">Chrome</a> or <a href="https://addons.mozilla.org/en-US/firefox/addon/it-portal-password-lookup/" target="_blank" class="read-more">Firefox here</a>.</p>
+                            <img class="img-fluid mb-4" loading="lazy" src="/assets/migrated/chrome.png" alt="TODO"/>
                         </div>
                         {# <div class="part">
                             <div class="two-cols-img ">

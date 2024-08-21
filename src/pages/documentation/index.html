@@ -10,18 +10,33 @@ bodyClass: page-documentation
 ---
 
 {# {% include "sections/hero-breadcrumb.njk" %} #}
+<section class="d-flex align-items-center page-hero inner-page-hero" id="page-hero">
+    <div class="overlay-photo-image-bg parallax" data-bg-img="/assets/hero/inner-page-hero.jpg" data-bg-opacity="1"></div>
+    <div class="overlay-color" data-bg-opacity=".75"></div>
+    <div class="container position-relative">
+        <div class="hero-text-area centerd">
+            <div class="row">
+                <div class="col-lg-8 d-flex flex-column justify-content-center text-start">
+                    <div class="pre-title d-inline-block wow fadeInUp" data-wow-delay=".1s">IT Portal</div>
+                    <h1 class="hero-title  wow fadeInUp" data-wow-delay=".2s">Documentation</h1>
+                    <p class="mb-0  wow fadeInUp" data-wow-delay=".3s">Enhance your IT operations with our robust documentation featuring tools for managing accounts, agreements, contacts, configurations, devices, documents, and more.</p>
+                </div>
+                <div class="col-lg-4">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="services services-boxed mega-section  ">
     <div class="container">
-        <div class="sec-heading  ">
+        {# <div class="sec-heading  ">
             <div class="content-area">
                 <h1>{{ title }}</h1>
-                {# <span class=" pre-title       wow fadeInUp " data-wow-delay=".2s">Documentation</span>
-                <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">
-                    <span class='hollow-text'>IT Portal</span> Documentation</h2> #}
                 <p class="subtitle   wow fadeInUp " data-wow-delay=".6s">Enhance your IT operations with our robust documentation featuring tools for managing accounts, agreements, contacts, configurations, devices, documents, and more.</p>
             </div>
-        </div>
+        </div> #}
         <div class="row gx-4 gy-4 services-row ">
             {% for item in collections.documentationCollection %}
                 {% if item.data.category == "documentation" %}

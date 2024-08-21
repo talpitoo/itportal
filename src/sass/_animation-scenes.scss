@@ -10,7 +10,8 @@
   &.canvas-integrations,
   &.canvas-features,
   &.canvas-security,
-  &.canvas-password-management {
+  &.canvas-password-management,
+  &.canvas-about {
     width: 100% !important;
     height: auto !important;
 
@@ -26,13 +27,18 @@
 }
 
 .page-features,
-.page-security {
+.page-security,
+.page-about-us {
   .page-hero {
     padding-bottom: 0;
   }
 }
 
-.page-pricing {
+.page-pricing,
+.page-documentation,
+.page-faqs,
+.page-contact,
+.page-sample-documentation {
   .page-hero {
     padding-top: 150px;
   }
