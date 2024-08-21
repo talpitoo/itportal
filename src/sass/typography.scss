@@ -1,4 +1,5 @@
 body,
+p,
 ul,
 ol,
 h6,
@@ -18,9 +19,6 @@ select,
 
 .copyrights .credits {
   font-size: 18px !important;
-}
-
-.copyrights .credits {
   font-weight: normal !important;
 }
 
@@ -33,7 +31,12 @@ ul + h2,
 ul + h3,
 ul + h4,
 ul + h5,
-ul + h6 {
+ul + h6,
+ol + h2,
+ol + h3,
+ol + h4,
+ol + h5,
+ol + h6 {
   margin-top: 32px;
 }
 

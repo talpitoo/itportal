@@ -1,27 +1,25 @@
-<section class="d-flex align-items-center page-hero  inner-page-hero " id="page-hero">
+<section class="d-flex align-items-center page-hero inner-page-hero" id="page-hero">
     <div class="overlay-photo-image-bg parallax" data-bg-img="/assets/hero/inner-page-hero.jpg" data-bg-opacity="1"></div>
     <div class="overlay-color" data-bg-opacity=".75"></div>
-    <div class="container">
+    <div class="container position-relative">
         <div class="hero-text-area centerd">
-            <h1 class="hero-title  wow fadeInUp" data-wow-delay=".2s">Features</h1>
-            {# <nav aria-label="breadcrumb ">
-                <ul class="breadcrumb wow fadeInUp" data-wow-delay=".6s">
-                    <li class="breadcrumb-item">
-                        <a class="breadcrumb-link" href="/">
-                            <i class="bi bi-house icon "></i>home</a>
-                    </li>
-                    <li class="breadcrumb-item active">features</li>
-                </ul>
-            </nav> #}
-
-            {% set animationName = "features" %}
-            {% set compositionId = "compositionFeatures" %}
-            {% set sceneName = "sceneFeatures" %}
-            {% set wrapperClass = "canvas-features" %}
-            {% set width = 363 %}
-            {% set height = 270 %}
-            {% set position = "static" %}
-            {% include "animations/animation-template.njk" %}
+            <div class="row">
+                <div class="col-lg-4 d-flex flex-column justify-content-center text-start">
+                    <div class="pre-title d-inline-block wow fadeInUp" data-wow-delay=".1s">IT Portal</div>
+                    <h1 class="hero-title  wow fadeInUp" data-wow-delay=".2s">Features</h1>
+                    <p class="mb-0  wow fadeInUp" data-wow-delay=".3s">We understand the challenges faced by organizations with the features businesses need to thrive in the digital age</p>
+                </div>
+                <div class="col-lg-8">
+                    {% set animationName = "features" %}
+                    {% set compositionId = "compositionFeatures" %}
+                    {% set sceneName = "sceneFeatures" %}
+                    {% set wrapperClass = "canvas-features" %}
+                    {% set width = 363 %}
+                    {% set height = 270 %}
+                    {% set position = "static" %}
+                    {% include "animations/animation-template.njk" %}
+                </div>
+            </div>
         </div>
     </div>
 </section>

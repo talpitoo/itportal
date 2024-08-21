@@ -14818,6 +14818,7 @@ body.dark-theme .about .stats-counter.stats-cards .stat-box {
 
 /* End .page-header and other Rules   */
 body,
+p,
 ul,
 ol,
 h6,
@@ -14838,9 +14839,6 @@ select,
 
 .copyrights .credits {
   font-size: 18px !important;
-}
-
-.copyrights .credits {
   font-weight: normal !important;
 }
 
@@ -14862,7 +14860,17 @@ ul + .h4,
 ul + h5,
 ul + .h5,
 ul + h6,
-ul + .h6 {
+ul + .h6,
+ol + h2,
+ol + .h2,
+ol + h3,
+ol + .h3,
+ol + h4,
+ol + .h4,
+ol + h5,
+ol + .h5,
+ol + h6,
+ol + .h6 {
   margin-top: 32px;
 }
 
@@ -14877,38 +14885,41 @@ strong {
 }
 @media (min-width: 992px) {
   #animation_container {
-    margin-top: 0;
     position: absolute !important;
+    margin-top: 0;
   }
 }
-#animation_container.canvas-features, #animation_container.canvas-security, #animation_container.canvas-password-management {
+#animation_container.canvas-security, #animation_container.canvas-password-management {
   width: 50% !important;
   height: auto !important;
   margin: 1rem auto 0;
 }
 @media (min-width: 992px) {
-  #animation_container.canvas-features, #animation_container.canvas-security, #animation_container.canvas-password-management {
+  #animation_container.canvas-security, #animation_container.canvas-password-management {
     position: static !important;
   }
 }
-#animation_container.canvas-integrations {
+#animation_container.canvas-integrations, #animation_container.canvas-features {
   width: 100% !important;
   height: auto !important;
 }
 @media (min-width: 992px) {
-  #animation_container.canvas-integrations {
+  #animation_container.canvas-integrations, #animation_container.canvas-features {
     position: static !important;
   }
 }
-#animation_container.canvas-integrations canvas {
+#animation_container.canvas-integrations canvas, #animation_container.canvas-features canvas {
   width: 100% !important;
   height: auto !important;
 }
 
-.canvas-features canvas,
 .canvas-security canvas {
   width: 100% !important;
   height: auto !important;
+}
+
+.page-features .page-hero {
+  padding-bottom: 0;
 }
 
 .page-hero.tringle-bg::before {
