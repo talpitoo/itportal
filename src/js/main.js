@@ -53,57 +53,69 @@ $(function () {
     }, 1000);
   });
 
-  /* ********* Start dark mode switcher ***********/
+  // search API start
+  function displayResults(results) {
+    // Clear previous results
+    $('#resultsContainer').empty();
 
-  const modeSwitcher = $(".mode-switcher");
-  const themeStoredKey = "ThemeColor";
-  const darkTheme_class = "dark-theme";
-  const lightTheme_class = "light-theme";
-  const themeStoredItem = localStorage.getItem(themeStoredKey);
-  /*********  Custom functions Area *********/
-
-  function setThemeMode(themeColor) {
-    if (themeColor === darkTheme_class) {
-      pageBody.addClass(darkTheme_class);
-      modeSwitcher.addClass(darkTheme_class).removeClass(lightTheme_class);
-      localStorage.setItem(themeStoredKey, darkTheme_class);
-      localStorage.removeItem(lightTheme_class);
+    // Check if results is a string (HTML content)
+    if (typeof results === 'string') {
+      $('#resultsContainer').html(results);
+    } else if (Array.isArray(results)) {
+      // If results is an array, iterate through it
+      results.forEach(function (result) {
+        $('#resultsContainer').append('<p>' + result.text + '</p>');
+      });
+    } else {
+      $('#resultsContainer').html('<p>No results found.</p>');
     }
-    if (themeColor === lightTheme_class) {
-      pageBody.removeClass(darkTheme_class);
-      modeSwitcher.addClass(lightTheme_class).removeClass(darkTheme_class);
-      localStorage.setItem(themeStoredKey, lightTheme_class);
-      localStorage.removeItem(darkTheme_class);
-    }
+    // if (Array.isArray(results) && results.length > 0) {
+    //   results.forEach(function (post) {
+    //     $('#resultsContainer').append(`
+    //           <div class="search-result">
+    //               <h3>${post.title}</h3>
+    //               <p>${post.body}</p>
+    //           </div>
+    //       `);
+    //   });
+    // } else {
+    //   $('#resultsContainer').html('<p>No results found.</p>');
+    // }
   }
 
-  /* *******  Set the theme according to the local storage value ********/
-  // if local storge not set or the body has class value of .dark-theme THEN default theme is dark
-  if (!themeStoredItem && !pageBody.hasClass(darkTheme_class)) {
-    setThemeMode(darkTheme_class);
-  }
-  // the only case to be light mode is when the local storge has he value of light-theme
-  if (themeStoredItem === lightTheme_class) {
-    setThemeMode(lightTheme_class);
-  }
+  $('.search-form').on('submit', function (e) {
+    e.preventDefault(); // Prevent the default form submission
 
-  // if local storge or the body has class value of .dark-theme
-  if (
-    themeStoredItem === darkTheme_class ||
-    pageBody.hasClass(darkTheme_class)
-  ) {
-    setThemeMode(darkTheme_class);
-  }
-
-  /* ******* Set the theme by clicking the theme switcher ********/
-  $(modeSwitcher).on("click", function () {
-    if ($(this).is("." + darkTheme_class)) {
-      setThemeMode(lightTheme_class);
-    } else if ($(this).is("." + lightTheme_class)) {
-      setThemeMode(darkTheme_class);
+    var query = $('#searchInput').val();
+    if (query.length > 2) { // Only search if query is at least 3 characters
+      $.ajax({
+        url: 'https://www.itportal.com/v4/code/',
+        method: 'GET',
+        data: {
+          rID: 'AISearch',
+          Search: query
+        },
+        // url: 'https://jsonplaceholder.typicode.com/posts',
+        // method: 'GET',
+        // data: {
+        //   userId: query // Using query as userId for demonstration
+        // },
+        success: function (response) {
+          // Handle the response
+          displayResults(response);
+        },
+        error: function (xhr, status, error) {
+          console.error("An error occurred: " + error);
+          $('#resultsContainer').html('<p>An error occurred while searching. Please try again.</p>');
+        }
+      });
+    } else {
+      $('#resultsContainer').html('<p>Please enter at least 3 characters to search.</p>');
     }
   });
+  // search API end
 
+  /*********  Custom functions Area *********/
   /* ----------------------------------
      START #page-header js rules
    ---------------------------------- */
