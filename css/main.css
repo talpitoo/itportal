@@ -14889,37 +14889,27 @@ strong {
     margin-top: 0;
   }
 }
-#animation_container.canvas-security, #animation_container.canvas-password-management {
-  width: 50% !important;
-  height: auto !important;
-  margin: 1rem auto 0;
-}
-@media (min-width: 992px) {
-  #animation_container.canvas-security, #animation_container.canvas-password-management {
-    position: static !important;
-  }
-}
-#animation_container.canvas-integrations, #animation_container.canvas-features {
+#animation_container.canvas-integrations, #animation_container.canvas-features, #animation_container.canvas-security, #animation_container.canvas-password-management {
   width: 100% !important;
   height: auto !important;
 }
 @media (min-width: 992px) {
-  #animation_container.canvas-integrations, #animation_container.canvas-features {
+  #animation_container.canvas-integrations, #animation_container.canvas-features, #animation_container.canvas-security, #animation_container.canvas-password-management {
     position: static !important;
   }
 }
-#animation_container.canvas-integrations canvas, #animation_container.canvas-features canvas {
+#animation_container.canvas-integrations canvas, #animation_container.canvas-features canvas, #animation_container.canvas-security canvas, #animation_container.canvas-password-management canvas {
   width: 100% !important;
   height: auto !important;
 }
 
-.canvas-security canvas {
-  width: 100% !important;
-  height: auto !important;
-}
-
-.page-features .page-hero {
+.page-features .page-hero,
+.page-security .page-hero {
   padding-bottom: 0;
+}
+
+.page-pricing .page-hero {
+  padding-top: 150px;
 }
 
 .page-hero.tringle-bg::before {

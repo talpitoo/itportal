@@ -7,19 +7,10 @@
     margin-top: 0;
   }
 
+  &.canvas-integrations,
+  &.canvas-features,
   &.canvas-security,
   &.canvas-password-management {
-    width: 50% !important;
-    height: auto !important;
-    margin: 1rem auto 0;
-
-    @include media-breakpoint-up(lg) {
-      position: static !important;
-    }
-  }
-
-  &.canvas-integrations,
-  &.canvas-features {
     width: 100% !important;
     height: auto !important;
 
@@ -34,13 +25,15 @@
   }
 }
 
-.canvas-security canvas {
-  width: 100% !important;
-  height: auto !important;
-}
-
-.page-features {
+.page-features,
+.page-security {
   .page-hero {
     padding-bottom: 0;
+  }
+}
+
+.page-pricing {
+  .page-hero {
+    padding-top: 150px;
   }
 }
