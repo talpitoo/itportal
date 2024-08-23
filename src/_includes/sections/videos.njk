@@ -17,10 +17,12 @@
             </div>
         </div>
         <div class="row info-items-list">
-            <div class="col-12 col-lg-6 d-flex align-items-center about-col  wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                <div class="col-12 col-lg-6 tab-content w-100" id="myTabContent">
+            <div class="col-12 col-lg-5 d-flex align-items-center about-col  wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <div class="col-12 col-lg-5 tab-content w-100" id="myTabContent">
                     <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/eVfyL85j4QM?si=hor1jWLC7tO3XDHS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/eVfyL85j4QM?si=hor1jWLC7tO3XDHS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                         <div class="ratio ratio-16x9">
@@ -32,48 +34,50 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1h1o9EHAJtQ?si=nUeAS-WJhbtEg0xG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/1h1o9EHAJtQ?si=nUeAS-WJhbtEg0xG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 offset-lg-1 mt-5 mt-lg-0">
                 <ul class="nav flex-column gap-3 nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link text-start active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
-                            <div class="info-item">
+                            <div class="info-item mb-0">
                                 <span class="info-number ">01.</span>
                                 <div class="info-content">
                                     <h5 class="info-title">Engineer Video</h5>
-                                    <p class="info-text">See how as an engineer you can benefit from a central documentation repository.</p>
+                                    <p class="info-text mb-0">See how as an engineer you can benefit from a central documentation repository.</p>
                                 </div>
                             </div>
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link text-start" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
-                            <div class="info-item">
+                            <div class="info-item mb-0">
                                 <span class="info-number ">02.</span>
                                 <div class="info-content">
                                     <h5 class="info-title">Manager Video</h5>
-                                    <p class="info-text">As a manager, find piece of mind knowing knowledge is centralized.</p>
+                                    <p class="info-text mb-0">As a manager, find piece of mind knowing knowledge is centralized.</p>
                                 </div>
                             </div>
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link text-start" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
-                            <div class="info-item">
+                            <div class="info-item mb-0">
                                 <span class="info-number ">03.</span>
                                 <div class="info-content">
                                     <h5 class="info-title">15 Minute Overview</h5>
-                                    <p class="info-text">Also review our quick 15 minute overview video to get a good grasp of what is needed for documentation.</p>
+                                    <p class="info-text mb-0">Also review our quick 15 minute overview video to get a good grasp of what is needed for documentation.</p>
                                 </div>
                             </div>
                         </button>
                     </li>
                 </ul>
                 <div class="cta-area mt-4">
-                    <a class=" btn-solid " href="#live-demo">Live Demo</a>
+                    <a class=" btn-solid " href="#" data-bs-toggle="modal" data-bs-target="#modalLiveDemo">Live Demo</a>
                 </div>
             </div>
         </div>

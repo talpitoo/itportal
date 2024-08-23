@@ -1,0 +1,15 @@
+{# <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLiveDemo">
+  Launch demo modal
+</button> #}
+
+<div class="modal fade" id="modalLiveDemo" tabindex="-1" aria-labelledby="modalLiveDemoLabel" aria-hidden="true">
+  {# modal-fullscreen-lg-down #}
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body bg-dark position-relative">        
+        {% include "sections/live-demo-contact-form.njk" %}
+        <button type="button" class="btn-close position-absolute top-0 end-0 mt-3 me-3 bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+</div>

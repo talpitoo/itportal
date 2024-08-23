@@ -11851,6 +11851,10 @@ body.rounded-btns .read-more {
   margin-right: 0;
 }
 
+.page-hero-generic {
+  min-height: 0;
+}
+
 .hero-swiper-slider {
   padding: 0;
   background: var(--clr-dark-blue);
