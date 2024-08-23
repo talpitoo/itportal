@@ -6,27 +6,8 @@ permalink: /terms-of-use/
 bodyClass: page-terms
 ---
 
-<!-- Start inner Page hero-->
-<section class="d-flex align-items-center page-hero  inner-page-hero " id="page-hero">
-  <div class="overlay-photo-image-bg parallax" data-bg-img="/assets/hero/inner-page-hero.jpg" data-bg-opacity="1"></div>
-  <div class="overlay-color" data-bg-opacity=".75"></div>
-  <div class="container">
-    <div class="hero-text-area centerd">
-      <h1 class="hero-title  wow fadeInUp" data-wow-delay=".2s">Terms of Use/Refund Policy</h1>
-      {# <nav aria-label="breadcrumb ">
-        <ul class="breadcrumb wow fadeInUp" data-wow-delay=".6s">
-          <li class="breadcrumb-item">
-            <a class="breadcrumb-link" href="/">
-              <i class="bi bi-house icon "></i>home</a>
-          </li>
-          <li class="breadcrumb-item active">Terms of Use/Refund Policy</li>
-        </ul>
-      </nav> #}
-    </div>
-  </div>
-</section>
-<!-- End inner Page hero-->
-<!-- Start  about Section-->
+{% include "sections/hero-generic.njk" %}
+
 <section class="about mega-section" id="about">
   <div class="container">
     <!-- Start first about div-->
@@ -110,10 +91,8 @@ bodyClass: page-terms
         </div>
       </div>
     </div>
-    <!--End first about div-->
   </div>
 </section>
-<!-- End  about Section-->
 
 {% include "sections/loading.njk" %}
 {% include "sections/back-to-top.njk" %}

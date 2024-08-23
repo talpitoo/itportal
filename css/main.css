@@ -14921,6 +14921,10 @@ strong {
   padding-top: 150px;
 }
 
+.page-hero-generic {
+  padding-top: 150px;
+}
+
 .page-hero.tringle-bg::before {
   clip-path: polygon(100vw 20vw, 100vw 100vw, -35vw 100vw) !important;
 }

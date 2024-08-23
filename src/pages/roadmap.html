@@ -6,28 +6,8 @@ permalink: /roadmap/
 bodyClass: page-roadmap
 ---
 
-<!-- Start inner Page hero-->
-<section class="d-flex align-items-center page-hero  inner-page-hero ">
-  <div class="overlay-photo-image-bg parallax" data-bg-img="/assets/hero/inner-page-hero.jpg" data-bg-opacity="1"></div>
-  <div class="overlay-color" data-bg-opacity=".75"></div>
-  <div class="container">
-    <div class="hero-text-area centerd">
-      <h1 class="hero-title  wow fadeInUp" data-wow-delay=".2s">Roadmap and Changes</h1>
-      {# <nav aria-label="breadcrumb ">
-        <ul class="breadcrumb wow fadeInUp" data-wow-delay=".6s">
-          <li class="breadcrumb-item">
-            <a class="breadcrumb-link" href="/">
-              <i class="bi bi-house icon "></i>home</a>
-          </li>
-          <li class="breadcrumb-item active">Roadmap and Changes</li>
-        </ul>
-      </nav> #}
-    </div>
-  </div>
-</section>
-<!-- End inner Page hero-->
+{% include "sections/hero-generic.njk" %}
 
-<!-- Start  about Section-->
 <section class="about mega-section" id="page-roadmap">
   <div class="container">
     <!-- Start first about div-->
@@ -6115,10 +6095,8 @@ bodyClass: page-roadmap
         </div>
       </div>
     </div>
-    <!--End first about div-->
   </div>
 </section>
-<!-- End  about Section-->
 
 {% include "sections/loading.njk" %}
 {% include "sections/back-to-top.njk" %}
