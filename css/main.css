@@ -14894,6 +14894,10 @@ textarea::placeholder {
   color: gray !important;
 }
 
+.text-muted {
+  color: gray !important;
+}
+
 #animation_container {
   position: static !important;
   margin-top: 40px;
