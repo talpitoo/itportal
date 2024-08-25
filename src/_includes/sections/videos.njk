@@ -1,10 +1,11 @@
 <section class="py-5">
     <div class="container">
         <div class="sec-heading  light-title ">
-            <div class="content-area">
-                <span class="pre-title       wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">a picture is worth a thousand words</span>
-                <h2 class="title    wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-                    <a href="https://kb.itportal.com/?U=KQ8VTIvC" target="_blank" class="featured-text">AI Powered <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
+            <div class="content-area mw-100">
+                <span class="pre-title wow fadeInUp mw-100" data-wow-delay=".2s">a picture is worth a thousand words</span>
+
+                <h2 class="title    wow fadeInUp" data-wow-delay=".4s">
+                    <a href="https://kb.itportal.com/?U=KQ8VTIvC" target="_blank" class="read-more featured-text">AI Powered <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
                             <path d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"></path>
                         </svg>
                     </a> - IT Documentation
@@ -17,31 +18,8 @@
             </div>
         </div>
         <div class="row info-items-list">
-            <div class="col-12 col-lg-5 d-flex align-items-center about-col  wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                <div class="col-12 col-lg-5 tab-content w-100" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/eVfyL85j4QM?si=hor1jWLC7tO3XDHS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                        <div class="ratio ratio-16x9">
-                            <video controls>
-                                <source src="/assets/migrated/video2.ogx" type="video/ogg">
-                                {# <source src="https://www.itportal.com/v4/videos/video2.ogv" type="video/ogg"> #}
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/1h1o9EHAJtQ?si=nUeAS-WJhbtEg0xG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6 offset-lg-1 mt-5 mt-lg-0">
-                <ul class="nav flex-column gap-3 nav-tabs" id="myTab" role="tablist">
+            <div class="col-12 col-lg-6 order-lg-2 offset-lg-1 mt-5 mt-lg-0">
+                <ul class="nav flex-column gap-3 nav-tabs" id="videosTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link text-start active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
                             <div class="info-item mb-0">
@@ -77,7 +55,30 @@
                     </li>
                 </ul>
                 <div class="cta-area mt-4">
-                    <a class=" btn-solid " href="#" data-bs-toggle="modal" data-bs-target="#modalLiveDemo">Live Demo</a>
+                    <button type="button" class="btn-solid" data-bs-toggle="modal" data-bs-target="#modalLiveDemo">Live Demo</butto>
+                </div>
+            </div>
+            <div class="order-lg-1 pt-4 pt-lg-0 col-12 col-lg-5 d-flex align-items-center about-col  wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <div class="col-12 col-lg-5 tab-content w-100" id="videosTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/eVfyL85j4QM?si=hor1jWLC7tO3XDHS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <div class="ratio ratio-16x9">
+                            <video controls>
+                                <source src="/assets/migrated/video2.ogx" type="video/ogg">
+                                {# <source src="https://www.itportal.com/v4/videos/video2.ogv" type="video/ogg"> #}
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/1h1o9EHAJtQ?si=nUeAS-WJhbtEg0xG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

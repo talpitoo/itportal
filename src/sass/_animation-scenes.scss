@@ -1,9 +1,10 @@
 #animation_container {
   position: static !important;
   margin-top: 40px;
+  max-width: 100%;
 
   @include media-breakpoint-up(lg) {
-    position: absolute !important;
+    // position: absolute !important;
     margin-top: 0;
   }
 
@@ -46,4 +47,21 @@
 
 .page-hero-generic {
   padding-top: 150px;  
+}
+
+
+.page-landing,
+.page-msp,
+.page-it,
+.page-education,
+.page-government {
+  .page-hero {
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 0;
+
+      .itp-row-hero-cta {
+        padding-bottom: 100px;
+      }
+    }
+  }
 }

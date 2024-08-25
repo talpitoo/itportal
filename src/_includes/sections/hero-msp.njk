@@ -1,62 +1,28 @@
-<!-- Start  Page hero-->
 <section class="page-hero  d-flex flex-column align-items-center  tringle-bg position-relative" id="page-hero">
     <div class="overlay-photo-image-bg" data-bg-img="/assets/sections-bg-images/pattern-bg-1.jpg" data-bg-opacity=".2"></div>
-    <!-- <div class="particles-js  dots" id="particles-js"></div> -->
+    <div class="linear-gradient"></div>
+    
     <div class="container position-relative">
         {% set animationName = "splash-msp" %}
         {% set compositionId = "compositionSplashMSP" %}
         {% set sceneName = "sceneSplashMSP" %}
         {% include "animations/animation-template.njk" %}
-    </div>
 
-    <div class="linear-gradient"></div>
-
-    <div class="container">
-        <div class="row">
-
+        <div class="row position-lg-absolute top-0">
             <div class="col-12 col-lg-6 ">
-                <!--Start of .hero-text-area-->
                 <div class="hero-text-area   ">
                     <div class="row">
-                        {# <div class="col-12   ">
-                            <div class="hero-social-icons mb-3 ">
-                                <div class="sc-wrapper dir-row sc-flat">
-                                    <ul class="sc-list">
-                                        <li class="sc-item " title="Facebook">
-                                            <a class="sc-link" href="#0" title="social media icon">
-                                                <i class="fab fa-facebook-f sc-icon"></i>
-                                            </a>
-                                        </li>
-                                        <li class="sc-item " title="youtube">
-                                            <a class="sc-link" href="#0" title="social media icon">
-                                                <i class="fab fa-youtube sc-icon"></i>
-                                            </a>
-                                        </li>
-                                        <li class="sc-item " title="instagram">
-                                            <a class="sc-link" href="#0" title="social media icon">
-                                                <i class="fab fa-instagram sc-icon"></i>
-                                            </a>
-                                        </li>
-                                        <li class="sc-item " title="twitter">
-                                            <a class="sc-link" href="#0" title="social media icon">
-                                                <i class="fab fa-twitter sc-icon"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> #}
                         <div class="col-12       ">
-                            {# <div class="pre-title ">MSP</div> #}
                             <h1 class="hero-title hero-title hero-title-solutions">IT Portal Offers <span class="featured-text">Managed Service Providers {% include "components/svg-wave.njk" %}</span> the ability to drive growth and profitability through streamlined IT management, exceptional client experiences, and robust security</h1>
                         </div>
 
                     </div>
                 </div>
-                <!--End of .hero-text-area-->
             </div>
+        </div>
 
-            <div class="col-12 col-lg-4 offset-lg-2 itp-hero-msp">
+        <div class="row itp-row-hero-cta position-lg-absolute start-0 end-0 bottom-0">
+            <div class="col-12 col-lg-4 offset-lg-8 itp-hero-msp text-lg-end">
                 <div class="cta-links-area ">
                     <a class=" btn-outline cta-link cta-link-primary " href="#discover">Discover MSP</a>
                     <div class="play-btn-row-dir ">
@@ -70,8 +36,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
-<!-- End  Page hero-->

@@ -3,6 +3,12 @@
 //   color: var(--clr-main) !important;
 // }
 
+.position-lg-absolute {
+  @include media-breakpoint-up(lg) {
+    position: absolute !important;
+  }
+}
+
 .text-itportal-main {
   color: $itportal-main !important;
 }
