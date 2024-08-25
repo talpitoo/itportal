@@ -18,8 +18,8 @@
     <nav class="menu-navbar">
       <div class="header-logo">
         <a class="logo-link" href="/">
-          <img class="logo-img light-logo" loading="lazy" src="/assets/logo/logo-itportal-light.svg" alt="logo"/>
-          <img class="logo-img  dark-logo" loading="lazy" src="/assets/logo/logo-itportal-dark.svg" alt="logo"/>
+          <img class="logo-img light-logo" loading="lazy" src="/assets/logo/logo-itportal-light.svg" alt="logo" width="160" height="29" />
+          <img class="logo-img  dark-logo" loading="lazy" src="/assets/logo/logo-itportal-dark.svg" alt="logo" width="160" height="29" />
         </a>
       </div>
       <div class="links menu-wrapper ">
@@ -27,7 +27,7 @@
           {% set navPages = collections.all | eleventyNavigation %}
           {% for entry in navPages %}
             {% if entry.includeSelf != false %}
-              <div>
+              {# <div> #}
                 {% if entry.children.length %}
                   <li class="menu-item has-sub-menu">
                     {# NOTE: adaptive markup a vs. span #}
@@ -62,7 +62,7 @@
                     </a>
                   </li>
                 {% endif %}
-              </div>
+              {# </div> #}
             {% endif %}
           {% endfor %}
         </ul>
