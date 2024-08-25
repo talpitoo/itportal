@@ -14889,6 +14889,11 @@ strong {
   font-weight: 700;
 }
 
+input::placeholder,
+textarea::placeholder {
+  color: gray !important;
+}
+
 #animation_container {
   position: static !important;
   margin-top: 40px;

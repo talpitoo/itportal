@@ -44,3 +44,8 @@ b,
 strong {
   font-weight: $font-weight-bold;
 }
+
+input::placeholder,
+textarea::placeholder {
+  color: gray !important;
+}
