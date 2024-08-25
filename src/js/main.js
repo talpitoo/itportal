@@ -28,17 +28,17 @@ $(function () {
   // function to fire the conter plugin
   let counterShowsUp = false;
 
-  function fireCounter() {
-    if ($(".js-stats-counter").length) {
-      if (jQuery().countTo && counterShowsUp === false) {
-        let pos = $(".js-stats-counter").offset().top;
-        if (main_window.scrollTop() + main_window.innerHeight() - 50 >= pos) {
-          $(".counter").countTo();
-          counterShowsUp = true;
-        }
-      }
-    }
-  }
+  // function fireCounter() {
+  //   if ($(".js-stats-counter").length) {
+  //     if (jQuery().countTo && counterShowsUp === false) {
+  //       let pos = $(".js-stats-counter").offset().top;
+  //       if (main_window.scrollTop() + main_window.innerHeight() - 50 >= pos) {
+  //         $(".counter").countTo();
+  //         counterShowsUp = true;
+  //       }
+  //     }
+  //   }
+  // }
 
   // Start open/close navbar search box
   $(".header-search-box form").on("click", function (e) {
@@ -240,19 +240,19 @@ $(function () {
   // End Smooth Scrolling To Window Top When Clicking on Back To Top Button
 
   /* Start Portfolio btns  */
-  if ($(".portfolio .portfolio-btn").length) {
-    $(".portfolio .portfolio-btn").on("click", function () {
-      $(this).addClass("active").siblings().removeClass("active");
+  // if ($(".portfolio .portfolio-btn").length) {
+  //   $(".portfolio .portfolio-btn").on("click", function () {
+  //     $(this).addClass("active").siblings().removeClass("active");
 
-      const $filterValue = $(this).attr("data-filter");
-      portfolioGroup.isotope({
-        filter: $filterValue,
-      });
-    });
-  }
+  //     const $filterValue = $(this).attr("data-filter");
+  //     portfolioGroup.isotope({
+  //       filter: $filterValue,
+  //     });
+  //   });
+  // }
 
   /* *******   initialize Counter plugin ********/
-  fireCounter();
+  // fireCounter();
 
   /* ********* set the Background Image path and opacity for elements that has the  a vlaue for data-bg-img attribute***********/
   const bg_img = $("*");
@@ -266,18 +266,18 @@ $(function () {
   });
 
   /* *******  Start skills Bars  ********/
-  $(window).on("scroll", function () {
-    $(".skills .skill .skill-bar .bar").each(function () {
-      let barOriginalPosition = $(this).offset().top + $(this).outerHeight();
-      let barCurrPosition = $(window).scrollTop() + $(window).height();
-      let widthValue = $(this).attr("data-skill-val");
-      if (barCurrPosition > barOriginalPosition) {
-        $(this).css({
-          width: widthValue + "%",
-        });
-      }
-    });
-  });
+  // $(window).on("scroll", function () {
+  //   $(".skills .skill .skill-bar .bar").each(function () {
+  //     let barOriginalPosition = $(this).offset().top + $(this).outerHeight();
+  //     let barCurrPosition = $(window).scrollTop() + $(window).height();
+  //     let widthValue = $(this).attr("data-skill-val");
+  //     if (barCurrPosition > barOriginalPosition) {
+  //       $(this).css({
+  //         width: widthValue + "%",
+  //       });
+  //     }
+  //   });
+  // });
 
   /* ******* Start Percentage loading screen interactions ********/
   let percentage = 0;
@@ -310,7 +310,7 @@ $(function () {
     }
 
     // to make sure the counter will start counting while its section apear on the screen
-    fireCounter();
+    // fireCounter();
   });
 
   /*************Start Contact Form Functionality************/
@@ -389,80 +389,80 @@ $(function () {
     ---------------------------------- */
 
   //initialize swiper [Hero Section] //fade slider
-  if ($(".hero-swiper-slider.fade-effect .swiper-container").length) {
-    const heroSlider = new Swiper(
-      ".hero-swiper-slider.fade-effect .swiper-container",
-      {
-        speed: 1000,
-        loop: true,
-        reverseDirection: true,
-        effect: "fade",
-        fadeEffect: {
-          crossFade: true,
-        },
-        on: {
-          init: function () {
-            let thisSlider = this;
-            $(".slides-count").html("0" + (this.slides.length - 2));
-            $(".curent-slide").html("0" + (this.realIndex + 1));
-          },
-          slideChange: function () {
-            $(".curent-slide").html("0" + (this.realIndex + 1));
-          },
-        },
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: true,
-        },
-        pagination: {
-          el: ".hero-swiper-slider.fade-effect .swiper-pagination",
-          type: "bullets",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".hero-swiper-slider.fade-effect .swiper-button-next",
-          prevEl: ".hero-swiper-slider.fade-effect .swiper-button-prev",
-        },
-      }
-    );
-  }
-  if ($(".hero-swiper-slider.slide-effect .swiper-container").length) {
-    const heroSlider = new Swiper(
-      ".hero-swiper-slider.slide-effect .swiper-container",
-      {
-        speed: 1000,
-        loop: true,
-        reverseDirection: true,
-        effect: "slide",
-        fadeEffect: {
-          crossFade: true,
-        },
-        on: {
-          init: function () {
-            let thisSlider = this;
-            $(".slides-count").html("0" + (this.slides.length - 2));
-            $(".curent-slide").html("0" + (this.realIndex + 1));
-          },
-          slideChange: function () {
-            $(".curent-slide").html("0" + (this.realIndex + 1));
-          },
-        },
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: true,
-        },
-        pagination: {
-          el: ".hero-swiper-slider.slide-effect .swiper-pagination",
-          type: "bullets",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".hero-swiper-slider.slide-effect .swiper-button-next",
-          prevEl: ".hero-swiper-slider.slide-effect .swiper-button-prev",
-        },
-      }
-    );
-  }
+  // if ($(".hero-swiper-slider.fade-effect .swiper-container").length) {
+  //   const heroSlider = new Swiper(
+  //     ".hero-swiper-slider.fade-effect .swiper-container",
+  //     {
+  //       speed: 1000,
+  //       loop: true,
+  //       reverseDirection: true,
+  //       effect: "fade",
+  //       fadeEffect: {
+  //         crossFade: true,
+  //       },
+  //       on: {
+  //         init: function () {
+  //           let thisSlider = this;
+  //           $(".slides-count").html("0" + (this.slides.length - 2));
+  //           $(".curent-slide").html("0" + (this.realIndex + 1));
+  //         },
+  //         slideChange: function () {
+  //           $(".curent-slide").html("0" + (this.realIndex + 1));
+  //         },
+  //       },
+  //       autoplay: {
+  //         delay: 5000,
+  //         disableOnInteraction: true,
+  //       },
+  //       pagination: {
+  //         el: ".hero-swiper-slider.fade-effect .swiper-pagination",
+  //         type: "bullets",
+  //         clickable: true,
+  //       },
+  //       navigation: {
+  //         nextEl: ".hero-swiper-slider.fade-effect .swiper-button-next",
+  //         prevEl: ".hero-swiper-slider.fade-effect .swiper-button-prev",
+  //       },
+  //     }
+  //   );
+  // }
+  // if ($(".hero-swiper-slider.slide-effect .swiper-container").length) {
+  //   const heroSlider = new Swiper(
+  //     ".hero-swiper-slider.slide-effect .swiper-container",
+  //     {
+  //       speed: 1000,
+  //       loop: true,
+  //       reverseDirection: true,
+  //       effect: "slide",
+  //       fadeEffect: {
+  //         crossFade: true,
+  //       },
+  //       on: {
+  //         init: function () {
+  //           let thisSlider = this;
+  //           $(".slides-count").html("0" + (this.slides.length - 2));
+  //           $(".curent-slide").html("0" + (this.realIndex + 1));
+  //         },
+  //         slideChange: function () {
+  //           $(".curent-slide").html("0" + (this.realIndex + 1));
+  //         },
+  //       },
+  //       autoplay: {
+  //         delay: 5000,
+  //         disableOnInteraction: true,
+  //       },
+  //       pagination: {
+  //         el: ".hero-swiper-slider.slide-effect .swiper-pagination",
+  //         type: "bullets",
+  //         clickable: true,
+  //       },
+  //       navigation: {
+  //         nextEl: ".hero-swiper-slider.slide-effect .swiper-button-next",
+  //         prevEl: ".hero-swiper-slider.slide-effect .swiper-button-prev",
+  //       },
+  //     }
+  //   );
+  // }
 
   // initialize swiper [Testimonials with 1 Column]
   if ($(".testimonials-1-col  .swiper-container").length) {
@@ -493,78 +493,78 @@ $(function () {
   }
 
   //initialize swiper [clients Section]
-  if ($(".our-clients .swiper-container").length) {
-    const partenersSlider = new Swiper(".our-clients .swiper-container", {
-      // Optional parameters
-      speed: 600,
-      loop: true,
-      spaceBetween: 20,
-      grabCursor: true,
-      delay: 5000,
-      autoplay: {
-        delay: 5000,
-      },
-      slidesPerView: 3,
-      breakpoints: {
-        991: {
-          slidesPerView: 6,
-          spaceBetween: 30,
-        },
-      },
-    });
-  }
+  // if ($(".our-clients .swiper-container").length) {
+  //   const partenersSlider = new Swiper(".our-clients .swiper-container", {
+  //     // Optional parameters
+  //     speed: 600,
+  //     loop: true,
+  //     spaceBetween: 20,
+  //     grabCursor: true,
+  //     delay: 5000,
+  //     autoplay: {
+  //       delay: 5000,
+  //     },
+  //     slidesPerView: 3,
+  //     breakpoints: {
+  //       991: {
+  //         slidesPerView: 6,
+  //         spaceBetween: 30,
+  //       },
+  //     },
+  //   });
+  // }
 
   //initialize swiper [portfolio-slider]
-  if ($(".portfolio-slider .swiper-container").length) {
-    const swiperPortfolioSlider = new Swiper(
-      ".portfolio-slider .swiper-container",
-      {
-        speed: 600,
-        loop: true,
-        centeredSlides: true,
-        slidesPerView: 1,
-        spaceBetween: 30,
-        autoplay: {
-          delay: 5000,
-        },
-        breakpoints: {
-          991: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-          },
-        },
-        navigation: {
-          nextEl: ".portfolio-slider .swiper-button-next",
-          prevEl: ".portfolio-slider .swiper-button-prev",
-        },
-      }
-    );
-  }
+  // if ($(".portfolio-slider .swiper-container").length) {
+  //   const swiperPortfolioSlider = new Swiper(
+  //     ".portfolio-slider .swiper-container",
+  //     {
+  //       speed: 600,
+  //       loop: true,
+  //       centeredSlides: true,
+  //       slidesPerView: 1,
+  //       spaceBetween: 30,
+  //       autoplay: {
+  //         delay: 5000,
+  //       },
+  //       breakpoints: {
+  //         991: {
+  //           slidesPerView: 2,
+  //           spaceBetween: 30,
+  //         },
+  //       },
+  //       navigation: {
+  //         nextEl: ".portfolio-slider .swiper-button-next",
+  //         prevEl: ".portfolio-slider .swiper-button-prev",
+  //       },
+  //     }
+  //   );
+  // }
 
   //initialize swiper [portfolio-single]
-  if (
-    $(".portfolio-single .portfolio-single-slider .swiper-container").length
-  ) {
-    const swiperPortfolioSingleSlider = new Swiper(
-      ".portfolio-single .portfolio-single-slider .swiper-container",
-      {
-        spaceBetween: 10,
-        grabCursor: true,
-        reverseDirection: true,
-        loop: true,
-        slidesPerView: 1,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: true,
-        },
+  // if (
+  //   $(".portfolio-single .portfolio-single-slider .swiper-container").length
+  // ) {
+  //   const swiperPortfolioSingleSlider = new Swiper(
+  //     ".portfolio-single .portfolio-single-slider .swiper-container",
+  //     {
+  //       spaceBetween: 10,
+  //       grabCursor: true,
+  //       reverseDirection: true,
+  //       loop: true,
+  //       slidesPerView: 1,
+  //       autoplay: {
+  //         delay: 5000,
+  //         disableOnInteraction: true,
+  //       },
 
-        navigation: {
-          nextEl: ".portfolio-single-slider .swiper-button-next",
-          prevEl: ".portfolio-single-slider .swiper-button-prev",
-        },
-      }
-    );
-  }
+  //       navigation: {
+  //         nextEl: ".portfolio-single-slider .swiper-button-next",
+  //         prevEl: ".portfolio-single-slider .swiper-button-prev",
+  //       },
+  //     }
+  //   );
+  // }
 
   /* *******  loading  wow.js  Options ********/
   const wow = new WOW({
@@ -574,156 +574,156 @@ $(function () {
   wow.init();
 
   /* *******  loading fancybox.js library ********/
-  if ($("*").fancybox) {
-    $().fancybox({
-      selector: '[data-fancybox=".show-in-fancybox "]:visible',
-      loop: true,
-      buttons: ["zoom", "close"],
-    });
-  }
+  // if ($("*").fancybox) {
+  //   $().fancybox({
+  //     selector: '[data-fancybox=".show-in-fancybox "]:visible',
+  //     loop: true,
+  //     buttons: ["zoom", "close"],
+  //   });
+  // }
 
   /* *******  loading tilt.js library ********/
-  if (jQuery().tilt) {
-    $("[data-tilt]").tilt({
-      perspective: 1000,
-    });
-  }
+  // if (jQuery().tilt) {
+  //   $("[data-tilt]").tilt({
+  //     perspective: 1000,
+  //   });
+  // }
 
   /* *******  Loading the isotope plugin ********/
-  if (jQuery().isotope) {
-    portfolioGroup.isotope({
-      // options
-      itemSelector: ".portfolio-item",
-      layoutMode: "fitRows",
-      percentPosition: true,
-      filter: "*",
-      stagger: 30,
-      containerStyle: null,
-    });
-  }
+  // if (jQuery().isotope) {
+  //   portfolioGroup.isotope({
+  //     // options
+  //     itemSelector: ".portfolio-item",
+  //     layoutMode: "fitRows",
+  //     percentPosition: true,
+  //     filter: "*",
+  //     stagger: 30,
+  //     containerStyle: null,
+  //   });
+  // }
 
   /* *******  Start particles.js ********/
-  if ($(".particles-js.dots").length) {
-    // constant to hold the particals options
-    const customParticlesOptions = {
-      particles: {
-        number: {
-          value: 150,
-          density: {
-            enable: true,
-            value_area: 500,
-          },
-        },
-        color: {
-          value: "#09aff4",
-        },
-        shape: {
-          type: "circle",
-          stroke: {
-            width: 0,
-            color: "#000000",
-          },
-          polygon: {
-            nb_sides: 5,
-          },
-          image: {
-            src: "img/github.svg",
-            width: 100,
-            height: 100,
-          },
-        },
-        opacity: {
-          value: 0.5,
-          random: true,
-          anim: {
-            enable: true,
-            speed: 1,
-            opacity_min: 0,
-            sync: false,
-          },
-        },
-        size: {
-          value: 3,
-          random: true,
-          anim: {
-            enable: true,
-            speed: 5,
-            size_min: 0.3,
-            sync: false,
-          },
-        },
-        line_linked: {
-          enable: false,
-          distance: 150,
-          color: "#ffffff",
-          opacity: 0.4,
-          width: 1,
-        },
-        move: {
-          enable: true,
-          speed: 5,
-          direction: "none",
-          random: true,
-          straight: false,
-          out_mode: "out",
-          bounce: false,
-          attract: {
-            enable: false,
-            rotateX: 600,
-            rotateY: 1200,
-          },
-        },
-      },
-      interactivity: {
-        detect_on: "canvas",
-        events: {
-          onhover: {
-            enable: false,
-            mode: "bubble",
-          },
-          onclick: {
-            enable: false,
-            mode: "repulse",
-          },
-          resize: true,
-        },
-        modes: {
-          grab: {
-            distance: 400,
-            line_linked: {
-              opacity: 1,
-            },
-          },
-          bubble: {
-            distance: 250,
-            size: 0,
-            duration: 2,
-            opacity: 0,
-            speed: 3,
-          },
-          repulse: {
-            distance: 400,
-            duration: 0.4,
-          },
-          push: {
-            particles_nb: 4,
-          },
-          remove: {
-            particles_nb: 2,
-          },
-        },
-      },
-      retina_detect: true,
-    };
-    particlesJS("particles-js", customParticlesOptions);
-  }
+  // if ($(".particles-js.dots").length) {
+  //   // constant to hold the particals options
+  //   const customParticlesOptions = {
+  //     particles: {
+  //       number: {
+  //         value: 150,
+  //         density: {
+  //           enable: true,
+  //           value_area: 500,
+  //         },
+  //       },
+  //       color: {
+  //         value: "#09aff4",
+  //       },
+  //       shape: {
+  //         type: "circle",
+  //         stroke: {
+  //           width: 0,
+  //           color: "#000000",
+  //         },
+  //         polygon: {
+  //           nb_sides: 5,
+  //         },
+  //         image: {
+  //           src: "img/github.svg",
+  //           width: 100,
+  //           height: 100,
+  //         },
+  //       },
+  //       opacity: {
+  //         value: 0.5,
+  //         random: true,
+  //         anim: {
+  //           enable: true,
+  //           speed: 1,
+  //           opacity_min: 0,
+  //           sync: false,
+  //         },
+  //       },
+  //       size: {
+  //         value: 3,
+  //         random: true,
+  //         anim: {
+  //           enable: true,
+  //           speed: 5,
+  //           size_min: 0.3,
+  //           sync: false,
+  //         },
+  //       },
+  //       line_linked: {
+  //         enable: false,
+  //         distance: 150,
+  //         color: "#ffffff",
+  //         opacity: 0.4,
+  //         width: 1,
+  //       },
+  //       move: {
+  //         enable: true,
+  //         speed: 5,
+  //         direction: "none",
+  //         random: true,
+  //         straight: false,
+  //         out_mode: "out",
+  //         bounce: false,
+  //         attract: {
+  //           enable: false,
+  //           rotateX: 600,
+  //           rotateY: 1200,
+  //         },
+  //       },
+  //     },
+  //     interactivity: {
+  //       detect_on: "canvas",
+  //       events: {
+  //         onhover: {
+  //           enable: false,
+  //           mode: "bubble",
+  //         },
+  //         onclick: {
+  //           enable: false,
+  //           mode: "repulse",
+  //         },
+  //         resize: true,
+  //       },
+  //       modes: {
+  //         grab: {
+  //           distance: 400,
+  //           line_linked: {
+  //             opacity: 1,
+  //           },
+  //         },
+  //         bubble: {
+  //           distance: 250,
+  //           size: 0,
+  //           duration: 2,
+  //           opacity: 0,
+  //           speed: 3,
+  //         },
+  //         repulse: {
+  //           distance: 400,
+  //           duration: 0.4,
+  //         },
+  //         push: {
+  //           particles_nb: 4,
+  //         },
+  //         remove: {
+  //           particles_nb: 2,
+  //         },
+  //       },
+  //     },
+  //     retina_detect: true,
+  //   };
+  //   particlesJS("particles-js", customParticlesOptions);
+  // }
 
   /* *******  loading Splitting.js library ********/
-  if (!(typeof window.Splitting === "undefined")) {
-    if ($("[data-splitting]").length) {
-      Splitting();
-    }
-  }
+  // if (!(typeof window.Splitting === "undefined")) {
+  //   if ($("[data-splitting]").length) {
+  //     Splitting();
+  //   }
+  // }
 
   /* *******  loading simpleParallax.js library ********/
   // if (!(typeof window.simpleParallax === "undefined")) {
