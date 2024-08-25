@@ -6,7 +6,7 @@ module.exports = function (eleventyConfig) {
     // Copy the `img` and `css` folders to the output
     eleventyConfig.addPassthroughCopy("src/assets");
     eleventyConfig.addPassthroughCopy("src/fonts");
-    // eleventyConfig.addPassthroughCopy("src/js");
+    eleventyConfig.addPassthroughCopy("src/js");
     eleventyConfig.addPassthroughCopy("css");
     // eleventyConfig.addPassthroughCopy('src/fonts') // NOTE: not used at the moment
     eleventyConfig.addPassthroughCopy('src/site.webmanifest');
@@ -14,6 +14,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/robots.txt');
     // TODO/DEBUG copy the .json files with dummy data
     eleventyConfig.addPassthroughCopy({ "src/_data/brokers": "data/brokers" });
+
+    // Ignore main.js as it's handled by esbuild
+    eleventyConfig.ignores.add("src/js/main.js");
 
     // features collection
     eleventyConfig.addCollection("featuresCollection", function (collectionApi) {
