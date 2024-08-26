@@ -11,11 +11,13 @@
 <meta name="keywords" content="TODO">
 <meta name="author" content="IT Portal Inc.">
 
+{# NOTE: preload the main CSS #}
+<link rel="preload" href="/css/main.css" as="style">
+
 {# fonts #}
 {# <link rel="preconnect" href="https://fonts.googleapis.com"> #}
 {# <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> #}
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" media='print' onload="this.media='all'">
-{# <link rel="stylesheet" type="text/css" href="/css/main.css"/> #}
 {# NOTE: in case further load speed optimization is required <link rel="stylesheet" media='print' onload="this.media='all'" href="/css/vendor/swiper-bundle.min.css" > #}
 
 {# favicons #}
@@ -25,32 +27,18 @@
 <link rel="manifest" href="/site.webmanifest">
 
 {# open graph #}
-{# <meta property="og:image" content="/assets/og-cover-logo-TODO.png"/>
-<meta property="twitter:image" content="/assets/og-cover-logo-TODO.png"/>
-<meta property="og:image:width" content="1200"/>
+<meta property="og:image" content="/assets/og-cover.jpg"/>
+<meta property="twitter:image" content="/assets/og-cover.jpg"/>
+{# <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/> #}
+<meta property="og:image:width" content="1450"/>
+<meta property="og:image:height" content="1080"/>
 
-<!-- main -->
-<link rel="preload" href="/css/main.css" as="style">
 <link rel="stylesheet" href="/css/main.css">
-
-<!-- animate.css file -->
 <link rel="stylesheet" href="/css/vendors/animate.css" media="print" onload="this.media='all'">
-
-<!-- Swiper -->
 <link rel="stylesheet" href="/css/vendors/swiper-bundle.min.css" media="print" onload="this.media='all'">
-
-<!-- flaticon -->
 <link rel="stylesheet" href="/css/vendors/flaticon/flaticon.css" media="print" onload="this.media='all'">
-
-<!-- fontAwesome -->
 <link rel="stylesheet" href="/css/vendors/all.min.css" media="print" onload="this.media='all'">
-
-<!-- bootstrap icons -->
 <link rel="stylesheet" href="/css/vendors/bootstrap-icons-1.9.1/bootstrap-icons.css" media="print" onload="this.media='all'">
-
-<!-- Fancybox -->
 {# <link rel="stylesheet" href="/css/vendors/jquery.fancybox.min.css" media="print" onload="this.media='all'"> #}
-
-<!-- cookies -->
 <link rel="stylesheet" href="/css/cookieconsent.css" media="print" onload="this.media='all'">

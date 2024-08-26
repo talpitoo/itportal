@@ -1,9 +1,8 @@
 {
-  "name": "itportal-11ty-alpinejs-bootstrap",
+  "name": "itportal-11ty-bootstrap",
   "version": "1.0.0",
   "description": "TODO",
   "private": true,
-  "main": "index.js",
   "scripts": {
     "watch:sass": "sass src/sass/main.scss:css/main.css --watch",
     "watch:js": "esbuild src/js/main.js --bundle --outfile=_site/js/main.js --sourcemap --watch",
@@ -24,9 +23,6 @@
   "keywords": [
     "11ty",
     "Bootstrap",
-    "Alpine.js",
-    "Axios",
-    "GSAP",
     "Swiper"
   ],
   "author": "IT Portal Inc.",
