@@ -3,308 +3,308 @@
         {
             "name": "Autotask",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=27&Method=View&Permalink=3F28241D47786040465B535C627E705C484754566371703F3F44DBE2ACCC0D08BC4F82843CA5241EED1391E1318F866C95371FAFB02CE26B642867989C26D31A67",
-            "img": "/assets/integrations/box-autotask.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-autotask.png",
             "category": "top"
         },
         {
             "name": "Domotz",
             "href": "https://www.domotz.com/integrations/software/documentation/it-portal.php",
-            "img": "/assets/integrations/box-domotz.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-domotz.png",
             "category": "top"
         },
         {
             "name": "ConnectWise",
             "href": "https://marketplace.connectwise.com/si-portal",
-            "img": "/assets/integrations/box-connectwise.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-connectwise.png",
             "category": "top"
         },
         {
             "name": "VMware vSphere",
             "href": "https://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7371&Method=View&Permalink=3F28241D46786240434D4E5E6378684F4B4E545D697B684F333946D9ED92C50478BC5AF39031B833048622600816A4EE5B735977B683FA3605661D3AD5EFD31306577C9E",
-            "img": "/assets/integrations/box-vmware.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-vmware.png",
             "category": "top"
         },
         {
             "name": "Autotask Endpoint Management",
             "href": "#",
-            "img": "/assets/integrations/box-aem.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-aem.png",
             "category": "top"
         },
         {
             "name": "ConnectWise AUTOMATE",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7324&Method=View&Permalink=3F28241D477C7F5D5D46515D6B69615F48465856627C702E3F41DAF6973D0309BC5CF39E33B5C90D81048AF005BF9954662D12BBA9EAC63D6B6BCFCFE3D729C9B51D83",
-            "img": "/assets/integrations/box-automate.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-automate.png",
             "category": "top"
         },
         {
             "name": "ConnectWise",
             "href": "https://marketplace.connectwise.com/si-portal",
-            "img": "/assets/integrations/box-connectwise.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-connectwise.png",
             "category": "psa-rmm"
         },
         {
             "name": "Autotask",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=27&Method=View&Permalink=3F28241D47786040465B535C627E705C484754566371703F3F44DBE2ACCC0D08BC4F82843CA5241EED1391E1318F866C95371FAFB02CE26B642867989C26D31A67",
-            "img": "/assets/integrations/box-autotask.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-autotask.png",
             "category": "psa-rmm"
         },
         {
             "name": "HaloPSA",
             "href": "http://kb.siportal.com/?U=L1WrxBCb",
-            "img": "/assets/integrations/box-halo.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-halo.png",
             "category": "psa-rmm"
         },
         {
             "name": "Splashtop",
             "href": "https://kb.itportal.com/?U=wNqYqh3i",
-            "img": "/assets/integrations/box-Splashtop.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-Splashtop.png",
             "category": "psa-rmm"
         },
         {
             "name": "ConnectWise Control",
             "href": "https://kb.itportal.com/?U=TatTybUw",
-            "img": "/assets/integrations/box-control.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-control.png",
             "category": "psa-rmm"
         },
         {
             "name": "LionGard",
             "href": "https://kb.itportal.com/?U=GHhSl1sx",
-            "img": "/assets/integrations/box-liongard.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-liongard.png",
             "category": "psa-rmm"
         },
         {
             "name": "CloudBlue",
             "href": "https://kb.itportal.com/?U=BmIK8ysO",
-            "img": "/assets/integrations/box-cloudblue.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-cloudblue.png",
             "category": "psa-rmm"
         },
         {
             "name": "Kaseya BMS",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7381&Method=View&Permalink=3F28241D407B7F5C5D46515D6A69695542465B5D6B69112242DAEB97C0050BB252F89836B43504862C6AFE0CBFE751742B7D91BFDCDF05670B3CFA8EE41723417D9A",
-            "img": "/assets/integrations/box-bms.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-bms.png",
             "category": "psa-rmm"
         },
         {
             "name": "Atera",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7319&Method=View&Permalink=3F28241D407D7F5D5D46515D6B696355474D5B586769002240DAF597C20103BD5EF59937B9340C8256680913A4EA44735E78ACBCE8C8386A12C2D2FD880936B70383",
-            "img": "/assets/integrations/box-atera.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-atera.png",
             "category": "psa-rmm"
         },
         {
             "name": "Continuum",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7297&Method=View&Permalink=3F28241D4678614043444E5E6378674F464E525F697D654F223947D8EE93C40573B6538A963AAB39129C32740515D1EB4E74547C4897F2CA0A101F30DEF7EC140367739F",
-            "img": "/assets/integrations/box-continuum.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-continuum.png",
             "category": "psa-rmm"
         },
         {
             "name": "NinjaRMM",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7313&Method=View&Permalink=3F28241D407D7F5D5D46515D6B69645542455B5D6069002240DAF597C2020CBA5BF78739A331149C2E66F10ABCE45C79266294BBD0D8041A0537FB93E2282A5D7F90",
-            "img": "/assets/integrations/box-ninja.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-ninja.png",
             "category": "psa-rmm"
         },
         {
             "name": "Automate",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7324&Method=View&Permalink=3F28241D477C7F5D5D46515D6B69615F48465856627C702E3F41DAF6973D0309BC5CF39E33B5C90D81048AF005BF9954662D12BBA9EAC63D6B6BCFCFE3D729C9B51D83",
-            "img": "/assets/integrations/box-automate.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-automate.png",
             "category": "psa-rmm"
         },
         {
             "name": "CommitCRM",
             "href": "http://www.commitcrm.com/products/siportal/",
-            "img": "/assets/integrations/box-commitcrm.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-commitcrm.png",
             "category": "psa-rmm"
         },
         {
             "name": "RepairShopr",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7341&Method=View&Permalink=3F28241D47787F5E435B535C6270705748445256617F702E3F45DAE891CB0D0DB148988F27AC2C64E8EDADEF2A8680789F03059E4E3F8A6830200BF79924D1027853B9",
-            "img": "/assets/integrations/box-rs.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-rs.png",
             "category": "psa-rmm"
         },
         {
             "name": "AEM",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7335&Method=View&Permalink=3F28241D4678604040404E5E6378684F4B4E5254697C684F333944DBED93C50072BB51F49431BC3E08833E7DF415A0EB5F742078BD9AE5351E1C0A3CDBE9EF0300527C83",
-            "img": "/assets/integrations/box-aem.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-aem.png",
             "category": "psa-rmm"
         },
         {
             "name": "VSA",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7332&Method=View&Permalink=3F28241D4678604040404E5E6378684F4B4E555C6978654F333944DBED93C50770B65CF99131BE3106843D7CF512A1EA5E77277FBC9BE4321F1F0833E9F4C410796F6596",
-            "img": "/assets/integrations/box-vsa.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-vsa.png",
             "category": "psa-rmm"
         },
         {
             "name": "N-Able N-central",
             "href": "http://kb.siportal.com/?U=15693169417351",
-            "img": "/assets/integrations/box-nable.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-nable.png",
             "category": "psa-rmm"
         },
         {
             "name": "N-Able RMM",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7352&Method=View&Permalink=3F28241D47787F5C435B535C6270705D48455856607A703F3F45DAE891CB060AB44E9A8027A62419911895E432B3886F94361EAAB635F115393318EA8F3AD8126C64B8",
-            "img": "/assets/integrations/box-solarwinds-rmm.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-solarwinds-rmm.png",
             "category": "psa-rmm"
         },
         {
             "name": "N-Able N-central",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7352&Method=View&Permalink=3F28241D47787F5C435B535C6270705D48455856607A703F3F45DAE891CB060AB44E9A8027A62419911895E432B3886F94361EAAB635F115393318EA8F3AD8126C64B8",
-            "img": "/assets/integrations/box-nable-api.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-nable-api.png",
             "category": "psa-rmm"
         },
         {
             "name": "Pulseway",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7338&Method=View&Permalink=3F28241D407B7F5C5D46515D6A69685547475B596769112242DAEB97C0000BBE52FF9D0CB2CB04872D6BFE0FBFE851752B7E91BED7D70465063AFF85FC1A214B7F97",
-            "img": "/assets/integrations/box-pulseway.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-pulseway.png",
             "category": "psa-rmm"
         },
         {
             "name": "Watchman",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7340&Method=View&Permalink=3F28241D40717F585D46515D6B696755404D5B5E666911224CDAF1973E0309BC5BFC8336BD340F832167F810A3F05D4D277695A6D4C736741BCDEAF9F1033EB60488",
-            "img": "/assets/integrations/box-watchman.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-watchman.png",
             "category": "psa-rmm"
         },
         {
             "name": "SyncroMSP",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7369&Method=View&Permalink=3F28241D47787F5D415B535C6270705A484558566778702E3F45DAED92CE0F02B849818122A12614941D99FF36B68C576E2E14A1BFCFF01E030826D38437CF28517BA7",
-            "img": "/assets/integrations/box-syncromsp.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-syncromsp.png",
             "category": "psa-rmm"
         },
         {
             "name": "Auvik",
             "href": "https://www.itportal.com/v4/code/?rID=Changes",
-            "img": "/assets/integrations/box-auvik.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-auvik.png",
             "category": "psa-rmm"
         },
         {
             "name": "Domotz",
             "href": "https://www.domotz.com/integrations/software/documentation/it-portal.php",
-            "img": "/assets/integrations/box-domotz.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-domotz.png",
             "category": "psa-rmm"
         },
         {
             "name": "Itarian",
             "href": "http://kb.siportal.com/?U=3Nx3uqff",
-            "img": "/assets/integrations/box-itarian.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-itarian.png",
             "category": "psa-rmm"
         },
         
         {
             "name": "Nimble",
             "href": "http://kb.siportal.com/?U=H9IwPmat",
-            "img": "/assets/integrations/box-nimble.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-nimble.png",
             "category": "authentication-data"
         },
         {
             "name": "Yubikey",
             "href": "http://kb.siportal.com/?U=H9IwPmat",
-            "img": "/assets/integrations/box-yubico.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-yubico.png",
             "category": "authentication-data"
         },
         {
             "name": "Myki",
             "href": "https://support.myki.com/en/articles/4298797-integration-with-it-portal",
-            "img": "/assets/integrations/box-myki.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-myki.png",
             "category": "authentication-data"
         },
         {
             "name": "DUO/Google Auth TOTP",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7249&Method=View&Permalink=3F28241D47786040465B535C627E705C484753566771703F3F44DBE2ACCC0F0EB34087843CA8201DEE1497E0308E876D923018ABBACAFC1407351DE68D38D81E6162B9",
-            "img": "/assets/integrations/box-duo.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-duo.png",
             "category": "authentication-data"
         },
         {
             "name": "PassPortal",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7284&Method=View&Permalink=3F28241D47786040465B535C627E705C48475356637C703F3F44DBE2ACCC0F0ABE4F81853CA82063E9EE92EE2D848263993A0395B13CF4113A3E10FA9B2CD6047451B6",
-            "img": "/assets/integrations/box-passportal.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-passportal.png",
             "category": "authentication-data"
         },
         {
             "name": "AuthAntil",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7366&Method=View&Permalink=3F28241D4578614040424E5E6378684F43465B5D6473645F52242C47D8EC92CA0276B45CF18139BC3E0D9F357BCC25BE9550682B12A4BCD7D031191F32C5E9FD053DBC7B9F",
-            "img": "/assets/integrations/box-authanvil.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-authanvil.png",
             "category": "authentication-data"
         },
         {
             "name": "bvoip",
             "href": "https://www.bvoip.com/integrations/1stream-itportal-voip-integration-by-bvoip",
-            "img": "/assets/integrations/box-bvoip.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-bvoip.png",
             "category": "authentication-data"
         },
         {
             "name": "IT Portal Authentication",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7249&Method=View&Permalink=3F28241D47786040465B535C627E705C484753566771703F3F44DBE2ACCC0F0EB34087843CA8201DEE1497E0308E876D923018ABBACAFC1407351DE68D38D81E6162B9",
-            "img": "/assets/integrations/box-gauth.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-gauth.png",
             "category": "authentication-data"
         },
         {
             "name": "AD",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7286&Method=View&Permalink=3F28241D47786040465B535C627E705C484750566171703F3F44DBE2ACCC0E00BC4E85823CAF2E62EAEF93ED2C8A8360963B1C96B63BF7103B3E10FE9422DF196868B4",
-            "img": "/assets/integrations/box-ad.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-ad.png",
             "category": "authentication-data"
         },
         {
             "name": "RADIUS",
             "href": "",
-            "img": "/assets/integrations/box-radius.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-radius.png",
             "category": "authentication-data"
         },
         {
             "name": "SAML",
             "href": "http://kb.siportal.com/?U=15692785602581",
-            "img": "/assets/integrations/box-SAML.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-SAML.png",
             "category": "authentication-data"
         },
         {
             "name": "Restful API",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7347&Method=View&Permalink=3F28241D4578614040424E5E6378684F43465B596173655952242C47D8EC92CA0377B250F48539BC3E149A0F76CA5EB490566F2D15ADB9D3D6081C0635C2F2EE1F2C466D91",
-            "img": "/assets/integrations/box-rest.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-rest.png",
             "category": "authentication-data"
         },
         {
             "name": "Excel and CSV Import",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7283&Method=View&Permalink=3F28241D4578614040424E5E6378684F43465B596173605A52242C47D8EC92CA0372B050F38039BC3E149A0A72B75AB18C6D933019A8B4D4EE05100B29DEF6E916124C56AA",
-            "img": "/assets/integrations/box-csv.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-csv.png",
             "category": "authentication-data"
         },
         {
             "name": "Gliffy",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7344&Method=View&Permalink=3F28241D47717F5D425B535C6271705C48465356617B703F3F4CDAF096C20D71B7B29A86265A2A6EE6E3AED12998BD7580080A834A23837C342D0E8BA211E973774543",
-            "img": "/assets/integrations/box-lucidcharts.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-lucidcharts.png",
             "category": "authentication-data"
         },
         {
             "name": "Gliffy",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7293&Method=View&Permalink=3F28241D47786040465B535C627E705C484658566770703F3F44DBE2ACCC0900B2438B813CA33812961F9FFD38BA8F506A2B10A6A2CAFD000F0622D583C8C32A507DAA",
-            "img": "/assets/integrations/box-Gliffy.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-Gliffy.png",
             "category": "authentication-data"
         },
         {
             "name": "Draw IO Import",
             "href": "http://kb.siportal.com/?U=7lwarM4h",
-            "img": "/assets/integrations/box-drawio.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-drawio.png",
             "category": "authentication-data"
         },
         {
             "name": "VMWare Import",
             "href": "https://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7371&Method=View&Permalink=3F28241D46786240434D4E5E6378684F4B4E545D697B684F333946D9ED92C50478BC5AF39031B833048622600816A4EE5B735977B683FA3605661D3AD5EFD31306577C9E",
-            "img": "/assets/integrations/box-vmware.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-vmware.png",
             "category": "authentication-data"
         },
         {
             "name": "Office 365",
             "href": "https://www.itportal.com/v4/code/?rID=Changes#",
-            "img": "/assets/integrations/box-365.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-365.png",
             "category": "authentication-data"
         },
         {
             "name": "IIS Requirements",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7294&Method=View&Permalink=3F28241D4678604043444E5E6378674F444E50546978624F223944DBEF90C70A7BB05F8F9A34AA26129B0E710111ADE843795861B490F6CD06150335C2F0E31D056E7692",
-            "img": "/assets/integrations/box-iis.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-iis.png",
             "category": "authentication-data"
         },
         {
             "name": "SQL",
             "href": "http://kb.siportal.com/portal3/kb/#article/?rID=KB&KBID=7294&Method=View&Permalink=3F28241D4678604043444E5E6378674F444E535F697C614F223944DBEF90C70071B35D889B34AB38119C0E710010ACE843795861B590F7CF06150235DBFAEE17096C7E92",
-            "img": "/assets/integrations/box-sql.png",
+            "img": "{{ baseUrl }}/assets/integrations/box-sql.png",
             "category": "authentication-data"
         }
     ]

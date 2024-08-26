@@ -4,7 +4,7 @@ excerpt: >
   Easily find and manage your IT Portal passwords with the IT Portal Browser Password plugin.
 icon: flaticon-web-development
 layout: layouts/layout-feature.njk
-permalink: /features/password-plugin-DISABLED/
+permalink: "{{ baseUrl }}/features/password-plugin-DISABLED/"
 eleventyNavigation-DISABLED:
   key: Password Plugin
   parent: Features

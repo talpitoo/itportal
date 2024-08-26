@@ -4,7 +4,7 @@ excerpt: >
   Prevent unexpected disruptions and ensure business continuity with IT Portal’s proactive expiration management.
 icon: flaticon-web-development
 layout: layouts/layout-feature.njk
-permalink: /features/expirations/
+permalink: "{{ baseUrl }}/features/expirations/"
 eleventyNavigation:
   key: Expirations
   parent: Features
@@ -13,7 +13,7 @@ eleventyNavigation:
 category: "all-features"
 ---
 
-<img class="img-fluid mb-4" src="/assets/migrated/expirations.png" alt="Screenshot">
+<img class="img-fluid mb-4" src="{{ baseUrl }}/assets/migrated/expirations.png" alt="Screenshot">
 
 ## Safeguard your operations with advanced expiration management. 
 

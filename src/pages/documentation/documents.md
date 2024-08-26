@@ -4,7 +4,7 @@ excerpt: >
   Organize and centralize your important files and information for easy access and collaboration, boosting productivity and reducing errors.
 icon: flaticon-list
 layout: layouts/layout-documentation.njk
-permalink: /documentation/documents/
+permalink: "{{ baseUrl }}/documentation/documents/"
 eleventyNavigation:
   key: Documents
   parent: Documentation

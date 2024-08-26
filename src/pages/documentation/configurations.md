@@ -4,7 +4,7 @@ excerpt: >
   Standardize and optimize device settings with our configuration management tool, so that you can improve system performance and reduce troubleshooting time.
 icon: flaticon-list
 layout: layouts/layout-documentation.njk
-permalink: /documentation/configurations/
+permalink: "{{ baseUrl }}/documentation/configurations/"
 eleventyNavigation:
   key: Configurations
   parent: Documentation

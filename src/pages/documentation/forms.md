@@ -4,7 +4,7 @@ excerpt: >
   Streamline data collection and management with customizable online forms, saving time and improving data accuracy.
 icon: flaticon-list
 layout: layouts/layout-documentation.njk
-permalink: /documentation/forms/
+permalink: "{{ baseUrl }}/documentation/forms/"
 eleventyNavigation:
   key: Forms
   parent: Documentation

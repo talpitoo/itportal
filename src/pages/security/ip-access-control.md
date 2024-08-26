@@ -4,7 +4,7 @@ excerpt: >
   Safeguard data by limiting access to authorized networks.
 icon: flaticon-unlock
 layout: layouts/layout-security.njk
-permalink: /security/ip-access-control/
+permalink: "{{ baseUrl }}/security/ip-access-control/"
 eleventyNavigation:
   key: IP Access Control
   parent: Security

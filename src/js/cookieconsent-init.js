@@ -121,7 +121,7 @@ cc.run({
                         }
                     }, {
                         title: 'More information',
-                        description: 'For any queries in relation to my policy on cookies and your choices, please <a class="cc-link" href="/contact">contact me</a>.',
+                        description: 'For any queries in relation to my policy on cookies and your choices, please <a class="cc-link" href="{{ baseUrl }}/contact">contact me</a>.',
                     }
                 ]
             }

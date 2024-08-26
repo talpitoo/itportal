@@ -4,7 +4,7 @@ excerpt: >
   Empower your team and users with self-service knowledge and troubleshooting resources, increasing efficiency and reducing support ticket volume.
 icon: flaticon-list
 layout: layouts/layout-documentation.njk
-permalink: /documentation/kbs/
+permalink: "{{ baseUrl }}/documentation/kbs/"
 eleventyNavigation:
   key: KBs
   parent: Documentation

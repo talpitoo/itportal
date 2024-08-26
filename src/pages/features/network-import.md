@@ -4,7 +4,7 @@ excerpt: >
   Easily import and centrally manage network configurations
 icon: flaticon-nanotechnology
 layout: layouts/layout-feature.njk
-permalink: /features/network-import/
+permalink: "{{ baseUrl }}/features/network-import/"
 eleventyNavigation:
   key: Network Import
   parent: Features
@@ -12,7 +12,7 @@ eleventyNavigation:
 category: "top-features"
 ---
 
-<img class="img-fluid mb-4" src="/assets/migrated/configurations.png" alt="Screenshot">
+<img class="img-fluid mb-4" src="{{ baseUrl }}/assets/migrated/configurations.png" alt="Screenshot">
 
 ## Streamline Network Management with Configuration Import
 

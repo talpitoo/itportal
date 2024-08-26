@@ -4,7 +4,7 @@ excerpt: >
   IT Portal Scorecard allows IT departments to automate checks to ensure documentation compliance
 icon: flaticon-clipboard
 layout: layouts/layout-feature.njk
-permalink: /features/scoreboard/
+permalink: "{{ baseUrl }}/features/scoreboard/"
 eleventyNavigation:
   key: Scoreboard
   parent: Features
@@ -12,7 +12,7 @@ eleventyNavigation:
 category: "top-features"
 ---
 
-<img class="img-fluid mb-4" src="/assets/migrated/scoreboard2.png" alt="Screenshot">
+<img class="img-fluid mb-4" src="{{ baseUrl }}/assets/migrated/scoreboard2.png" alt="Screenshot">
 
 ## Achieve Documentation Compliance with Scoreboard
 
