@@ -1,5 +1,5 @@
 <section class="page-hero  d-flex align-items-center  tringle-bg" id="page-hero">
-    <div class="overlay-photo-image-bg" data-bg-img="/assets/sections-bg-images/pattern-bg-1.webp" data-bg-opacity=".2"></div>
+    <div class="overlay-photo-image-bg" data-bg-img="{{ baseUrl }}/assets/sections-bg-images/pattern-bg-1.webp" data-bg-opacity=".2"></div>
     
     <div class="container position-relative">
         {# NOTE: video canvas stuff #}
@@ -8,10 +8,10 @@
         {% set sceneName = "sceneSplashLanding" %}
         {% include "animations/animation-template-dynamic.njk" %}
         <script src="https://code.createjs.com/1.0.0/createjs.min.js" defer></script>
-        <script src="/js/animations/splash-landing.js" defer></script>
-        <script src="/js/animations/splash-msp.js" defer></script>
-        <script src="/js/animations/splash-education.js" defer></script>
-        <script src="/js/animations/splash-government.js" defer></script>
+        <script src="{{ baseUrl }}/js/animations/splash-landing.js" defer></script>
+        <script src="{{ baseUrl }}/js/animations/splash-msp.js" defer></script>
+        <script src="{{ baseUrl }}/js/animations/splash-education.js" defer></script>
+        <script src="{{ baseUrl }}/js/animations/splash-government.js" defer></script>
         <script>
             var canvas,
                 stage,
@@ -77,22 +77,22 @@
                         animationName = 'splash-msp';
                         compositionId = 'compositionSplashMSP';
                         sceneName = 'sceneSplashMSP';
-                        findMySolutionHref = '/solutions/msp';
+                        findMySolutionHref = '{{ baseUrl }}/solutions/msp';
                     } else if (industry === 'it') {
                         animationName = 'splash-landing';
                         compositionId = 'compositionSplashLanding';
                         sceneName = 'sceneSplashLanding';
-                        findMySolutionHref = '/solutions/it';
+                        findMySolutionHref = '{{ baseUrl }}/solutions/it';
                     } else if (industry === 'government') {
                         animationName = 'splash-government';
                         compositionId = 'compositionSplashGovernment';
                         sceneName = 'sceneSplashGovernment';
-                        findMySolutionHref = '/solutions/government';
+                        findMySolutionHref = '{{ baseUrl }}/solutions/government';
                     } else if (industry === 'education') {
                         animationName = 'splash-government';
                         compositionId = 'compositionSplashEducation';
                         sceneName = 'sceneSplashEducation';
-                        findMySolutionHref = '/solutions/education';
+                        findMySolutionHref = '{{ baseUrl }}/solutions/education';
                     }
 
                     // Update animation by reinitializing

@@ -4,7 +4,7 @@ excerpt: >
   Gain comprehensive insights into your IT environment and stay informed with real-time updates.
 icon: flaticon-web-development
 layout: layouts/layout-feature.njk
-permalink: /features/synopsis-view/
+permalink: "/features/synopsis-view/"
 eleventyNavigation:
   key: Synopsis View
   parent: Features
@@ -15,4 +15,4 @@ category: "all-features"
 
 Synopsis View, an engineer's go-to tool, provides a consolidated snapshot of all accessible objects across your organization. Gain valuable insights into your support environment by quickly analyzing object counts and identifying potential issues or areas for optimization.
 
-<img class="img-fluid" src="/assets/migrated/synopsis.png" alt="Screenshot">
+<img class="img-fluid" src="{{ baseUrl }}/assets/migrated/synopsis.png" alt="Screenshot">

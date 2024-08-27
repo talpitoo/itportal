@@ -2,7 +2,7 @@
 title: Pricing
 excerpt: TODO
 layout: layouts/layout-base.njk
-permalink: /pricing/
+permalink: "/pricing/"
 eleventyNavigation:
   key: Pricing
   order: 6
@@ -10,7 +10,7 @@ bodyClass: page-pricing
 ---
 
 <section class="d-flex align-items-center page-hero inner-page-hero" id="page-hero">
-    <div class="overlay-photo-image-bg parallax" data-bg-img="/assets/hero/inner-page-hero.webp" data-bg-opacity="1"></div>
+    <div class="overlay-photo-image-bg parallax" data-bg-img="{{ baseUrl }}/assets/hero/inner-page-hero.webp" data-bg-opacity="1"></div>
     <div class="overlay-color" data-bg-opacity=".75"></div>
     <div class="container position-relative">
         <div class="hero-text-area centerd">
@@ -21,7 +21,7 @@ bodyClass: page-pricing
                     <p class="mb-0  wow fadeInUp" data-wow-delay=".3s">IT Portal’s competitive pricing offers unmatched value and flexibility, so you can choose the plan that best fits your budget. Experience the exceptional service you need, along with all the features you’d come to expect from other providers.</p>
                 </div>
                 <div class="col-lg-4">
-                    <img src="/assets/migrated/guarantee-30.png" alt="30 day money back guarantee" class="img-fluid mt-5 mt-lg-0">
+                    <img src="{{ baseUrl }}/assets/migrated/guarantee-30.png" alt="30 day money back guarantee" class="img-fluid mt-5 mt-lg-0">
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@ bodyClass: page-pricing
 {% include "sections/pricing-tiles.njk" %}
 
 <section class="take-action elf-section has-dark-bg" id="take-action">
-    <div class="overlay-photo-image-bg  " data-bg-img="/assets/sections-bg-images/2.webp" data-bg-opacity=".25"></div>
+    <div class="overlay-photo-image-bg  " data-bg-img="{{ baseUrl }}/assets/sections-bg-images/2.webp" data-bg-opacity=".25"></div>
     <div class="cta-wrapper">
         <div class="container">
             <div class="sec-heading  centered mb-0 ">
@@ -43,7 +43,7 @@ bodyClass: page-pricing
             </div>
             <!--Start .see-more-area-->
             <div class=" see-more-area wow fadeInUp" data-wow-delay="0.8s">
-                <a class=" btn-solid cta-link" href="/contact">contact us</a>
+                <a class=" btn-solid cta-link" href="{{ baseUrl }}/contact">contact us</a>
             </div>
             <!--End Of .see-more-area        -->
         </div>

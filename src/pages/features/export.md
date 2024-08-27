@@ -4,7 +4,7 @@ excerpt: >
   Safeguard your data using IT Portal Export to create a complete, offline copy of your IT Portal for disaster recovery or remote access.
 icon: flaticon-analysis
 layout: layouts/layout-feature.njk
-permalink: /features/export/
+permalink: "/features/export/"
 eleventyNavigation:
   key: Export
   parent: Features
@@ -12,7 +12,7 @@ eleventyNavigation:
 category: "top-features"
 ---
 
-<a href="http://demosync.it-portal.com/#start.html"><img class="img-fluid mb-4" src="/assets/migrated/portal-export-1a.png" alt="Screenshot"></a>
+<a href="http://demosync.it-portal.com/#start.html"><img class="img-fluid mb-4" src="{{ baseUrl }}/assets/migrated/portal-export-1a.png" alt="Screenshot"></a>
 
 ## Protect Your IT Documentation with Portal Export
 

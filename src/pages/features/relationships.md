@@ -4,7 +4,7 @@ excerpt: >
   Uncover hidden insights and optimize operations with powerful relationship mapping.
 icon: flaticon-web-development
 layout: layouts/layout-feature.njk
-permalink: /features/relationships/
+permalink: "/features/relationships/"
 eleventyNavigation:
   key: Relationships
   parent: Features
@@ -21,4 +21,4 @@ The true power of the Portal lies in its ability to visualize complex connection
 
 By visualizing these relationships, you can identify inefficiencies, optimize resource allocation, and make data-driven decisions to improve overall IT operations.
 
-<img class="img-fluid" src="/assets/migrated/relationships.png" alt="Screenshot">
+<img class="img-fluid" src="{{ baseUrl }}/assets/migrated/relationships.png" alt="Screenshot">

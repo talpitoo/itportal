@@ -4,7 +4,7 @@ excerpt: >
   Admins have a complete list of log options. You can run reports on:
 icon: flaticon-unlock
 layout: layouts/layout-security.njk
-permalink: /security/logs-access/
+permalink: "/security/logs-access/"
 eleventyNavigation:
   key: Logs Access
   parent: Security

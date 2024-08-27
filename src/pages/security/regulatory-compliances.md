@@ -4,7 +4,7 @@ excerpt: >
   Trust our SOC 2 Type II compliant platform for peace of mind.
 icon: flaticon-unlock
 layout: layouts/layout-security.njk
-permalink: /security/regulatory-compliances/
+permalink: "/security/regulatory-compliances/"
 eleventyNavigation:
   key: Regulatory Compliances
   parent: Security

@@ -4,7 +4,7 @@ excerpt: >
   Recovery & purge allows admins to recover deleted items (recycle bin).
 icon: flaticon-unlock
 layout: layouts/layout-security.njk
-permalink: /security/recycle-bin/
+permalink: "/security/recycle-bin/"
 eleventyNavigation:
   key: Recycle Bin
   parent: Security

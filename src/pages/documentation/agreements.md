@@ -4,7 +4,7 @@ excerpt: >
   Streamline contract management and ensure compliance with automatic reminders and alerts for important dates and deadlines.
 icon: flaticon-list
 layout: layouts/layout-documentation.njk
-permalink: /documentation/agreements/
+permalink: "/documentation/agreements/"
 eleventyNavigation:
   key: Agreements
   parent: Documentation

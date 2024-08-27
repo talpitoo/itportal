@@ -4,7 +4,7 @@ excerpt: >
   Protect sensitive data with an extra layer of security.
 icon: flaticon-unlock
 layout: layouts/layout-security.njk
-permalink: /security/2fa/
+permalink: "/security/2fa/"
 eleventyNavigation:
   key: Two Factor Authentication
   parent: Security

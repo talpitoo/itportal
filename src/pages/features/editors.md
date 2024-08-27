@@ -4,7 +4,7 @@ excerpt: >
   Edit and create documents, diagrams, and more in the IT Portal with our powerful editors.
 icon: flaticon-web-domain
 layout: layouts/layout-feature.njk
-permalink: /features/editors/
+permalink: "/features/editors/"
 eleventyNavigation:
   key: Editors
   parent: Features
@@ -20,14 +20,14 @@ Work seamlessly on your documents from within the  IT Portal - open, edit, and s
 
 - A Microsoft 365 editor for efficient document management
 
-<a href="https://youtu.be/8tnVN1Fy6iY"><img class="img-fluid" src="/assets/migrated/office.gif" alt="Screenshot"></a>
+<a href="https://youtu.be/8tnVN1Fy6iY"><img class="img-fluid" src="{{ baseUrl }}/assets/migrated/office.gif" alt="Screenshot"></a>
 
 - A drawing tool to create visuals and diagrams
 
-<a href="https://www.youtube.com/watch?v=utRC0zhmqaE"><img class="img-fluid" src="/assets/migrated/drawing.png" alt="Screenshot"></a>
+<a href="https://www.youtube.com/watch?v=utRC0zhmqaE"><img class="img-fluid" src="{{ baseUrl }}/assets/migrated/drawing.png" alt="Screenshot"></a>
 
 - A WYSIWYG editor for precise formatting
 
-<a href="https://www.froala.com/wysiwyg-editor"><img class="img-fluid mb-4" src="/assets/migrated/froala-editor.gif" alt="Screenshot"></a>
+<a href="https://www.froala.com/wysiwyg-editor"><img class="img-fluid mb-4" src="{{ baseUrl }}/assets/migrated/froala-editor.gif" alt="Screenshot"></a>
 
 Easily transfer content from Microsoft Word and Excel while customizing the formatting to your preferences.

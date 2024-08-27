@@ -4,7 +4,7 @@ excerpt: >
   Provide your customers access to their data at no cost!
 icon: flaticon-web-development
 layout: layouts/layout-feature.njk
-permalink: /features/free-company-users/
+permalink: "/features/free-company-users/"
 eleventyNavigation:
   key: Free Company Users
   parent: Features
@@ -13,7 +13,7 @@ eleventyNavigation:
 category: "all-features"
 ---
 
-<img class="img-fluid mb-4" src="/assets/migrated/expirations.png" alt="Screenshot">
+<img class="img-fluid mb-4" src="{{ baseUrl }}/assets/migrated/expirations.png" alt="Screenshot">
 
 Optimize user management and licensing costs by granting customers appropriate access levels based on their needs.
 

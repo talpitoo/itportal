@@ -2,6 +2,10 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
+    // NOTE: base URL if hosting from a subfolder
+    // eleventyConfig.addGlobalData("baseUrl", "/itportal/flex-it");
+    // NOTE: base URL if hosting from the root folder
+    eleventyConfig.addGlobalData("baseUrl", "");
 
     // Copy the `img` and `css` folders to the output
     eleventyConfig.addPassthroughCopy("src/assets");

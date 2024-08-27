@@ -4,7 +4,7 @@ excerpt: >
   Streamline user management and access control.
 icon: flaticon-unlock
 layout: layouts/layout-security.njk
-permalink: /security/active-directory/
+permalink: "/security/active-directory/"
 eleventyNavigation:
   key: Active Directory
   parent: Security

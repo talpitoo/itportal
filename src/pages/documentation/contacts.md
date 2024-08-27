@@ -4,7 +4,7 @@ excerpt: >
   Improved collaboration! Build and maintain strong relationships with your team and partners through our centralized contact management system.
 icon: flaticon-list
 layout: layouts/layout-documentation.njk
-permalink: /documentation/contacts/
+permalink: "/documentation/contacts/"
 eleventyNavigation:
   key: Contacts
   parent: Documentation

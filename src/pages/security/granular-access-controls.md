@@ -4,7 +4,7 @@ excerpt: >
   Assign precise permissions to individuals and groups, minimizing risk.
 icon: flaticon-unlock
 layout: layouts/layout-security.njk
-permalink: /security/granular-access-controls/
+permalink: "/security/granular-access-controls/"
 eleventyNavigation:
   key: Granular Access Controls
   parent: Security

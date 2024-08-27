@@ -4,7 +4,7 @@ excerpt: >
   Streamline asset management and enhance collaboration with intuitive organization
 icon: flaticon-web-development
 layout: layouts/layout-feature.njk
-permalink: /features/image-gallery/
+permalink: "/features/image-gallery/"
 eleventyNavigation:
   key: Image Galleries and Folders
   parent: Features
@@ -13,7 +13,7 @@ eleventyNavigation:
 category: "all-features"
 ---
 
-<img class="img-fluid mb-4" src="/assets/migrated/1550146314963.png" alt="Screenshot">
+<img class="img-fluid mb-4" src="{{ baseUrl }}/assets/migrated/1550146314963.png" alt="Screenshot">
 
 ## An Engineer’s Favorite Tool!
 

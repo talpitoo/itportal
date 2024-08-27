@@ -4,7 +4,7 @@ excerpt: >
   Track, manage, and secure all your IT assets with our comprehensive device inventory solution, so that you can maintain optimal performance and prevent unauthorized access.
 icon: flaticon-list
 layout: layouts/layout-documentation.njk
-permalink: /documentation/devices/
+permalink: "/documentation/devices/"
 eleventyNavigation:
   key: Devices
   parent: Documentation

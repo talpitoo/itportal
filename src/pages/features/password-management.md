@@ -4,7 +4,7 @@ excerpt: >
   Protect sensitive information and boost productivity with secure password management.
 icon: flaticon-web-development
 layout: layouts/layout-feature.njk
-permalink: /features/password-management/
+permalink: "/features/password-management/"
 eleventyNavigation:
   key: Password Management
   parent: Features

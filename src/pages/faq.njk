@@ -2,7 +2,7 @@
 title: FAQs
 excerpt: TODO
 layout: layouts/layout-base.njk
-permalink: /faqs/
+permalink: "/about-us/faqs/"
 eleventyNavigation:
   key: FAQs
   parent: About Us
@@ -11,7 +11,7 @@ bodyClass: page-faqs
 ---
 
 <section class="d-flex align-items-center page-hero page-hero-generic inner-page-hero" id="page-hero">
-    <div class="overlay-photo-image-bg parallax" data-bg-img="/assets/hero/inner-page-hero.webp" data-bg-opacity="1"></div>
+    <div class="overlay-photo-image-bg parallax" data-bg-img="{{ baseUrl }}/assets/hero/inner-page-hero.webp" data-bg-opacity="1"></div>
     <div class="overlay-color" data-bg-opacity=".75"></div>
     <div class="container position-relative">
         <div class="hero-text-area centerd">
@@ -37,7 +37,7 @@ bodyClass: page-faqs
 
 <!-- Start  take-action Section-->
 <section class="take-action elf-section has-dark-bg" id="take-action">
-    <div class="overlay-photo-image-bg  " data-bg-img="/assets/sections-bg-images/2.webp" data-bg-opacity=".25"></div>
+    <div class="overlay-photo-image-bg  " data-bg-img="{{ baseUrl }}/assets/sections-bg-images/2.webp" data-bg-opacity=".25"></div>
     <div class="cta-wrapper">
         <div class="container">
             <div class="sec-heading  centered mb-0 ">
@@ -49,7 +49,7 @@ bodyClass: page-faqs
             </div>
             <!--Start .see-more-area-->
             <div class=" see-more-area wow fadeInUp" data-wow-delay="0.8s">
-                <a class=" btn-solid cta-link" href="/contact">contact us</a>
+                <a class=" btn-solid cta-link" href="{{ baseUrl }}/contact">contact us</a>
             </div>
             <!--End Of .see-more-area        -->
         </div>

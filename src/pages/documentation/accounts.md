@@ -4,7 +4,7 @@ excerpt: >
   Securely manage and centralize all your login credentials, subscriptions, and support accounts in one place.
 icon: flaticon-list
 layout: layouts/layout-documentation.njk
-permalink: /documentation/accounts/
+permalink: "/documentation/accounts/"
 eleventyNavigation:
   key: Accounts
   parent: Documentation
