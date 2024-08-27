@@ -2,7 +2,7 @@
 title: Integrations
 excerpt: TODO
 layout: layouts/layout-base.njk
-permalink: "{{ baseUrl }}/integrations/"
+permalink: "/integrations/"
 eleventyNavigation:
   key: Integrations
   order: 3
@@ -28,7 +28,7 @@ bodyClass: page-integrations
                         <div class="box service-box service-box-integrations  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
                             <div class="service-icon">
                                 {# <i class="flaticon-web-development font-icon"></i> #}
-                                <img src="{{ item.img }}" class="img-fluid"/>
+                                <img src="{{ baseUrl }}{{ item.img }}" class="img-fluid"/>
                             </div>
                             <span class="service-num hollow-text">1    </span>
                             <div class="service-content">

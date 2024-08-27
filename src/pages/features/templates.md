@@ -4,7 +4,7 @@ excerpt: >
   Your Platform, Your Way. Customize the platform to your exact needs with flexible customization options. 
 icon: flaticon-web-development
 layout: layouts/layout-feature.njk
-permalink: "{{ baseUrl }}/features/templates/"
+permalink: "/features/templates/"
 eleventyNavigation:
   key: Templates
   parent: Features

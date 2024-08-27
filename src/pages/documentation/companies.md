@@ -4,7 +4,7 @@ excerpt: >
   Organize and track all your client information and documentation, including contracts, invoices, and support tickets, in one centralized location.
 icon: flaticon-list
 layout: layouts/layout-documentation.njk
-permalink: "{{ baseUrl }}/documentation/companies/"
+permalink: "/documentation/companies/"
 eleventyNavigation:
   key: Companies
   parent: Documentation

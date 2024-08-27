@@ -4,7 +4,7 @@ excerpt: >
   Your Brand, Our Platform. We understand the importance of brand consistency. Our platform is designed to let you control the look and feel to match your business identity.
 icon: flaticon-web-development
 layout: layouts/layout-feature.njk
-permalink: "{{ baseUrl }}/features/branding/"
+permalink: "/features/branding/"
 eleventyNavigation:
   key: Branding
   parent: Features

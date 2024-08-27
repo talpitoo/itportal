@@ -4,7 +4,7 @@ excerpt: >
   Tailor access rights to specific users and groups.
 icon: flaticon-unlock
 layout: layouts/layout-security.njk
-permalink: "{{ baseUrl }}/security/granular-permissions/"
+permalink: "/security/granular-permissions/"
 eleventyNavigation:
   key: Granular Permissions
   parent: Security

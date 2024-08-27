@@ -4,7 +4,7 @@ excerpt: >
   Organize and track all your client information and documentation, including contracts, invoices, and support tickets, in one centralized location..
 icon: flaticon-web-development
 layout: layouts/layout-feature.njk
-permalink: "{{ baseUrl }}/features/change-history/"
+permalink: "/features/change-history/"
 eleventyNavigation:
   key: Change History
   parent: Features

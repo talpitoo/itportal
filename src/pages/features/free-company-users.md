@@ -4,7 +4,7 @@ excerpt: >
   Provide your customers access to their data at no cost!
 icon: flaticon-web-development
 layout: layouts/layout-feature.njk
-permalink: "{{ baseUrl }}/features/free-company-users/"
+permalink: "/features/free-company-users/"
 eleventyNavigation:
   key: Free Company Users
   parent: Features

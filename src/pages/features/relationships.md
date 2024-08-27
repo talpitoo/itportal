@@ -4,7 +4,7 @@ excerpt: >
   Uncover hidden insights and optimize operations with powerful relationship mapping.
 icon: flaticon-web-development
 layout: layouts/layout-feature.njk
-permalink: "{{ baseUrl }}/features/relationships/"
+permalink: "/features/relationships/"
 eleventyNavigation:
   key: Relationships
   parent: Features

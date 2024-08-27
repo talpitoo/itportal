@@ -4,7 +4,7 @@ excerpt: >
   We have customers that prefer do on-premises and safeguard it themselves. For those needing cloud services we offer some options.
 icon: flaticon-unlock
 layout: layouts/layout-security.njk
-permalink: "{{ baseUrl }}/security/ssl-and-encryption/"
+permalink: "/security/ssl-and-encryption/"
 eleventyNavigation:
   key: SSL and Encryption
   parent: Security

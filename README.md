@@ -17,6 +17,17 @@ https://itportal.vercel.app/
 5. compile the website with `npm run build` and serve it from the `_site` folder.
 6. You can serve the compiled website from `_site` with `npx @11ty/eleventy --serve`.
 
+## Deployment
+
+1. Compile the website with `npm run build` and deploy the generated `_site` folder.
+2. In case you are deploying to a subfolder, don't forget to change the `{{ baseUrl }}` in **.eleventy.js** first.
+
+```
+module.exports = function (eleventyConfig) {
+    // NOTE: base URL if hosting from a subfolder
+    eleventyConfig.addGlobalData("baseUrl", "/itportal/flex-it");
+```
+
 ## 👨‍💻 Development notes
 
 * the top navbar uses semantic, auto-generated nested navigation. It is based on the folder structure, the template `/src/_includes/components/navigation-dynamic.njk` and the front matter in individual files, e.g.

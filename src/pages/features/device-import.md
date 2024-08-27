@@ -4,7 +4,7 @@ excerpt: >
   Quickly import your devices into the IT Portal with our simple script.
 icon: flaticon-database
 layout: layouts/layout-feature.njk
-permalink: "{{ baseUrl }}/features/device-import/"
+permalink: "/features/device-import/"
 eleventyNavigation:
   key: Device Import
   parent: Features

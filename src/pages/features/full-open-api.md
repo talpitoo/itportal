@@ -4,7 +4,7 @@ excerpt: >
   Customize and integrate seamlessly. Our open API empowers you to import and export data, building custom solutions and extending platform capabilities.
 icon: flaticon-web-development
 layout: layouts/layout-feature.njk
-permalink: "{{ baseUrl }}/features/full-open-api/"
+permalink: "/features/full-open-api/"
 eleventyNavigation:
   key: Full Open API
   parent: Features

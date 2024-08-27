@@ -4,7 +4,7 @@ excerpt: >
   Gain comprehensive insights into your IT environment and stay informed with real-time updates.
 icon: flaticon-web-development
 layout: layouts/layout-feature.njk
-permalink: "{{ baseUrl }}/features/synopsis-view/"
+permalink: "/features/synopsis-view/"
 eleventyNavigation:
   key: Synopsis View
   parent: Features

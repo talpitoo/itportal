@@ -4,7 +4,7 @@ excerpt: >
   Safeguard your data using IT Portal Export to create a complete, offline copy of your IT Portal for disaster recovery or remote access.
 icon: flaticon-analysis
 layout: layouts/layout-feature.njk
-permalink: "{{ baseUrl }}/features/export/"
+permalink: "/features/export/"
 eleventyNavigation:
   key: Export
   parent: Features

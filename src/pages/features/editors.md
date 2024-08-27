@@ -4,7 +4,7 @@ excerpt: >
   Edit and create documents, diagrams, and more in the IT Portal with our powerful editors.
 icon: flaticon-web-domain
 layout: layouts/layout-feature.njk
-permalink: "{{ baseUrl }}/features/editors/"
+permalink: "/features/editors/"
 eleventyNavigation:
   key: Editors
   parent: Features

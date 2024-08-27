@@ -4,7 +4,7 @@ excerpt: >
   Empower your IT team to access the portal on the go with the IT Portal Mobile App
 icon: flaticon-responsive
 layout: layouts/layout-feature.njk
-permalink: "{{ baseUrl }}/features/mobile/"
+permalink: "/features/mobile/"
 eleventyNavigation:
   key: Mobile
   parent: Features

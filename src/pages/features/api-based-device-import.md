@@ -4,7 +4,7 @@ excerpt: >
   Connect your devices effortlessly using our API. It’s easy to get started.
 icon: flaticon-web-development
 layout: layouts/layout-feature.njk
-permalink: "{{ baseUrl }}/features/api-based-device-import/"
+permalink: "/features/api-based-device-import/"
 eleventyNavigation:
   key: API Based Device Import
   parent: Features
