@@ -12,7 +12,8 @@
   &.canvas-features,
   &.canvas-security,
   &.canvas-password-management,
-  &.canvas-about {
+  &.canvas-about,
+  &.canvas-pricing {
     width: 100% !important;
     height: auto !important;
 
@@ -29,9 +30,18 @@
 
 .page-features,
 .page-security,
-.page-about-us {
+.page-about-us,
+.page-pricing {
   .page-hero {
     padding-bottom: 0;
+  }
+}
+
+.page-pricing {
+  .page-hero {
+    @include media-breakpoint-up(lg) {
+      padding-top: 0 !important;
+    }
   }
 }
 
@@ -46,9 +56,8 @@
 }
 
 .page-hero-generic {
-  padding-top: 150px;  
+  padding-top: 150px;
 }
-
 
 .page-landing,
 .page-msp,
